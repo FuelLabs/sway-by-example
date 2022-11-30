@@ -24,12 +24,12 @@ const SOL_ROUTES: Route[] = [
     title: "First App",
   },
   {
-    path: "ownership",
-    title: "Ownership",
+    path: "initialization",
+    title: "Initialization",
   },
   {
-    path: "variables",
-    title: "Initialization",
+    path: "ownership",
+    title: "Ownership",
   },
   {
     path: "constants",
@@ -123,13 +123,13 @@ export default function HomePage() {
   return (
     <div className={styles.component}>
       <SEO
-        title="Sway by Example | v0.31.2"
+        title="Sway by Example | v0.31.3"
         description="Learn smart contract programming using Solidity"
       />
       <h1 className={styles.header}>
-        <a href="/">Sway by Example 🌴</a>
+        <a href="/">Sway by Example</a>
       </h1>
-      <div className={styles.subHeader}>v0.31.2</div>
+      <div className={styles.subHeader}>v0.31.3</div>
       <div className={styles.main}>
         <p>
           an introduction to{" "}

@@ -9,5 +9,5 @@ Key Differences
 - address -> identity
 
 ```rust
-{{{Ownership}}}
+{{{ownership}}}
 ```

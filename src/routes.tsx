@@ -5,7 +5,7 @@ import component_first_app from "./pages/first-app"
 import component_hello_world from "./pages/hello-world"
 import component_ownership from "./pages/ownership"
 import component_interface from "./pages/interface"
-import component_variables from "./pages/variables"
+import component_initialization from "./pages/initialization"
 import component_ from "./pages"
 
 interface Path {
@@ -46,16 +46,16 @@ const routes: Route[] = [
     component: component_hello_world,
   },
   {
+    path: "/initialization",
+    component: component_initialization,
+  },
+  {
     path: "/ownership",
     component: component_ownership,
   },
   {
     path: "/interface",
     component: component_interface,
-  },
-  {
-    path: "/variables",
-    component: component_variables,
   },
   {
     path: "",

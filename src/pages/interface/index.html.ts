@@ -4,11 +4,11 @@ export const title = "Interface"
 export const description = "An example of interface in Solidity"
 export const codes = [
     {
-        fileName: "Interface.rs",
+        fileName: "Interface",
         code: "Y29udHJhY3Q7CgphYmkgT3duZXJzaGlwRXhhbXBsZSB7CiAgICAjW3N0b3JhZ2Uod3JpdGUpXQogICAgZm4gcmV2b2tlX293bmVyc2hpcCgpOwogICAgI1tzdG9yYWdlKHdyaXRlKV0KICAgIGZuIHNldF9vd25lcihpZGVudGl0eTogSWRlbnRpdHkpOwogICAgI1tzdG9yYWdlKHJlYWQpXQogICAgZm4gb3duZXIoKSAtPiBPcHRpb248SWRlbnRpdHk+Owp9CgpzdG9yYWdlIHsKICAgIG93bmVyOiBPcHRpb248SWRlbnRpdHk+ID0gT3B0aW9uOjpOb25lLAp9CgppbXBsIE93bmVyc2hpcEV4YW1wbGUgZm9yIENvbnRyYWN0IHsKICAgIC8vIEFOQ0hPUjogcmV2b2tlX293bmVyX2V4YW1wbGUKICAgICNbc3RvcmFnZSh3cml0ZSldCiAgICBmbiByZXZva2Vfb3duZXJzaGlwKCkgewogICAgICAgIHN0b3JhZ2Uub3duZXIgPSBPcHRpb246Ok5vbmUoKTsKICAgIH0KICAgIC8vIEFOQ0hPUl9FTkQ6IHJldm9rZV9vd25lcl9leGFtcGxlCiAgICAvLyBBTkNIT1I6IHNldF9vd25lcl9leGFtcGxlCiAgICAjW3N0b3JhZ2Uod3JpdGUpXQogICAgZm4gc2V0X293bmVyKGlkZW50aXR5OiBJZGVudGl0eSkgewogICAgICAgIHN0b3JhZ2Uub3duZXIgPSBPcHRpb246OlNvbWUoaWRlbnRpdHkpOwogICAgfQogICAgLy8gQU5DSE9SX0VORDogc2V0X293bmVyX2V4YW1wbGUKICAgICNbc3RvcmFnZShyZWFkKV0KICAgIGZuIG93bmVyKCkgLT4gT3B0aW9uPElkZW50aXR5PiB7CiAgICAgICAgc3RvcmFnZS5vd25lcgogICAgfQp9",
     },
     {
-        fileName: "Interface2.rs",
+        fileName: "Interface2",
         code: "Y29udHJhY3Q7CgphYmkgT3duZXJzaGlwRXhhbXBsZSB7CiAgICAjW3N0b3JhZ2Uod3JpdGUpXQogICAgZm4gcmV2b2tlX293bmVyc2hpcCgpOwogICAgI1tzdG9yYWdlKHdyaXRlKV0KICAgIGZuIHNldF9vd25lcihpZGVudGl0eTogSWRlbnRpdHkpOwogICAgI1tzdG9yYWdlKHJlYWQpXQogICAgZm4gb3duZXIoKSAtPiBPcHRpb248SWRlbnRpdHk+Owp9CgpzdG9yYWdlIHsKICAgIG93bmVyOiBPcHRpb248SWRlbnRpdHk+ID0gT3B0aW9uOjpOb25lLAp9",
     },
 ]

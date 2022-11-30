@@ -13,33 +13,37 @@ function Footer() {
     <div className={styles.component}>
       <div className={styles.row}>
         {/* <img src={sce} alt="smart contract engineer" className={styles.sce} /> */}
-        <a href="https://twitter.com/calldelegation" target="__blank">
+        Call Delegation
+        {/* <a href="https://twitter.com/calldelegation" target="__blank">
           Call Delegation
-        </a>
+        </a> */}
       </div>
-      {/* <div className={styles.social}>
+      <div className={styles.social}>
         <div className={styles.row}>
-          <img src={discord} alt="discord" className={styles.discord} />
-          <a href="https://discord.gg/bt8FK2wkcW" target="__blank">
-            Discord
+          {/* <img src={discord} alt="discord" className={styles.discord} /> */}
+          <a href="https://twitter.com/calldelegation" target="__blank">
+            Twitter
           </a>
         </div>
-        <div className={styles.row}>
+        {/* <div className={styles.row}>
           <img src={telegram} alt="telegram" className={styles.telegram} />
+          <div className={styles.bar}>|</div>
           <a href="https://t.me/smartcontractprogrammer" target="__blank">
             Telegram
           </a>
-        </div>
+        </div> */}
         <div className={styles.row}>
-          <img src={youTube} alt="youtube" className={styles.youTube} />
+          {/* <img src={youTube} alt="youtube" className={styles.youTube} /> */}
+          <div className={styles.bar}>|</div>
           <a
-            href="https://www.youtube.com/channel/UCJWh7F3AFyQ_x01VKzr9eyA"
+            href="https://github.com/calldelegation"
             target="__blank"
           >
-            YouTube
+            Github
           </a>
         </div>
       </div>
+      {/* 
       <div className={styles.row}>
         Donate
         <span role="img" aria-label="smiley">

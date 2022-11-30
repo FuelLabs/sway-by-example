@@ -3,13 +3,15 @@ import { useAppContext, Theme } from "../contexts/AppContext"
 import styles from "./Header.module.css"
 import logoLight from "./logo.png"
 import logoDark from "./logo-dark.png"
+// import fuelLogo from "./fuel-logo.svg"
+import fuelLogo from "./palm-trees.png"
 import modeLight from "./mode-light.png"
 import modeDark from "./mode-dark.png"
 
 function Header() {
   const { state, setTheme } = useAppContext()
 
-  let logo = state.theme == "dark" ? logoDark : logoLight
+  let logo = state.theme == "dark" ? fuelLogo : fuelLogo
 
   function onClickTheme(theme: Theme) {
     setTheme(theme)
@@ -25,7 +27,7 @@ function Header() {
       <h3 className={styles.header}>
         <a href="/">Sway by Example</a>
         <div className={styles.versions}>
-          <div className={styles.version}>v0.31.2</div>
+          <div className={styles.version}>v0.31.3</div>
         </div>
       </h3>
 

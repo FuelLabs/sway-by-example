@@ -21,7 +21,9 @@ function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div className={styles.component}>
-        <Header />
+        <div className={styles.header}>
+          <Header />
+        </div>
         <div className={styles.main}>
           <Routes>
             {routes.map((route) => {

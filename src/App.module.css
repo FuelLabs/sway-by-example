@@ -20,6 +20,15 @@
   }
 } */
 
+.header {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-right: 20px;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
