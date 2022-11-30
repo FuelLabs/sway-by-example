@@ -14,6 +14,14 @@ Interface
 - cannot declare a constructor
 - cannot declare state variables
 
-```solidity
+```rust
 {{{Interface}}}
+```
+
+- blah
+- blah 
+- blah 
+
+```rust
+{{{Interface2}}}
 ```

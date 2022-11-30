@@ -25,7 +25,7 @@ function Header() {
       <h3 className={styles.header}>
         <a href="/">Sway by Example</a>
         <div className={styles.versions}>
-          <div className={styles.version}>v0.31.1</div>
+          <div className={styles.version}>v0.31.2</div>
         </div>
       </h3>
 

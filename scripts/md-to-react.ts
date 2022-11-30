@@ -4,12 +4,18 @@ import path from "path"
 import yaml from "yaml"
 import mustache from "mustache"
 import { marked } from "marked"
-import hljs from "highlight.js"
+import hljs from 'highlight.js/lib/core';
+import Rust from 'highlight.js/lib/languages/rust';
 // @ts-ignore
-import { solidity } from "highlightjs-solidity"
+// import { Sway } from "highlightjs-sway"
+hljs.registerLanguage('rust', Rust);
+
+// @ts-ignore
+// import { solidity } from "highlightjs-solidity"
 import { exists, copy, removeExt, getExt, renderTemplateToFile } from "./lib"
 
-hljs.registerLanguage("solidity", solidity)
+// hljs.registerLanguage("solidity", solidity)
+
 const { readFile, readdir } = fs.promises
 
 function findIndexOfFrontMatter(lines: string[]): number {
@@ -56,7 +62,7 @@ function parse(file: string): { content: string; metadata: Metadata } {
 async function findSolidityFiles(dir: string): Promise<string[]> {
   const files = await readdir(dir)
 
-  return files.filter((file) => file.split(".").pop() === "sol")
+  return files.filter((file) => file.split(".").pop() === "rs")
 }
 
 async function mdToHtml(filePath: string) {
@@ -86,7 +92,7 @@ async function mdToHtml(filePath: string) {
   const markdown = mustache.render(content, codes)
   const html = marked(markdown, {
     highlight: (code, language) => {
-      if (language === "solidity") {
+      if (language === "rust") {
         return hljs.highlight(code, { language }).value
       }
       return code
@@ -106,7 +112,7 @@ async function mdToHtml(filePath: string) {
       version: metadata.version,
       description: metadata.description,
       codes: Object.entries(codes).map(([key, val]) => ({
-        key: `${key}.sol`,
+        key: `${key}.rs`,
         // @ts-ignore
         val: Buffer.from(val).toString("base64"),
       })),
