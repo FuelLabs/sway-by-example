@@ -16,12 +16,16 @@ interface Route {
 
 const SOL_ROUTES: Route[] = [
   {
-    path: "hello-world",
-    title: "Hello World",
+    path: "hello-sway",
+    title: "Hello Sway",
   },
   {
-    path: "first-app",
-    title: "First App",
+    path: "imports",
+    title: "Imports",
+  },
+  {
+    path: "error-handling",
+    title: "Error Handling",
   },
   {
     path: "initialization",
@@ -31,14 +35,10 @@ const SOL_ROUTES: Route[] = [
     path: "ownership",
     title: "Ownership",
   },
-  {
-    path: "constants",
-    title: "Block headers",
-  },
-  {
-    path: "interface",
-    title: "Interface",
-  },
+  // {
+  //   path: "interface",
+  //   title: "Interface",
+  // },
 ]
 
 const APP_ROUTES: Route[] = [
@@ -52,9 +52,9 @@ const TEST_ROUTES: Route[] = [
 
 const DEFI_ROUTES = [
   {
-    path: "uniswap-v2",
+    path: "staking-contract",
     title: "Staking Contracts",
-  },
+  }
 ]
 
 export const ROUTES_BY_CATEGORY = [
@@ -127,7 +127,7 @@ export default function HomePage() {
         description="Learn smart contract programming using Solidity"
       />
       <h1 className={styles.header}>
-        <a href="/">Sway by Example</a>
+        <a href="/">Sway by Example 🏖️</a>
       </h1>
       <div className={styles.subHeader}>v0.31.3</div>
       <div className={styles.main}>

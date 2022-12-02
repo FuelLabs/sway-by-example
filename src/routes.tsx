@@ -1,11 +1,12 @@
 import component_abi_decode from "./pages/abi-decode"
 import component_abi_encode from "./pages/abi-encode"
-import component_constants from "./pages/constants"
-import component_first_app from "./pages/first-app"
-import component_hello_world from "./pages/hello-world"
+import component_error_handling from "./pages/error-handling"
+import component_imports from "./pages/imports"
+import component_hello_sway from "./pages/hello-sway"
 import component_ownership from "./pages/ownership"
 import component_interface from "./pages/interface"
 import component_initialization from "./pages/initialization"
+import component_defi_staking_contract from "./pages/defi/staking-contract"
 import component_ from "./pages"
 
 interface Path {
@@ -34,16 +35,16 @@ const routes: Route[] = [
     component: component_abi_encode,
   },
   {
-    path: "/constants",
-    component: component_constants,
+    path: "/error-handling",
+    component: component_error_handling,
   },
   {
-    path: "/first-app",
-    component: component_first_app,
+    path: "/imports",
+    component: component_imports,
   },
   {
-    path: "/hello-world",
-    component: component_hello_world,
+    path: "/hello-sway",
+    component: component_hello_sway,
   },
   {
     path: "/initialization",
@@ -56,6 +57,10 @@ const routes: Route[] = [
   {
     path: "/interface",
     component: component_interface,
+  },
+  {
+    path: "/defi/staking-contract",
+    component: component_defi_staking_contract,
   },
   {
     path: "",

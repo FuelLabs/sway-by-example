@@ -62,7 +62,7 @@ pre .buttons button:hover {
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-  color: rgb(231, 76, 60);
+  color: rgb(46, 139, 192);
 }
 .language-rust {
   display: block;
