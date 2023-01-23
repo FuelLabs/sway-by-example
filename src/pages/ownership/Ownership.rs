@@ -26,6 +26,7 @@ impl OwnershipExample for Contract {
     #[storage(read, write)]
     fn revoke_ownership() {
         let sender: Result<Identity, AuthError> = msg_sender(); 
+        // Ownership access control!
         require(sender.unwrap() == storage.owner.unwrap(), OwnerError::IsNotOwner);
         storage.owner = Option::None();
     }
@@ -33,9 +34,11 @@ impl OwnershipExample for Contract {
     #[storage(read, write)]
     fn set_owner(identity: Identity) {
         let sender: Result<Identity, AuthError> = msg_sender(); 
+        // Ownership access control!
         require(sender.unwrap() == storage.owner.unwrap(), OwnerError::IsNotOwner);
         storage.owner = Option::Some(identity);
     }
+
     #[storage(read)]
     fn owner() -> Option<Identity> {
         storage.owner
