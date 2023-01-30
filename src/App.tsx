@@ -6,6 +6,7 @@ import Header from "./components/Header"
 import Footer from "./components/Footer"
 import routes from "./routes"
 import { getPrevNextPaths } from "./pages/index"
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const { state, loadLocalStorage } = useAppContext()
@@ -42,6 +43,7 @@ function App() {
           <Footer />
         </div>
       </div>
+      <Analytics />
     </Router>
   )
 }
