@@ -8,7 +8,7 @@ interface AppState {
 }
 
 const INITIAL_STATE: AppState = {
-  theme: "light",
+  theme: "dark",
   loading: true,
 }
 
