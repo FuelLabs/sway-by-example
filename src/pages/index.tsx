@@ -29,11 +29,11 @@ const SOL_ROUTES: Route[] = [
   },
   {
     path: "account-types",
-    title: "Account Types ★",
+    title: "Account Types",
   },
   {
     path: "initialization",
-    title: "Initialization ★",
+    title: "Initialization",
   },
   {
     path: "ownership",
@@ -41,15 +41,15 @@ const SOL_ROUTES: Route[] = [
   },
   {
     path: "events",
-    title: "Events ★",
+    title: "Events",
   },
   {
     path: "tokens",
-    title: "Tokens ★",
+    title: "Tokens",
   },
   {
     path: "contract-calls",
-    title: "Contract Calls ★",
+    title: "Contract Calls",
   },
   // {
   //   path: "interface",
@@ -73,7 +73,7 @@ const CHEATSHEET: Route[] = [
 const DEFI_ROUTES = [
   {
     path: "flashloans",
-    title: "Flashloans ★",
+    title: "Flashloans",
   },
   {
     path: "staking-contract",
@@ -154,13 +154,13 @@ export default function HomePage() {
   return (
     <div className={styles.component}>
       <SEO
-        title="Sway by Example | v0.33.1"
+        title="Sway by Example | v0.35.4"
         description="Learn smart contract programming using Solidity"
       />
       <h1 className={styles.header}>
         <a href="/">Sway by Example 🏖️</a>
       </h1>
-      <div className={styles.subHeader}>v0.33.1</div>
+      <div className={styles.subHeader}>v0.35.4</div>
       <div className={styles.main}>
         <p>
           an introduction to{" "}
