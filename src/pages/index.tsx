@@ -14,7 +14,7 @@ interface Route {
   title: string
 }
 
-const SOL_ROUTES: Route[] = [
+const BASIC_ROUTES: Route[] = [
   {
     path: "hello-sway",
     title: "Hello Sway",
@@ -51,13 +51,21 @@ const SOL_ROUTES: Route[] = [
     path: "contract-calls",
     title: "Contract Calls",
   },
-  // {
-  //   path: "interface",
-  //   title: "Interface",
-  // },
 ]
 
-const APP_ROUTES: Route[] = [
+const SOL_ROUTES = [
+  {
+    path: "logging",
+    title: "Logging",
+  },
+  {
+    path: "storage",
+    title: "Storage",
+  },
+  {
+    path: "conditional",
+    title: "Conditional",
+  },
 ]
 
 const HACK_ROUTES: Route[] = [
@@ -90,8 +98,15 @@ export const ROUTES_BY_CATEGORY = [
     })),
   },
   {
-    title: "Basics",
+    title: "Sway vs Solidity",
     routes: SOL_ROUTES.map((route) => ({
+      ...route,
+      path: `/${route.path}`,
+    })),
+  },
+  {
+    title: "Basics",
+    routes: BASIC_ROUTES.map((route) => ({
       ...route,
       path: `/${route.path}`,
     })),
@@ -154,13 +169,13 @@ export default function HomePage() {
   return (
     <div className={styles.component}>
       <SEO
-        title="Sway by Example | v0.35.4"
+        title="Sway by Example | v0.38"
         description="Learn smart contract programming using Solidity"
       />
       <h1 className={styles.header}>
         <a href="/">Sway by Example 🏖️</a>
       </h1>
-      <div className={styles.subHeader}>v0.35.4</div>
+      <div className={styles.subHeader}>v0.38</div>
       <div className={styles.main}>
         <p>
           an introduction to{" "}

@@ -13,7 +13,7 @@ function Footer() {
     <div className={styles.component}>
       <div className={styles.row}>
         {/* <img src={sce} alt="smart contract engineer" className={styles.sce} /> */}
-        Call Delegation
+        Modularize Everything
         {/* <a href="https://twitter.com/calldelegation" target="__blank">
           Call Delegation
         </a> */}
@@ -21,25 +21,32 @@ function Footer() {
       <div className={styles.social}>
         <div className={styles.row}>
           {/* <img src={discord} alt="discord" className={styles.discord} /> */}
-          <a href="https://twitter.com/calldelegation" target="__blank">
+          <a href="https://twitter.com/SwayLang" target="__blank">
             Twitter
           </a>
         </div>
-        {/* <div className={styles.row}>
-          <img src={telegram} alt="telegram" className={styles.telegram} />
+        <div className={styles.row}>
+          {/* <img src={telegram} alt="telegram" className={styles.telegram} /> */}
           <div className={styles.bar}>|</div>
-          <a href="https://t.me/smartcontractprogrammer" target="__blank">
-            Telegram
+          <a href="https://fuellabs.github.io/sway/latest/book/" target="__blank">
+            Docs
           </a>
-        </div> */}
+        </div>
         <div className={styles.row}>
           {/* <img src={youTube} alt="youtube" className={styles.youTube} /> */}
           <div className={styles.bar}>|</div>
           <a
-            href="https://github.com/calldelegation"
+            href="https://github.com/FuelLabs/sway"
             target="__blank"
           >
             Github
+          </a>
+        </div>
+        <div className={styles.row}>
+          {/* <img src={telegram} alt="telegram" className={styles.telegram} /> */}
+          <div className={styles.bar}>|</div>
+          <a href="https://forum.fuel.network/" target="__blank">
+            Help
           </a>
         </div>
       </div>
