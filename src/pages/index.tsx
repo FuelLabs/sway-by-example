@@ -51,17 +51,15 @@ const SOL_ROUTES: Route[] = [
     path: "contract-calls",
     title: "Contract Calls",
   },
-  // {
-  //   path: "interface",
-  //   title: "Interface",
-  // },
+  {
+    path: "variables",
+    title: "Variables",
+  },
 ]
 
-const APP_ROUTES: Route[] = [
-]
+const APP_ROUTES: Route[] = []
 
-const HACK_ROUTES: Route[] = [
-]
+const HACK_ROUTES: Route[] = []
 
 const CHEATSHEET: Route[] = [
   {
