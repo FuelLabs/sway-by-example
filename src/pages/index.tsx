@@ -1,20 +1,13 @@
 import React from "react"
 import SEO from "../components/SEO"
 import styles from "./index.module.css"
-import youTube from "../components/youtube.png"
-
-const UPDATES = [
-  "2022/11/15 - GitHub PR by thurendous",
-  "2022/11/15 - GitHub PR by grbickon",
-  "2022/11/15 - Unchecked math",
-]
 
 interface Route {
   path: string
   title: string
 }
 
-const SOL_ROUTES: Route[] = [
+const SWAY_ROUTES: Route[] = [
   {
     path: "hello-sway",
     title: "Hello Sway",
@@ -89,32 +82,11 @@ export const ROUTES_BY_CATEGORY = [
   },
   {
     title: "Basics",
-    routes: SOL_ROUTES.map((route) => ({
+    routes: SWAY_ROUTES.map((route) => ({
       ...route,
       path: `/${route.path}`,
     })),
   },
-  // {
-  //   title: "Applications",
-  //   routes: APP_ROUTES.map((route) => ({
-  //     ...route,
-  //     path: `/app/${route.path}`,
-  //   })),
-  // },
-  // {
-  //   title: "Hacks",
-  //   routes: HACK_ROUTES.map((route) => ({
-  //     ...route,
-  //     path: `/hacks/${route.path}`,
-  //   })),
-  // },
-  // {
-  //   title: "Tests",
-  //   routes: TEST_ROUTES.map((route) => ({
-  //     ...route,
-  //     path: `/tests/${route.path}`,
-  //   })),
-  // },
   {
     title: "DeFi",
     routes: DEFI_ROUTES.map((route) => ({
@@ -171,24 +143,6 @@ export default function HomePage() {
           </a>{" "}
           with simple examples | New! ★
         </p>
-
-        {/* YOUTUBE STUFF */}
-        {/* <div className={styles.youTube}>
-          <img src={youTube} alt="logo" className={styles.youTubeLogo} />
-          <a
-            href="https://www.youtube.com/channel/UCJWh7F3AFyQ_x01VKzr9eyA"
-            target="__blank"
-          >
-            Most code are explained here
-          </a>
-        </div> */}
-
-        {/* UPDATES */}
-        {/* <div className={styles.updates}>
-          {UPDATES.map((text, i) => (
-            <div key={i}>{text}</div>
-          ))}
-        </div> */}
 
         {ROUTES_BY_CATEGORY.map(({ routes, title }, i) => (
           <div key={i}>
