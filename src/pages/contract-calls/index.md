@@ -17,4 +17,3 @@ Contract to contract calls can simply be done by importing the callee's `abi` an
 ```rust
 {{{interface}}}
 ```
-

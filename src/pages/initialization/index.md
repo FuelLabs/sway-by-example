@@ -18,11 +18,10 @@ There are no `constructors` in Sway so initializations are done slightly differe
 {{{initialization}}}
 ```
 
-Another different approach is to keep track of an `initialization state` by creating your own constructor. Initialization can then be enforced by requiring subsequent related functions to check if the state has been initalized. 
+Another different approach is to keep track of an `initialization state` by creating your own constructor. Initialization can then be enforced by requiring subsequent related functions to check if the state has been initalized.
 
 `main.sw`
 
 ```rust
 {{{old_initialization}}}
 ```
-

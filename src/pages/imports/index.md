@@ -3,9 +3,11 @@ title: Imports
 version: 0.8.13
 description: Importing libraries in Sway
 ---
+
 Imports are very useful for code reuseability and interactions. Generally all Sway program types follow the same import paradigm.
 
 `main.sw`
+
 ```rust
 {{{imports}}}
 ```
@@ -15,8 +17,9 @@ Imports are very useful for code reuseability and interactions. Generally all Sw
 ### Local
 
 This is the folder structure.
+
 ```
-└── Import   
+└── Import
     └── src
         ├── main.sw
         └── imports_library.sw
@@ -27,7 +30,7 @@ This is the folder structure.
 This is the project structure.
 
 ```
-├── Import   
+├── Import
 │   ├── src
 │   │   └── main.sw
 │   └── Forc.toml
@@ -43,6 +46,7 @@ This is the project structure.
 External imports should be defined as a dependacy within `Forc.toml`
 
 `Forc.toml`
+
 ```rust
 {{{forc}}}
 ```
@@ -50,6 +54,7 @@ External imports should be defined as a dependacy within `Forc.toml`
 Note: It is good practice if you have a complex library to have an entry point for the sublibraries
 
 `math_lib.sw`
+
 ```rust
 {{{math_lib}}}
 ```

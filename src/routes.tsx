@@ -33,74 +33,74 @@ interface Route {
 }
 
 const routes: Route[] = [
-    {
-        path: "/abi-decode",
-        component: component_abi_decode
-    },
-    {
-        path: "/abi-encode",
-        component: component_abi_encode
-    },
-    {
-        path: "/account-types",
-        component: component_account_types
-    },
-    {
-        path: "/cheatsheet",
-        component: component_cheatsheet
-    },
-    {
-        path: "/contract-calls",
-        component: component_contract_calls
-    },
-    {
-        path: "/defi/flashloans",
-        component: component_defi_flashloans
-    },
-    {
-        path: "/defi/staking-contract",
-        component: component_defi_staking_contract
-    },
-    {
-        path: "/error-handling",
-        component: component_error_handling
-    },
-    {
-        path: "/events",
-        component: component_events
-    },
-    {
-        path: "/hello-sway",
-        component: component_hello_sway
-    },
-    {
-        path: "/imports",
-        component: component_imports
-    },
-    {
-        path: "/initialization",
-        component: component_initialization
-    },
-    {
-        path: "/interface",
-        component: component_interface
-    },
-    {
-        path: "/ownership",
-        component: component_ownership
-    },
-    {
-        path: "/tokens",
-        component: component_tokens
-    },
-    {
-        path: "/variables",
-        component: component_variables
-    },
-    {
-        path: "",
-        component: component_
-    },
+  {
+    path: "/abi-decode",
+    component: component_abi_decode,
+  },
+  {
+    path: "/abi-encode",
+    component: component_abi_encode,
+  },
+  {
+    path: "/account-types",
+    component: component_account_types,
+  },
+  {
+    path: "/cheatsheet",
+    component: component_cheatsheet,
+  },
+  {
+    path: "/contract-calls",
+    component: component_contract_calls,
+  },
+  {
+    path: "/defi/flashloans",
+    component: component_defi_flashloans,
+  },
+  {
+    path: "/defi/staking-contract",
+    component: component_defi_staking_contract,
+  },
+  {
+    path: "/error-handling",
+    component: component_error_handling,
+  },
+  {
+    path: "/events",
+    component: component_events,
+  },
+  {
+    path: "/hello-sway",
+    component: component_hello_sway,
+  },
+  {
+    path: "/imports",
+    component: component_imports,
+  },
+  {
+    path: "/initialization",
+    component: component_initialization,
+  },
+  {
+    path: "/interface",
+    component: component_interface,
+  },
+  {
+    path: "/ownership",
+    component: component_ownership,
+  },
+  {
+    path: "/tokens",
+    component: component_tokens,
+  },
+  {
+    path: "/variables",
+    component: component_variables,
+  },
+  {
+    path: "",
+    component: component_,
+  },
 ]
 
 export default routes

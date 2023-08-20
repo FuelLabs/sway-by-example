@@ -8,19 +8,20 @@ Errors will revert all state changes made during a transaction. Similar to Solid
 
 1. `revert` function calls directly reverts the transaction
 2. `assert` only reverts if a conditional is not met to be `true`
-3. `require` only reverts *with an error* if a conditional is not met to be `true`
+3. `require` only reverts _with an error_ if a conditional is not met to be `true`
 
 Note: `revert` keyword will panic in a `predicate`
 
 ```rust
 {{{error_handling}}}
 ```
+
 ### External
 
 This is the project structure for importing your own custom errors
 
 ```
-└── Import   
+└── Import
     └── src
         ├── main.sw
         └── errors.sw
@@ -31,4 +32,3 @@ Note: Similar to Solidity using custom errors will help save on bytecode size an
 ```rust
 {{{errors}}}
 ```
-

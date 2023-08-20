@@ -4,7 +4,7 @@ version: 0.8.13
 description: Introduction to Sway
 ---
 
-*STILL IN THE MIDDLE OF DEVELOPMENT AND TESTING*
+_STILL IN THE MIDDLE OF DEVELOPMENT AND TESTING_
 
 `liquidity_pool.sw`
 

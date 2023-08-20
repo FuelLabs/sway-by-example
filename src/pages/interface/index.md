@@ -19,8 +19,8 @@ Interface
 ```
 
 - blah
-- blah 
-- blah 
+- blah
+- blah
 
 ```rust
 {{{Interface2}}}

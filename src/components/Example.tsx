@@ -57,7 +57,7 @@ const Example: React.FC<Props> = ({
             </li>
           ))}
         </ul>
-        
+
         <div className={styles.prevNext}>
           {prev && (
             <a href={prev.path}>

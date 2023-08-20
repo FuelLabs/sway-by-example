@@ -35,10 +35,7 @@ function Footer() {
         <div className={styles.row}>
           {/* <img src={youTube} alt="youtube" className={styles.youTube} /> */}
           <div className={styles.bar}>|</div>
-          <a
-            href="https://github.com/calldelegation"
-            target="__blank"
-          >
+          <a href="https://github.com/calldelegation" target="__blank">
             Github
           </a>
         </div>
