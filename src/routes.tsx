@@ -2,6 +2,7 @@ import component_abi_decode from "./pages/abi-decode"
 import component_abi_encode from "./pages/abi-encode"
 import component_account_types from "./pages/account-types"
 import component_cheatsheet from "./pages/cheatsheet"
+import component_compound_types from "./pages/compound-types"
 import component_contract_calls from "./pages/contract-calls"
 import component_defi_flashloans from "./pages/defi/flashloans"
 import component_defi_staking_contract from "./pages/defi/staking-contract"
@@ -49,6 +50,10 @@ const routes: Route[] = [
     {
         path: "/cheatsheet",
         component: component_cheatsheet
+    },
+    {
+        path: "/compound-types",
+        component: component_compound_types
     },
     {
         path: "/contract-calls",

@@ -52,6 +52,10 @@ const SWAY_ROUTES: Route[] = [
     path: "primitive-types",
     title: "Primitive Types",
   },
+  {
+    path: "compound-types",
+    title: "Compound Types",
+  },
 ]
 
 const APP_ROUTES: Route[] = []
