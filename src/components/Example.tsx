@@ -43,21 +43,6 @@ const Example: React.FC<Props> = ({
 
         <Html html={html} />
 
-        <h3>View on Github</h3>
-        <ul>
-          {codes.map(({ fileName, code }, i) => (
-            <li key={i}>
-              <a
-                href={`https://github.com/calldelegation/sway-by-example-lib/tree/main/${fileName}`}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {fileName}
-              </a>
-            </li>
-          ))}
-        </ul>
-
         <div className={styles.prevNext}>
           {prev && (
             <a href={prev.path}>

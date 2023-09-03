@@ -6,7 +6,7 @@ Examples of Sway programs
 
 ```shell
 npm i
-nom run dev
+nom run start
 ```
 
 ### Production
@@ -18,3 +18,13 @@ npm run deploy
 ### TODO
 
 - [ ] update npm
+
+### Memo
+
+```shell
+# md to react
+npx ts-node --project ./scripts/tsconfig.json scripts/md-to-react.ts src/pages/array
+
+# build routes
+npx ts-node --project ./scripts/tsconfig.json scripts/build-routes.ts
+```

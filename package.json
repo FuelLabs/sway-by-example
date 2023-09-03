@@ -1,8 +1,8 @@
 {
-  "name": "solidity-by-example",
+  "name": "sway-by-example",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://solidity-by-example.org",
+  "homepage": "https://www.swaybyexample.com/",
   "dependencies": {
     "@vercel/analytics": "^0.1.8",
     "highlight.js": "^11.6.0",
