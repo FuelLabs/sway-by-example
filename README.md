@@ -9,6 +9,12 @@ npm i
 nom run dev
 ```
 
+### Production
+
+```shell
+npm run deploy
+```
+
 ### TODO
 
 - [ ] update npm
