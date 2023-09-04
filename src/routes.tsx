@@ -9,6 +9,7 @@ import component_defi_flashloans from "./pages/defi/flashloans"
 import component_defi_staking_contract from "./pages/defi/staking-contract"
 import component_error_handling from "./pages/error-handling"
 import component_events from "./pages/events"
+import component_functions from "./pages/functions"
 import component_hello_sway from "./pages/hello-sway"
 import component_imports from "./pages/imports"
 import component_initialization from "./pages/initialization"
@@ -79,6 +80,10 @@ const routes: Route[] = [
     {
         path: "/events",
         component: component_events
+    },
+    {
+        path: "/functions",
+        component: component_functions
     },
     {
         path: "/hello-sway",

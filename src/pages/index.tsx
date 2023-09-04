@@ -60,6 +60,10 @@ const SWAY_ROUTES: Route[] = [
     path: "blockchain-types",
     title: "Blockchain Types",
   },
+  {
+    path: "functions",
+    title: "Functions",
+  },
 ]
 
 const APP_ROUTES: Route[] = []
