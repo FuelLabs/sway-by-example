@@ -7,6 +7,7 @@ import component_compound_types from "./pages/compound-types"
 import component_contract_calls from "./pages/contract-calls"
 import component_defi_flashloans from "./pages/defi/flashloans"
 import component_defi_staking_contract from "./pages/defi/staking-contract"
+import component_enums from "./pages/enums"
 import component_error_handling from "./pages/error-handling"
 import component_events from "./pages/events"
 import component_functions from "./pages/functions"
@@ -16,7 +17,9 @@ import component_initialization from "./pages/initialization"
 import component_interface from "./pages/interface"
 import component_ownership from "./pages/ownership"
 import component_primitive_types from "./pages/primitive-types"
+import component_structs from "./pages/structs"
 import component_tokens from "./pages/tokens"
+import component_tuples from "./pages/tuples"
 import component_variables from "./pages/variables"
 import component_ from "./pages"
 
@@ -74,6 +77,10 @@ const routes: Route[] = [
         component: component_defi_staking_contract
     },
     {
+        path: "/enums",
+        component: component_enums
+    },
+    {
         path: "/error-handling",
         component: component_error_handling
     },
@@ -110,8 +117,16 @@ const routes: Route[] = [
         component: component_primitive_types
     },
     {
+        path: "/structs",
+        component: component_structs
+    },
+    {
         path: "/tokens",
         component: component_tokens
+    },
+    {
+        path: "/tuples",
+        component: component_tuples
     },
     {
         path: "/variables",

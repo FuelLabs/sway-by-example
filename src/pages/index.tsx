@@ -64,6 +64,18 @@ const SWAY_ROUTES: Route[] = [
     path: "functions",
     title: "Functions",
   },
+  {
+    path: "structs",
+    title: "Structs",
+  },
+  {
+    path: "tuples",
+    title: "Tuples",
+  },
+  {
+    path: "enums",
+    title: "Enums",
+  },
 ]
 
 const APP_ROUTES: Route[] = []

@@ -36,10 +36,10 @@ npx ts-node --project ./scripts/tsconfig.json scripts/build-routes.ts
     - [x] primitive types (`u64`, `bool`, `str[]`, `b256`)
     - [x] compound type (tuple, struct, array)
   - [x] blockchain types (`Address`, `ContractId` and `Identity`)
-  - [ ] functions (return outputs, `ref mut`)
-  - [ ] structs
-  - [ ] tuples
-  - [ ] enums
+  - [x] functions (return outputs, `ref mut`)
+  - [x] structs
+  - [x] tuples
+  - [x] enums
   - [ ] constants
   - [ ] configurable constants
   - [ ] std lib types - option
