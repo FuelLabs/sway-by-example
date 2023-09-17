@@ -52,3 +52,4 @@ npx ts-node --project ./scripts/tsconfig.json scripts/build-routes.ts
   - [ ] test in sway
 
 - rename sway files from `.rs` to `.sw`
+- move `hello-sway` repo to here?
