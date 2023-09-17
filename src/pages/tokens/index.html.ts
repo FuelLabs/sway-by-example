@@ -3,20 +3,20 @@ export const version = "0.8.13"
 export const title = "Tokens (UTXO)"
 export const description = "Introduction to Sway"
 export const codes = [
-  {
-    fileName: "tokens",
-    code: "Ly8gRnVsbCBuYXRpdmUgVVRYTyB0b2tlbiBzdGFuZGFyZCBjb3BpZWQgZnJvbSAKLy8gaHR0cHM6Ly9naXRodWIuY29tL0Z1ZWxMYWJzL3N3YXkvYmxvYi9tYXN0ZXIvZXhhbXBsZXMvbmF0aXZlX3Rva2VuL3NyYy9tYWluLnN3Cgpjb250cmFjdDsKCnVzZSBzdGQ6Ontjb250ZXh0OjoqLCB0b2tlbjo6Kn07CgphYmkgTmF0aXZlQXNzZXRUb2tlbiB7CiAgICBmbiBtaW50X2NvaW5zKG1pbnRfYW1vdW50OiB1NjQpOwogICAgZm4gYnVybl9jb2lucyhidXJuX2Ftb3VudDogdTY0KTsKICAgIGZuIGZvcmNlX3RyYW5zZmVyX2NvaW5zKGNvaW5zOiB1NjQsIGFzc2V0X2lkOiBDb250cmFjdElkLCB0YXJnZXQ6IENvbnRyYWN0SWQpOwogICAgZm4gdHJhbnNmZXJfY29pbnNfdG9fb3V0cHV0KGNvaW5zOiB1NjQsIGFzc2V0X2lkOiBDb250cmFjdElkLCByZWNpcGllbnQ6IEFkZHJlc3MpOwogICAgZm4gZGVwb3NpdCgpOwogICAgZm4gZ2V0X2JhbGFuY2UodGFyZ2V0OiBDb250cmFjdElkLCBhc3NldF9pZDogQ29udHJhY3RJZCkgLT4gdTY0OwogICAgZm4gbWludF9hbmRfc2VuZF90b19jb250cmFjdChhbW91bnQ6IHU2NCwgZGVzdGluYXRpb246IENvbnRyYWN0SWQpOwogICAgZm4gbWludF9hbmRfc2VuZF90b19hZGRyZXNzKGFtb3VudDogdTY0LCByZWNpcGllbnQ6IEFkZHJlc3MpOwp9CgouLi4KCi8vIGNvbnRyYWN0IGltcGxtZW50YXRpb24g",
-  },
+    {
+        fileName: "tokens",
+        code: "Ly8gRnVsbCBuYXRpdmUgVVRYTyB0b2tlbiBzdGFuZGFyZCBjb3BpZWQgZnJvbSAKLy8gaHR0cHM6Ly9naXRodWIuY29tL0Z1ZWxMYWJzL3N3YXkvYmxvYi9tYXN0ZXIvZXhhbXBsZXMvbmF0aXZlX3Rva2VuL3NyYy9tYWluLnN3Cgpjb250cmFjdDsKCnVzZSBzdGQ6Ontjb250ZXh0OjoqLCB0b2tlbjo6Kn07CgphYmkgTmF0aXZlQXNzZXRUb2tlbiB7CiAgICBmbiBtaW50X2NvaW5zKG1pbnRfYW1vdW50OiB1NjQpOwogICAgZm4gYnVybl9jb2lucyhidXJuX2Ftb3VudDogdTY0KTsKICAgIGZuIGZvcmNlX3RyYW5zZmVyX2NvaW5zKGNvaW5zOiB1NjQsIGFzc2V0X2lkOiBDb250cmFjdElkLCB0YXJnZXQ6IENvbnRyYWN0SWQpOwogICAgZm4gdHJhbnNmZXJfY29pbnNfdG9fb3V0cHV0KGNvaW5zOiB1NjQsIGFzc2V0X2lkOiBDb250cmFjdElkLCByZWNpcGllbnQ6IEFkZHJlc3MpOwogICAgZm4gZGVwb3NpdCgpOwogICAgZm4gZ2V0X2JhbGFuY2UodGFyZ2V0OiBDb250cmFjdElkLCBhc3NldF9pZDogQ29udHJhY3RJZCkgLT4gdTY0OwogICAgZm4gbWludF9hbmRfc2VuZF90b19jb250cmFjdChhbW91bnQ6IHU2NCwgZGVzdGluYXRpb246IENvbnRyYWN0SWQpOwogICAgZm4gbWludF9hbmRfc2VuZF90b19hZGRyZXNzKGFtb3VudDogdTY0LCByZWNpcGllbnQ6IEFkZHJlc3MpOwp9CgouLi4KCi8vIGNvbnRyYWN0IGltcGxtZW50YXRpb24g",
+    },
 ]
 
 const html = `<h3 id="utxo-vs-erc20-account-model-analogy">UTXO vs ERC20 (Account Model) Analogy</h3>
 <p>During token transactions instead of just updating the balance of their account like in a bank, the coins they are spending are marked as "spent" and new coins are created for the person they are sending the money to. Think of it like handing over cash to someone and getting change back, instead of just moving numbers around in a computer.</p>
-<p>Comparing Fuel&#39;s native <code>UTXO</code> assets and <a href="https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#ERC20">Ethereum&#39;s ERC20 standard</a> there are several important differences. </p>
+<p>Comparing Fuel&#39;s native <code>UTXO</code> assets and <a href="https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#ERC20">Ethereum&#39;s ERC20 standard</a> there are several important differences.</p>
 <ol>
 <li>No <code>token.approval()</code></li>
 <li>No <code>token.transferFrom()</code></li>
 </ol>
-<p>Using the analogy from before the token contract can be thought as the federal mint and just like in real life there are no <code>approvals</code> or <code>transferFroms</code> for them to move around the cash thats already minted in your wallet. </p>
+<p>Using the analogy from before the token contract can be thought as the federal mint and just like in real life there are no <code>approvals</code> or <code>transferFroms</code> for them to move around the cash thats already minted in your wallet.</p>
 <p>Bonus: No approvals and transferFroms means that a comprimised contract cannot steal the tokens in your wallet!</p>
 <pre><code class="language-rust"><span class="hljs-comment">// Full native UTXO token standard copied from </span>
 <span class="hljs-comment">// https://github.com/FuelLabs/sway/blob/master/examples/native_token/src/main.sw</span>

@@ -40,13 +40,15 @@ npx ts-node --project ./scripts/tsconfig.json scripts/build-routes.ts
   - [x] structs
   - [x] tuples
   - [x] enums
-  - [ ] constants
-  - [ ] configurable constants
-  - [ ] std lib types - option
-  - [ ] std lib types - result
-  - [ ] control flow
-    - [ ] if
-    - [ ] match
-    - [ ] while loop
-  - [ ] logging
+  - [x] constants
+  - [x] configurable constants
+  - [x] std lib types - option
+  - [x] std lib types - result
+  - [x] control flow
+    - [x] if
+    - [x] match
+    - [x] while loop
+  - [x] logging
   - [ ] test in sway
+
+- rename sway files from `.rs` to `.sw`

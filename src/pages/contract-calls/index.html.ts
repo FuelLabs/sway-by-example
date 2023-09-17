@@ -3,14 +3,14 @@ export const version = "0.8.13"
 export const title = "Calling Other Contracts"
 export const description = "Introduction to Sway"
 export const codes = [
-  {
-    fileName: "contract_caller",
-    code: "Y29udHJhY3Q7CgpkZXAgYWxpY2U7CnVzZSBhbGljZTo6QWxpY2U7CgphYmkgQm9iIHsKICAgICNbc3RvcmFnZSh3cml0ZSwgcmVhZCldCiAgICBmbiBjb3B5X2FsaWNlc19udW1iZXIoY29udHJhY3RfaWQ6IGIyNTYpIC0+IHU2NDsKfQoKc3RvcmFnZSB7CiAgICBjb3BpZWRfbnVtYmVyOiB1NjQgPSAwLAp9CgppbXBsIEJvYiBmb3IgQ29udHJhY3QgewogICAgI1tzdG9yYWdlKHdyaXRlLCByZWFkKV0KICAgIGZuIGNvcHlfYWxpY2VzX251bWJlcihjb250cmFjdF9pZDogYjI1NikgLT4gdTY0IHsKICAgICAgICAvLyBDYWxsaW5nIG90aGVyIGNvbnRyYWN0cwogICAgICAgIGxldCBhbGljZV9jb250cmFjdCA9IGFiaShBbGljZSwgY29udHJhY3RfaWQpOwogICAgICAgIHN0b3JhZ2UuY29waWVkX251bWJlciA9IGFsaWNlX2NvbnRyYWN0LmdldF9udW1iZXIoKTsKICAgICAgICByZXR1cm4gc3RvcmFnZS5jb3BpZWRfbnVtYmVyOwogICAgfQp9Cg==",
-  },
-  {
-    fileName: "interface",
-    code: "Y29udHJhY3Q7CgphYmkgQWxpY2UgewogICAgI1tzdG9yYWdlKHJlYWQpXQogICAgZm4gZ2V0X251bWJlcigpIC0+IHU2NDsKfQoKc3RvcmFnZSB7CiAgICBmYXZvdXJpdGVfbnVtYmVyOiB1NjQgPSA0MiwKfQoKaW1wbCBBbGljZSBmb3IgQ29udHJhY3QgewogICAgI1tzdG9yYWdlKHJlYWQpXQogICAgZm4gZ2V0X251bWJlcigpIC0+IHU2NCB7CiAgICAgICAgcmV0dXJuIHN0b3JhZ2UuZmF2b3VyaXRlX251bWJlcjsKICAgIH0KfQo=",
-  },
+    {
+        fileName: "contract_caller",
+        code: "Y29udHJhY3Q7CgpkZXAgYWxpY2U7CnVzZSBhbGljZTo6QWxpY2U7CgphYmkgQm9iIHsKICAgICNbc3RvcmFnZSh3cml0ZSwgcmVhZCldCiAgICBmbiBjb3B5X2FsaWNlc19udW1iZXIoY29udHJhY3RfaWQ6IGIyNTYpIC0+IHU2NDsKfQoKc3RvcmFnZSB7CiAgICBjb3BpZWRfbnVtYmVyOiB1NjQgPSAwLAp9CgppbXBsIEJvYiBmb3IgQ29udHJhY3QgewogICAgI1tzdG9yYWdlKHdyaXRlLCByZWFkKV0KICAgIGZuIGNvcHlfYWxpY2VzX251bWJlcihjb250cmFjdF9pZDogYjI1NikgLT4gdTY0IHsKICAgICAgICAvLyBDYWxsaW5nIG90aGVyIGNvbnRyYWN0cwogICAgICAgIGxldCBhbGljZV9jb250cmFjdCA9IGFiaShBbGljZSwgY29udHJhY3RfaWQpOwogICAgICAgIHN0b3JhZ2UuY29waWVkX251bWJlciA9IGFsaWNlX2NvbnRyYWN0LmdldF9udW1iZXIoKTsKICAgICAgICByZXR1cm4gc3RvcmFnZS5jb3BpZWRfbnVtYmVyOwogICAgfQp9Cg==",
+    },
+    {
+        fileName: "interface",
+        code: "Y29udHJhY3Q7CgphYmkgQWxpY2UgewogICAgI1tzdG9yYWdlKHJlYWQpXQogICAgZm4gZ2V0X251bWJlcigpIC0+IHU2NDsKfQoKc3RvcmFnZSB7CiAgICBmYXZvdXJpdGVfbnVtYmVyOiB1NjQgPSA0MiwKfQoKaW1wbCBBbGljZSBmb3IgQ29udHJhY3QgewogICAgI1tzdG9yYWdlKHJlYWQpXQogICAgZm4gZ2V0X251bWJlcigpIC0+IHU2NCB7CiAgICAgICAgcmV0dXJuIHN0b3JhZ2UuZmF2b3VyaXRlX251bWJlcjsKICAgIH0KfQo=",
+    },
 ]
 
 const html = `<p>Contract to contract calls can simply be done by importing the callee&#39;s <code>abi</code> and calling the desired functions.</p>

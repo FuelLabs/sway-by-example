@@ -76,6 +76,38 @@ const SWAY_ROUTES: Route[] = [
     path: "enums",
     title: "Enums",
   },
+  {
+    path: "constants",
+    title: "Constants",
+  },
+  {
+    path: "configurable-constants",
+    title: "Configurable Constants",
+  },
+  {
+    path: "options",
+    title: "Options",
+  },
+  {
+    path: "results",
+    title: "Results",
+  },
+  {
+    path: "control-flow-if",
+    title: "Control Flow - If",
+  },
+  {
+    path: "control-flow-match",
+    title: "Control Flow - Match",
+  },
+  {
+    path: "control-flow-while-loop",
+    title: "Control Flow - While Loop",
+  },
+  {
+    path: "logging",
+    title: "Logging",
+  },
 ]
 
 const APP_ROUTES: Route[] = []

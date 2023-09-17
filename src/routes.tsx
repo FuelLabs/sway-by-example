@@ -4,7 +4,12 @@ import component_account_types from "./pages/account-types"
 import component_blockchain_types from "./pages/blockchain-types"
 import component_cheatsheet from "./pages/cheatsheet"
 import component_compound_types from "./pages/compound-types"
+import component_configurable_constants from "./pages/configurable-constants"
+import component_constants from "./pages/constants"
 import component_contract_calls from "./pages/contract-calls"
+import component_control_flow_if from "./pages/control-flow-if"
+import component_control_flow_match from "./pages/control-flow-match"
+import component_control_flow_while_loop from "./pages/control-flow-while-loop"
 import component_defi_flashloans from "./pages/defi/flashloans"
 import component_defi_staking_contract from "./pages/defi/staking-contract"
 import component_enums from "./pages/enums"
@@ -15,8 +20,11 @@ import component_hello_sway from "./pages/hello-sway"
 import component_imports from "./pages/imports"
 import component_initialization from "./pages/initialization"
 import component_interface from "./pages/interface"
+import component_logging from "./pages/logging"
+import component_options from "./pages/options"
 import component_ownership from "./pages/ownership"
 import component_primitive_types from "./pages/primitive-types"
+import component_results from "./pages/results"
 import component_structs from "./pages/structs"
 import component_tokens from "./pages/tokens"
 import component_tuples from "./pages/tuples"
@@ -65,8 +73,28 @@ const routes: Route[] = [
         component: component_compound_types
     },
     {
+        path: "/configurable-constants",
+        component: component_configurable_constants
+    },
+    {
+        path: "/constants",
+        component: component_constants
+    },
+    {
         path: "/contract-calls",
         component: component_contract_calls
+    },
+    {
+        path: "/control-flow-if",
+        component: component_control_flow_if
+    },
+    {
+        path: "/control-flow-match",
+        component: component_control_flow_match
+    },
+    {
+        path: "/control-flow-while-loop",
+        component: component_control_flow_while_loop
     },
     {
         path: "/defi/flashloans",
@@ -109,12 +137,24 @@ const routes: Route[] = [
         component: component_interface
     },
     {
+        path: "/logging",
+        component: component_logging
+    },
+    {
+        path: "/options",
+        component: component_options
+    },
+    {
         path: "/ownership",
         component: component_ownership
     },
     {
         path: "/primitive-types",
         component: component_primitive_types
+    },
+    {
+        path: "/results",
+        component: component_results
     },
     {
         path: "/structs",
