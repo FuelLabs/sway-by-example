@@ -1,6 +1,6 @@
 ---
 title: Structs
-version: 0.8.13
+version: 0.37
 description: Structs in Sway
 ---
 

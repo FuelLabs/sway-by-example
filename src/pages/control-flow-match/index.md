@@ -1,6 +1,6 @@
 ---
 title: Control Flow - Match Statement
-version: 0.8.13
+version: 0.37
 description: Match statement in Sway
 ---
 

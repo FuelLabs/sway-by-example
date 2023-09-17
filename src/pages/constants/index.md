@@ -1,6 +1,6 @@
 ---
 title: Constants
-version: 0.8.13
+version: 0.37
 description: Constants in Sway
 ---
 

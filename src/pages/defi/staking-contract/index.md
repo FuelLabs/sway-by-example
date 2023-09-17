@@ -1,6 +1,6 @@
 ---
 title: Staking Contracts
-version: 0.8.13
+version: 0.37
 description: Importing libraries in Sway
 ---
 

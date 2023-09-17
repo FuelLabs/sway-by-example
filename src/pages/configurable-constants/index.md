@@ -1,6 +1,6 @@
 ---
 title: Configurable Constants
-version: 0.8.13
+version: 0.37
 description: Configurable constants in Sway
 ---
 

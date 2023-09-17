@@ -1,6 +1,6 @@
 ---
 title: Blockchain Types
-version: 0.8.13
+version: 0.37
 description: Blockchain types in Sway
 ---
 

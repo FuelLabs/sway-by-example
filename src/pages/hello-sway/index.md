@@ -1,6 +1,6 @@
 ---
 title: Hello Sway
-version: 0.8.13
+version: 0.37
 description: Introduction to Sway
 ---
 

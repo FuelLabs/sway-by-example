@@ -1,6 +1,6 @@
 ---
 title: Control Flow - While Loop
-version: 0.8.13
+version: 0.37
 description: While loop in Sway
 ---
 

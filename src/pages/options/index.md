@@ -1,6 +1,6 @@
 ---
 title: Options
-version: 0.8.13
+version: 0.37
 description: Options in Sway
 ---
 
