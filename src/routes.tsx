@@ -1,6 +1,7 @@
 import component_abi_decode from "./pages/abi-decode"
 import component_abi_encode from "./pages/abi-encode"
 import component_account_types from "./pages/account-types"
+import component_apps_ownership from "./pages/apps/ownership"
 import component_blockchain_types from "./pages/blockchain-types"
 import component_cheatsheet from "./pages/cheatsheet"
 import component_compound_types from "./pages/compound-types"
@@ -60,6 +61,10 @@ const routes: Route[] = [
     {
         path: "/account-types",
         component: component_account_types
+    },
+    {
+        path: "/apps/ownership",
+        component: component_apps_ownership
     },
     {
         path: "/blockchain-types",

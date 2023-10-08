@@ -114,7 +114,12 @@ const SWAY_ROUTES: Route[] = [
   },
 ]
 
-const APP_ROUTES: Route[] = []
+const APP_ROUTES: Route[] = [
+  {
+    path: "ownership",
+    title: "Ownership",
+  },
+]
 
 const HACK_ROUTES: Route[] = []
 
@@ -149,6 +154,13 @@ export const ROUTES_BY_CATEGORY = [
     routes: SWAY_ROUTES.map((route) => ({
       ...route,
       path: `/${route.path}`,
+    })),
+  },
+  {
+    title: "Apps",
+    routes: APP_ROUTES.map((route) => ({
+      ...route,
+      path: `/apps/${route.path}`,
     })),
   },
   {
