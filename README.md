@@ -53,11 +53,11 @@ npx ts-node --project ./scripts/tsconfig.json scripts/build-routes.ts
 
 - Blockchain
 
-  - [ ] msg_sender (ownership)
+  - [x] msg_sender (ownership)
   - [ ] base asset (wallet)
   - [ ] native support for assets (wrapped token)
   - [x] events
-  - [ ] storage map (simple, nested)
+  - [x] storage map (simple, nested)
   - [ ] vector (storage, heap) (nft)
   - [ ] hash
   - [ ] crypto signature (air drop)
