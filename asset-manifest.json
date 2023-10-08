@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.cd5d0ed7.css",
-    "main.js": "/static/js/main.667cfbd7.js",
+    "main.js": "/static/js/main.250ffcac.js",
     "static/media/palm-trees.png": "/static/media/palm-trees.a878d0dfd9a929d2c5f3.png",
     "static/media/mode-dark.png": "/static/media/mode-dark.5726a29b11b0940df6a4.png",
     "index.html": "/index.html",
     "main.cd5d0ed7.css.map": "/static/css/main.cd5d0ed7.css.map",
-    "main.667cfbd7.js.map": "/static/js/main.667cfbd7.js.map"
+    "main.250ffcac.js.map": "/static/js/main.250ffcac.js.map"
   },
   "entrypoints": [
     "static/css/main.cd5d0ed7.css",
-    "static/js/main.667cfbd7.js"
+    "static/js/main.250ffcac.js"
   ]
 }
