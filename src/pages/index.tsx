@@ -108,6 +108,10 @@ const SWAY_ROUTES: Route[] = [
     path: "logging",
     title: "Logging",
   },
+  {
+    path: "storage-map",
+    title: "Storage Map",
+  },
 ]
 
 const APP_ROUTES: Route[] = []

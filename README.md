@@ -51,5 +51,23 @@ npx ts-node --project ./scripts/tsconfig.json scripts/build-routes.ts
   - [x] logging
   - [ ] test in sway
 
+- Blockchain
+
+  - [ ] msg_sender (ownership)
+  - [ ] base asset (wallet)
+  - [ ] native support for assets (wrapped token)
+  - [x] events
+  - [ ] storage map (simple, nested)
+  - [ ] vector (storage, heap) (nft)
+  - [ ] hash
+  - [ ] crypto signature (air drop)
+  - [ ] calling contracts (multi sig)
+    - [ ] call
+    - [ ] low level call
+  - [ ] function purity
+  - [ ] identifier (address and contract id)
+
 - rename sway files from `.rs` to `.sw`
 - move `hello-sway` repo to here?
+
+- [ ] Integrate https://github.com/t4sk/hello-sway
