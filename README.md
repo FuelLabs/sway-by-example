@@ -58,7 +58,7 @@ npx ts-node --project ./scripts/tsconfig.json scripts/build-routes.ts
   - [ ] native support for assets (wrapped token)
   - [x] events
   - [x] storage map (simple, nested)
-  - [ ] vector (storage, heap) (nft)
+  - [x] vector (storage, heap) (nft)
   - [ ] hash
   - [ ] crypto signature (air drop)
   - [ ] calling contracts (multi sig)

@@ -31,6 +31,7 @@ import component_structs from "./pages/structs"
 import component_tokens from "./pages/tokens"
 import component_tuples from "./pages/tuples"
 import component_variables from "./pages/variables"
+import component_vector from "./pages/vector"
 import component_ from "./pages"
 
 interface Path {
@@ -50,142 +51,146 @@ interface Route {
 }
 
 const routes: Route[] = [
-  {
-    path: "/abi-decode",
-    component: component_abi_decode,
-  },
-  {
-    path: "/abi-encode",
-    component: component_abi_encode,
-  },
-  {
-    path: "/account-types",
-    component: component_account_types,
-  },
-  {
-    path: "/apps/ownership",
-    component: component_apps_ownership,
-  },
-  {
-    path: "/blockchain-types",
-    component: component_blockchain_types,
-  },
-  {
-    path: "/cheatsheet",
-    component: component_cheatsheet,
-  },
-  {
-    path: "/compound-types",
-    component: component_compound_types,
-  },
-  {
-    path: "/configurable-constants",
-    component: component_configurable_constants,
-  },
-  {
-    path: "/constants",
-    component: component_constants,
-  },
-  {
-    path: "/contract-calls",
-    component: component_contract_calls,
-  },
-  {
-    path: "/control-flow-if",
-    component: component_control_flow_if,
-  },
-  {
-    path: "/control-flow-match",
-    component: component_control_flow_match,
-  },
-  {
-    path: "/control-flow-while-loop",
-    component: component_control_flow_while_loop,
-  },
-  {
-    path: "/defi/flashloans",
-    component: component_defi_flashloans,
-  },
-  {
-    path: "/defi/staking-contract",
-    component: component_defi_staking_contract,
-  },
-  {
-    path: "/enums",
-    component: component_enums,
-  },
-  {
-    path: "/error-handling",
-    component: component_error_handling,
-  },
-  {
-    path: "/events",
-    component: component_events,
-  },
-  {
-    path: "/functions",
-    component: component_functions,
-  },
-  {
-    path: "/hello-sway",
-    component: component_hello_sway,
-  },
-  {
-    path: "/imports",
-    component: component_imports,
-  },
-  {
-    path: "/initialization",
-    component: component_initialization,
-  },
-  {
-    path: "/interface",
-    component: component_interface,
-  },
-  {
-    path: "/logging",
-    component: component_logging,
-  },
-  {
-    path: "/options",
-    component: component_options,
-  },
-  {
-    path: "/ownership",
-    component: component_ownership,
-  },
-  {
-    path: "/primitive-types",
-    component: component_primitive_types,
-  },
-  {
-    path: "/results",
-    component: component_results,
-  },
-  {
-    path: "/storage-map",
-    component: component_storage_map,
-  },
-  {
-    path: "/structs",
-    component: component_structs,
-  },
-  {
-    path: "/tokens",
-    component: component_tokens,
-  },
-  {
-    path: "/tuples",
-    component: component_tuples,
-  },
-  {
-    path: "/variables",
-    component: component_variables,
-  },
-  {
-    path: "",
-    component: component_,
-  },
+    {
+        path: "/abi-decode",
+        component: component_abi_decode
+    },
+    {
+        path: "/abi-encode",
+        component: component_abi_encode
+    },
+    {
+        path: "/account-types",
+        component: component_account_types
+    },
+    {
+        path: "/apps/ownership",
+        component: component_apps_ownership
+    },
+    {
+        path: "/blockchain-types",
+        component: component_blockchain_types
+    },
+    {
+        path: "/cheatsheet",
+        component: component_cheatsheet
+    },
+    {
+        path: "/compound-types",
+        component: component_compound_types
+    },
+    {
+        path: "/configurable-constants",
+        component: component_configurable_constants
+    },
+    {
+        path: "/constants",
+        component: component_constants
+    },
+    {
+        path: "/contract-calls",
+        component: component_contract_calls
+    },
+    {
+        path: "/control-flow-if",
+        component: component_control_flow_if
+    },
+    {
+        path: "/control-flow-match",
+        component: component_control_flow_match
+    },
+    {
+        path: "/control-flow-while-loop",
+        component: component_control_flow_while_loop
+    },
+    {
+        path: "/defi/flashloans",
+        component: component_defi_flashloans
+    },
+    {
+        path: "/defi/staking-contract",
+        component: component_defi_staking_contract
+    },
+    {
+        path: "/enums",
+        component: component_enums
+    },
+    {
+        path: "/error-handling",
+        component: component_error_handling
+    },
+    {
+        path: "/events",
+        component: component_events
+    },
+    {
+        path: "/functions",
+        component: component_functions
+    },
+    {
+        path: "/hello-sway",
+        component: component_hello_sway
+    },
+    {
+        path: "/imports",
+        component: component_imports
+    },
+    {
+        path: "/initialization",
+        component: component_initialization
+    },
+    {
+        path: "/interface",
+        component: component_interface
+    },
+    {
+        path: "/logging",
+        component: component_logging
+    },
+    {
+        path: "/options",
+        component: component_options
+    },
+    {
+        path: "/ownership",
+        component: component_ownership
+    },
+    {
+        path: "/primitive-types",
+        component: component_primitive_types
+    },
+    {
+        path: "/results",
+        component: component_results
+    },
+    {
+        path: "/storage-map",
+        component: component_storage_map
+    },
+    {
+        path: "/structs",
+        component: component_structs
+    },
+    {
+        path: "/tokens",
+        component: component_tokens
+    },
+    {
+        path: "/tuples",
+        component: component_tuples
+    },
+    {
+        path: "/variables",
+        component: component_variables
+    },
+    {
+        path: "/vector",
+        component: component_vector
+    },
+    {
+        path: "",
+        component: component_
+    },
 ]
 
 export default routes
