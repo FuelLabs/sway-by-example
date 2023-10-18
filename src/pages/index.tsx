@@ -116,6 +116,10 @@ const SWAY_ROUTES: Route[] = [
     path: "vector",
     title: "Vector",
   },
+  {
+    path: "base-asset",
+    title: "Base Asset",
+  },
 ]
 
 const APP_ROUTES: Route[] = [
