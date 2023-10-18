@@ -127,6 +127,10 @@ const APP_ROUTES: Route[] = [
     path: "ownership",
     title: "Ownership",
   },
+  {
+    path: "wallet",
+    title: "Wallet",
+  },
 ]
 
 const HACK_ROUTES: Route[] = []
