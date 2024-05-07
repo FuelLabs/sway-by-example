@@ -16,7 +16,7 @@ interface Code {
 interface Props {
   title: string
   description: string
-  version: "0.37"
+  version: "0.8.24"
   html: string
   prev: Path | null
   next: Path | null
@@ -35,7 +35,7 @@ const Example: React.FC<Props> = ({
   return (
     <div className={styles.component}>
       <SEO
-        title={`${title} | Sway by Example | ${version}`}
+        title={`${title} | Solidity by Example | ${version}`}
         description={description}
       />
       <div className={styles.content}>
@@ -57,6 +57,21 @@ const Example: React.FC<Props> = ({
             </a>
           )}
         </div>
+
+        <h3>Try on Remix</h3>
+        <ul>
+          {codes.map(({ fileName, code }, i) => (
+            <li key={i}>
+              <a
+                href={`https://remix.ethereum.org/?#code=${code}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {fileName}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   )

@@ -1,61 +1,38 @@
 // metadata
-export const version = "0.37"
+export const version = "0.8.24"
 export const title = "Events"
-export const description = "Introduction to Sway"
+export const description = "Example of how to emit events in Solidity"
+
+export const keywords = ["event", "events"]
+
 export const codes = [
   {
-    fileName: "events",
-    code: "Y29udHJhY3Q7CgpkZXAgZXZlbnRzOwoKdXNlIGV2ZW50czo6KjsKdXNlIHN0ZDo6ewogICAgbG9nZ2luZzo6bG9nLAogICAgYXV0aDo6ewogICAgICAgIG1zZ19zZW5kZXIKICAgIH0sCiAgICBjb25zdGFudHM6OlpFUk9fQjI1NiwKfTsKCmFiaSBORlQgewogICAgZm4gbWludCgpOwp9CgppbXBsIE5GVCBmb3IgQ29udHJhY3QgewogICAgZm4gbWludCgpIHsKICAgICAgICBsZXQgc2VuZGVyID0gSWRlbnRpdHk6OkFkZHJlc3MoQWRkcmVzcyB7dmFsdWU6IFpFUk9fQjI1Nn0pOwogICAgICAgIGxldCB1c2VyID0gbXNnX3NlbmRlcigpLnVud3JhcCgpOwogICAgICAgIAogICAgICAgIC8vIC4uLiBzb21lIG1pbnRpbmcgY29kZSAuLi4KCiAgICAgICAgbG9nKFRyYW5zZmVyIHsKICAgICAgICAgICAgc2VuZGVyLCAKICAgICAgICAgICAgcmVjaXBpZW50OiB1c2VyLCAKICAgICAgICAgICAgdG9rZW5faWQ6IDQyLCAKICAgICAgICB9KQogICAgfQp9",
-  },
-  {
-    fileName: "lib",
-    code: "bGlicmFyeSBldmVudHM7CgpwdWIgc3RydWN0IFRyYW5zZmVyIHsKICAgIHNlbmRlcjogSWRlbnRpdHksCiAgICByZWNpcGllbnQ6IElkZW50aXR5LAogICAgdG9rZW5faWQ6IHU2NCwKfQ==",
+    fileName: "Events.sol",
+    code: "Ly8gU1BEWC1MaWNlbnNlLUlkZW50aWZpZXI6IE1JVApwcmFnbWEgc29saWRpdHkgXjAuOC4yNDsKCmNvbnRyYWN0IEV2ZW50IHsKICAgIC8vIEV2ZW50IGRlY2xhcmF0aW9uCiAgICAvLyBVcCB0byAzIHBhcmFtZXRlcnMgY2FuIGJlIGluZGV4ZWQuCiAgICAvLyBJbmRleGVkIHBhcmFtZXRlcnMgaGVscHMgeW91IGZpbHRlciB0aGUgbG9ncyBieSB0aGUgaW5kZXhlZCBwYXJhbWV0ZXIKICAgIGV2ZW50IExvZyhhZGRyZXNzIGluZGV4ZWQgc2VuZGVyLCBzdHJpbmcgbWVzc2FnZSk7CiAgICBldmVudCBBbm90aGVyTG9nKCk7CgogICAgZnVuY3Rpb24gdGVzdCgpIHB1YmxpYyB7CiAgICAgICAgZW1pdCBMb2cobXNnLnNlbmRlciwgIkhlbGxvIFdvcmxkISIpOwogICAgICAgIGVtaXQgTG9nKG1zZy5zZW5kZXIsICJIZWxsbyBFVk0hIik7CiAgICAgICAgZW1pdCBBbm90aGVyTG9nKCk7CiAgICB9Cn0K",
   },
 ]
 
-const html = `<p>In Sway <code>events</code> are defined as <code>structs</code> typically as its own library to be imported in like errors or interfaces. By utilizing <code>logs</code> from the standard library, custom events can be <code>emitted</code> to be picked up and indexed at the end of function runs.</p>
-<p><code>main.sw</code></p>
-<pre><code class="language-rust">contract;
+const html = `<p><code>Events</code> allow logging to the Ethereum blockchain. Some use cases for events are:</p>
+<ul>
+<li>Listening for events and updating user interface</li>
+<li>A cheap form of storage</li>
+</ul>
+<pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
 
-dep events;
+<span class="hljs-class"><span class="hljs-keyword">contract</span> <span class="hljs-title">Event</span> </span>{
+    <span class="hljs-comment">// Event declaration</span>
+    <span class="hljs-comment">// Up to 3 parameters can be indexed.</span>
+    <span class="hljs-comment">// Indexed parameters helps you filter the logs by the indexed parameter</span>
+    <span class="hljs-function"><span class="hljs-keyword">event</span> <span class="hljs-title">Log</span>(<span class="hljs-params"><span class="hljs-keyword">address</span> <span class="hljs-keyword">indexed</span> sender, <span class="hljs-keyword">string</span> message</span>)</span>;
+    <span class="hljs-function"><span class="hljs-keyword">event</span> <span class="hljs-title">AnotherLog</span>(<span class="hljs-params"></span>)</span>;
 
-<span class="hljs-keyword">use</span> events::*;
-<span class="hljs-keyword">use</span> std::{
-    logging::log,
-    auth::{
-        msg_sender
-    },
-    constants::ZERO_B256,
-};
-
-abi NFT {
-    <span class="hljs-keyword">fn</span> <span class="hljs-title function_">mint</span>();
-}
-
-<span class="hljs-keyword">impl</span> <span class="hljs-title class_">NFT</span> <span class="hljs-keyword">for</span> <span class="hljs-title class_">Contract</span> {
-    <span class="hljs-keyword">fn</span> <span class="hljs-title function_">mint</span>() {
-        <span class="hljs-keyword">let</span> <span class="hljs-variable">sender</span> = Identity::<span class="hljs-title function_ invoke__">Address</span>(Address {value: ZERO_B256});
-        <span class="hljs-keyword">let</span> <span class="hljs-variable">user</span> = <span class="hljs-title function_ invoke__">msg_sender</span>().<span class="hljs-title function_ invoke__">unwrap</span>();
-        
-        <span class="hljs-comment">// ... some minting code ...</span>
-
-        <span class="hljs-title function_ invoke__">log</span>(Transfer {
-            sender, 
-            recipient: user, 
-            token_id: <span class="hljs-number">42</span>, 
-        })
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span>(<span class="hljs-params"></span>) <span class="hljs-title"><span class="hljs-keyword">public</span></span> </span>{
+        <span class="hljs-keyword">emit</span> Log(<span class="hljs-built_in">msg</span>.<span class="hljs-built_in">sender</span>, <span class="hljs-string">"Hello World!"</span>);
+        <span class="hljs-keyword">emit</span> Log(<span class="hljs-built_in">msg</span>.<span class="hljs-built_in">sender</span>, <span class="hljs-string">"Hello EVM!"</span>);
+        <span class="hljs-keyword">emit</span> AnotherLog();
     }
 }
-</code></pre>
-<p><code>events.sw</code></p>
-<pre><code class="language-rust">library events;
-
-<span class="hljs-keyword">pub</span> <span class="hljs-keyword">struct</span> <span class="hljs-title class_">Transfer</span> {
-    sender: Identity,
-    recipient: Identity,
-    token_id: <span class="hljs-type">u64</span>,
-}
-</code></pre>
-`
+</code></pre>`
 
 export default html

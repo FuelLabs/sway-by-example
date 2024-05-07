@@ -1,7 +1,8 @@
 ---
 title: Interface
-version: 0.37
+version: 0.8.24
 description: An example of interface in Solidity
+keywords: [interface, interfaces, contract, contracts]
 ---
 
 You can interact with other contracts by declaring an `Interface`.
@@ -14,14 +15,6 @@ Interface
 - cannot declare a constructor
 - cannot declare state variables
 
-```rust
+```solidity
 {{{Interface}}}
-```
-
-- blah
-- blah
-- blah
-
-```rust
-{{{Interface2}}}
 ```

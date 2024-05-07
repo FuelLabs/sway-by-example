@@ -1,0 +1,13 @@
+[profile.default]
+src = "src"
+test = "tests"
+out = "out"
+libs = ["lib"]
+evm_version = "cancun"
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+
+# solc_version = "0.8.24"
+
+[fmt]
+line_length = 80

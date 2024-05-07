@@ -1,68 +1,40 @@
 import assert from "assert"
 import fs from "fs"
 import path from "path"
-import yaml from "yaml"
 import mustache from "mustache"
 import { marked } from "marked"
-import hljs from 'highlight.js/lib/core';
+import { markedHighlight } from "marked-highlight"
+import hljs from "highlight.js"
 import Rust from 'highlight.js/lib/languages/rust';
 // @ts-ignore
-// import { Sway } from "highlightjs-sway"
-hljs.registerLanguage('rust', Rust);
-
-// @ts-ignore
 // import { solidity } from "highlightjs-solidity"
-import { exists, copy, removeExt, getExt, renderTemplateToFile } from "./lib"
-
-// hljs.registerLanguage("solidity", solidity)
+hljs.registerLanguage('rust', Rust);
+import { exists, removeExt, getExt, renderTemplateToFile, parseYaml } from "./lib"
 
 const { readFile, readdir } = fs.promises
 
-function findIndexOfFrontMatter(lines: string[]): number {
-  assert(lines[0] === "---", "Front matter missing")
+marked.use(
+  markedHighlight({
+    highlight: (code, lang) => {
+      let language = lang
+      // text
+      if (lang == "") {
+        language = "plaintext"
+      }
+      // use python
+      else if (lang === "vyper") {
+        language = "python"
+      }
+      return hljs.highlight(code, { language }).value
+    },
+  }),
+)
 
-  // find front matter
-  let i = 1
-  while (i < lines.length && lines[i] !== "---") {
-    i++
-  }
-
-  return i
-}
-
-interface Metadata {
-  title: string
-  description: string
-  version: string
-}
-
-function getMetadata(lines: string[]): Metadata {
-  assert(lines[0] === "---", "Invalid front matter")
-  assert(lines[lines.length - 1] === "---", "Invalid front matter")
-
-  const { title, description, version } = yaml.parse(lines.slice(1, -1).join("\n"))
-
-  return { title, description, version }
-}
-
-function parse(file: string): { content: string; metadata: Metadata } {
-  const lines = file.split("\n")
-
-  const i = findIndexOfFrontMatter(lines)
-
-  const metadata = getMetadata(lines.slice(0, i + 1))
-  const content = lines.slice(i + 1).join("\n")
-
-  return {
-    metadata,
-    content,
-  }
-}
+// hljs.registerLanguage("solidity", solidity)
 
 async function findSolidityFiles(dir: string): Promise<string[]> {
   const files = await readdir(dir)
-
-  return files.filter((file) => file.split(".").pop() === "rs")
+  return files.filter((file) => file.split(".").pop() == "rs")
 }
 
 async function mdToHtml(filePath: string) {
@@ -78,26 +50,17 @@ async function mdToHtml(filePath: string) {
   // get solidity code
   const solidityFileNames = await findSolidityFiles(dir)
 
-  const codes = {}
+  const codes: { [key: string]: string } = {}
   for (const solFileName of solidityFileNames) {
     const source = (await readFile(path.join(dir, solFileName))).toString()
-    // @ts-ignore
     codes[removeExt(solFileName)] = source
   }
 
-  // render solidity inside markdown
-  const md = (await readFile(filePath)).toString()
-  const { content, metadata } = parse(md)
+  // render Solidity inside markdown
+  const { content, metadata } = await parseYaml(filePath)
 
   const markdown = mustache.render(content, codes)
-  const html = marked(markdown, {
-    highlight: (code, language) => {
-      if (language === "rust") {
-        return hljs.highlight(code, { language }).value
-      }
-      return code
-    },
-  })
+  const html = (await marked.parse(markdown))
     .replace(/&quot;/g, `"`)
     // replace \ with \\
     .replace(/\\/g, `\\\\`)
@@ -111,12 +74,12 @@ async function mdToHtml(filePath: string) {
       title: metadata.title,
       version: metadata.version,
       description: metadata.description,
+      keywords: metadata.keywords,
       codes: Object.entries(codes).map(([key, val]) => ({
-        key: `${key}`,
-        // @ts-ignore
+        key: `${key}.rs`,
         val: Buffer.from(val).toString("base64"),
       })),
-    }
+    },
   )
 }
 
@@ -159,7 +122,7 @@ async function main() {
     path.join(dir, `index.tsx`),
     {
       importPathToExample: getImportPathToExample(dir),
-    }
+    },
   )
 }
 

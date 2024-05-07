@@ -1,19 +1,17 @@
 import React from "react"
+import { CRYPTO_JOBS_LIST_URL } from "../config"
 import styles from "./Footer.module.css"
 import sce from "./sce.png"
 import youTube from "./youtube.png"
 import telegram from "./telegram.png"
 import discord from "./discord.png"
 
-// Khan Academy
-const ADDRESS = "0x95a647B3d8a3F11176BAdB799b9499C671fa243a"
-
 function Footer() {
   return (
     <div className={styles.component}>
       <div className={styles.row}>
         {/* <img src={sce} alt="smart contract engineer" className={styles.sce} /> */}
-        Call Delegation
+        Call Delegation 💚 Fuel Labs
         {/* <a href="https://twitter.com/calldelegation" target="__blank">
           Call Delegation
         </a> */}
@@ -21,8 +19,8 @@ function Footer() {
       <div className={styles.social}>
         <div className={styles.row}>
           {/* <img src={discord} alt="discord" className={styles.discord} /> */}
-          <a href="https://twitter.com/calldelegation" target="__blank">
-            Twitter
+          <a href="https://github.com/FuelLabs/" target="__blank">
+            Github
           </a>
         </div>
         {/* <div className={styles.row}>
@@ -35,8 +33,29 @@ function Footer() {
         <div className={styles.row}>
           {/* <img src={youTube} alt="youtube" className={styles.youTube} /> */}
           <div className={styles.bar}>|</div>
-          <a href="https://github.com/calldelegation" target="__blank">
-            Github
+          <a href="https://docs.fuel.network/" target="__blank">
+            Docs
+          </a>
+        </div>
+        <div className={styles.row}>
+          {/* <img src={youTube} alt="youtube" className={styles.youTube} /> */}
+          <div className={styles.bar}>|</div>
+          <a href="https://forum.fuel.network/" target="__blank">
+            Forum
+          </a>
+        </div>
+        <div className={styles.row}>
+          {/* <img src={youTube} alt="youtube" className={styles.youTube} /> */}
+          <div className={styles.bar}>|</div>
+          <a href="https://twitter.com/fuel_network" target="__blank">
+            Twitter
+          </a>
+        </div>
+        <div className={styles.row}>
+          {/* <img src={youTube} alt="youtube" className={styles.youTube} /> */}
+          <div className={styles.bar}>|</div>
+          <a href="https://discord.gg/fuelnetwork" target="__blank">
+            Discord
           </a>
         </div>
       </div>

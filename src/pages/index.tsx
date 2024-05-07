@@ -1,237 +1,89 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
+import { useSearchParams } from "react-router-dom"
+import { CRYPTO_JOBS_LIST_URL } from "../config"
 import SEO from "../components/SEO"
+import SearchBar from "../components/SearchBar"
+import CryptoJobsList from "../components/svg/CryptoJobsList"
+import useDebounce from "../hooks/useDebounce"
+import { search, unique } from "../lib/search"
 import styles from "./index.module.css"
+import youTube from "../components/youtube.png"
+import { ROUTES, ROUTES_BY_CATEGORY, TRANSLATIONS } from "../nav"
 
-interface Route {
-  path: string
-  title: string
-}
-
-const SWAY_ROUTES: Route[] = [
-  {
-    path: "hello-sway",
-    title: "Hello Sway",
-  },
-  {
-    path: "imports",
-    title: "Imports",
-  },
-  {
-    path: "error-handling",
-    title: "Error Handling",
-  },
-  {
-    path: "account-types",
-    title: "Account Types",
-  },
-  {
-    path: "initialization",
-    title: "Initialization",
-  },
-  {
-    path: "ownership",
-    title: "Ownership",
-  },
-  {
-    path: "events",
-    title: "Events",
-  },
-  {
-    path: "tokens",
-    title: "Tokens",
-  },
-  {
-    path: "contract-calls",
-    title: "Contract Calls",
-  },
-  {
-    path: "variables",
-    title: "Variables",
-  },
-  {
-    path: "primitive-types",
-    title: "Primitive Types",
-  },
-  {
-    path: "compound-types",
-    title: "Compound Types",
-  },
-  {
-    path: "blockchain-types",
-    title: "Blockchain Types",
-  },
-  {
-    path: "functions",
-    title: "Functions",
-  },
-  {
-    path: "structs",
-    title: "Structs",
-  },
-  {
-    path: "tuples",
-    title: "Tuples",
-  },
-  {
-    path: "enums",
-    title: "Enums",
-  },
-  {
-    path: "constants",
-    title: "Constants",
-  },
-  {
-    path: "configurable-constants",
-    title: "Configurable Constants",
-  },
-  {
-    path: "options",
-    title: "Options",
-  },
-  {
-    path: "results",
-    title: "Results",
-  },
-  {
-    path: "control-flow-if",
-    title: "Control Flow - If",
-  },
-  {
-    path: "control-flow-match",
-    title: "Control Flow - Match",
-  },
-  {
-    path: "control-flow-while-loop",
-    title: "Control Flow - While Loop",
-  },
-  {
-    path: "logging",
-    title: "Logging",
-  },
-  {
-    path: "storage-map",
-    title: "Storage Map",
-  },
-  {
-    path: "vector",
-    title: "Vector",
-  },
-  {
-    path: "base-asset",
-    title: "Base Asset",
-  },
+const UPDATES = [
+  "2024/04/19 - EVM memory",
+  "2024/04/07 - Fix WETH permit hack",
+  "2024/04/06 - EVM storage",
 ]
-
-const APP_ROUTES: Route[] = [
-  {
-    path: "ownership",
-    title: "Ownership",
-  },
-  {
-    path: "wallet",
-    title: "Wallet",
-  },
-]
-
-const HACK_ROUTES: Route[] = []
-
-const CHEATSHEET: Route[] = [
-  {
-    path: "cheatsheet",
-    title: "Solidity ★",
-  },
-]
-
-const DEFI_ROUTES = [
-  {
-    path: "flashloans",
-    title: "Flashloans",
-  },
-  {
-    path: "staking-contract",
-    title: "Staking",
-  },
-]
-
-export const ROUTES_BY_CATEGORY = [
-  {
-    title: "Cheatsheet",
-    routes: CHEATSHEET.map((route) => ({
-      ...route,
-      path: `/${route.path}`,
-    })),
-  },
-  {
-    title: "Basics",
-    routes: SWAY_ROUTES.map((route) => ({
-      ...route,
-      path: `/${route.path}`,
-    })),
-  },
-  {
-    title: "Apps",
-    routes: APP_ROUTES.map((route) => ({
-      ...route,
-      path: `/apps/${route.path}`,
-    })),
-  },
-  {
-    title: "DeFi",
-    routes: DEFI_ROUTES.map((route) => ({
-      ...route,
-      path: `/defi/${route.path}`,
-    })),
-  },
-]
-
-const ROUTES = ROUTES_BY_CATEGORY.map(({ routes }) => routes).flat()
-const ROUTE_INDEX_BY_PATH = ROUTES.reduce((map, route: Route, i) => {
-  // @ts-ignore
-  map[route.path] = i
-  return map
-}, {})
-
-export function getPrevNextPaths(path: string): {
-  prev: Route | null
-  next: Route | null
-} {
-  // @ts-ignore
-  const index = ROUTE_INDEX_BY_PATH[path]
-  if (index >= 0) {
-    const prev = ROUTES[index - 1] || null
-    const next = ROUTES[index + 1] || null
-    return { prev, next }
-  }
-  return {
-    prev: null,
-    next: null,
-  }
-}
 
 export default function HomePage() {
-  return (
-    <div className={styles.component}>
-      <SEO
-        title="Sway by Example | v0.35.4"
-        description="Learn smart contract programming using Solidity"
-      />
-      <h1 className={styles.header}>
-        <a href="/">Sway by Example 🏖️</a>
-      </h1>
-      <div className={styles.subHeader}>v0.35.4</div>
-      <div className={styles.main}>
-        <p>
-          an introduction to{" "}
-          <a
-            href="https://fuellabs.github.io/sway/latest/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Sway
-          </a>{" "}
-          with simple examples | New! ★
-        </p>
+  const [query, setQuery] = useState("")
+  const [searchParams, setSearchParams] = useSearchParams()
+  const [searchResults, setSearchResults] = useState<{
+    [key: string]: boolean
+  } | null>(null)
 
+  useEffect(() => {
+    const q = searchParams.get("q")
+    if (q != null && q.length > 0) {
+      setQuery(q)
+      _search(q, false)
+    }
+  }, [])
+
+  function _search(query: string, save: boolean) {
+    const q = query.trim()
+
+    if (q.length == 0) {
+      setSearchResults(null)
+      if (save) {
+        setSearchParams({ q: "" })
+      }
+      return
+    }
+
+    const words = unique(q.split(" "))
+    const pages: { [key: string]: boolean } = {}
+
+    for (const word of words) {
+      const res = search(word)
+      for (const page of res) {
+        pages[page] = true
+      }
+    }
+
+    setSearchResults(pages)
+    if (save) {
+      setSearchParams({ q })
+    }
+  }
+
+  const _searchWithDelay = useDebounce((query: string) => _search(query, true), 500, [])
+
+  function onChangeSearchQuery(query: string) {
+    setQuery(query)
+    _searchWithDelay(query)
+  }
+
+  function renderLinks() {
+    if (searchResults) {
+      if (Object.keys(searchResults).length == 0) {
+        return <div>No results</div>
+      }
+
+      return (
+        <ul className={styles.list}>
+          {ROUTES.filter(({ path }) => searchResults[path]).map(({ path, title }) => (
+            <li className={styles.listItem} key={path}>
+              <a href={path}>{title}</a>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+
+    return (
+      <>
         {ROUTES_BY_CATEGORY.map(({ routes, title }, i) => (
           <div key={i}>
             {title && <h3 className={styles.category}>{title}</h3>}
@@ -245,6 +97,62 @@ export default function HomePage() {
             </ul>
           </div>
         ))}
+
+        <div>
+          <h3 className={styles.category}>Translations</h3>
+          {TRANSLATIONS.map(({ lang, url }) => (
+            <li className={styles.listItem} key={url}>
+              <a href={url} target="__blank">
+                {lang}
+              </a>
+            </li>
+          ))}
+        </div>
+      </>
+    )
+  }
+
+  return (
+    <div className={styles.component}>
+      <SEO
+        title="Solidity by Example | 0.8.24"
+        description="Learn smart contract programming using Solidity"
+      />
+      <h1 className={styles.header}>
+        <a href="/">Solidity by Example</a>
+      </h1>
+      <div className={styles.subHeader}>v 0.8.24</div>
+      <div className={styles.main}>
+        <p>
+          Introduction to <a href="https://solidity.readthedocs.io">Solidity</a> with
+          simple examples
+        </p>
+
+        <div className={styles.youTube}>
+          <img src={youTube} alt="logo" className={styles.youTubeLogo} />
+          <a href="https://www.youtube.com/@smartcontractprogrammer" target="__blank">
+            Most code are explained here
+          </a>
+        </div>
+
+        <div className={styles.cryptoJobsList}>
+          <CryptoJobsList size={24} className={styles.cryptoJobsListLogo} />
+          <a href={CRYPTO_JOBS_LIST_URL} target="__blank">
+            Looking for Solidity jobs?
+          </a>
+        </div>
+
+        <div className={styles.updates}>
+          {UPDATES.map((text, i) => (
+            <div key={i}>{text}</div>
+          ))}
+        </div>
+
+        <div className={styles.search}>
+          <SearchBar value={query} onChange={onChangeSearchQuery} />
+        </div>
+
+        {renderLinks()}
       </div>
     </div>
   )

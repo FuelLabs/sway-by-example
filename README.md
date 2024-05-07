@@ -1,73 +1,60 @@
-# sway-by-example
+# solidity-by-example.github.io
 
-Examples of Sway programs
+[Sway By Example](https://www.swaybyexample.com/)
+
+### License
+
+[MIT License](LICENSE)
 
 ### Development
 
 ```shell
 npm i
-nom run start
+npm start
 ```
 
 ### Production
 
 ```shell
+npm run build
+# Preview produciton
+npm run preview
+# Deploy
 npm run deploy
 ```
 
 ### Memo
 
+TODO: code split / dynamic imports
+
 ```shell
+## Deploy ##
+# copy files from contracts
+npx ts-node scripts/copy.ts
 # md to react
 npx ts-node --project ./scripts/tsconfig.json scripts/md-to-react.ts src/pages/array
 
+# md to react all pages
+find src/pages -type d -not -path "*/__snapshots__" -exec npx ts-node --project ./scripts/tsconfig.json scripts/md-to-react.ts {} \;
+
 # build routes
 npx ts-node --project ./scripts/tsconfig.json scripts/build-routes.ts
+
+# build search index
+npx ts-node --project ./scripts/tsconfig.json scripts/build-search-index.ts
+
+## Compile Solidity ##
+solc-select install 0.8.24
+solc-select use 0.8.24
+
+# compile single file
+solc src/pages/hello-world/HelloWorld.sol
+
+# find and compile sol
+find src/pages/hacks -name "*.sol" solc {} \;
+find src/pages -type f -name "*.sol" -exec sh -c 'solc "$0"' {} \;
+
+## Mics ##
+# rename files
+find . -type f -name "index.test.js" -exec sh -c 'mv "$0" "${0%.test.js}.test.tsx"' {} \;
 ```
-
-### TODO
-
-- [ ] update npm
-
-- Basic
-
-  - [x] variables (immutable, `mut`, type annotations)
-  - [x] built-in
-    - [x] primitive types (`u64`, `bool`, `str[]`, `b256`)
-    - [x] compound type (tuple, struct, array)
-  - [x] blockchain types (`Address`, `ContractId` and `Identity`)
-  - [x] functions (return outputs, `ref mut`)
-  - [x] structs
-  - [x] tuples
-  - [x] enums
-  - [x] constants
-  - [x] configurable constants
-  - [x] std lib types - option
-  - [x] std lib types - result
-  - [x] control flow
-    - [x] if
-    - [x] match
-    - [x] while loop
-  - [x] logging
-  - [ ] test in sway
-
-- Blockchain
-
-  - [x] msg_sender (ownership)
-  - [x] base asset (wallet)
-  - [ ] native support for assets (wrapped token)
-  - [x] events
-  - [x] storage map (simple, nested)
-  - [x] vector (storage, heap) (nft)
-  - [ ] hash
-  - [ ] crypto signature (air drop)
-  - [ ] calling contracts (multi sig)
-    - [ ] call
-    - [ ] low level call
-  - [ ] function purity
-  - [ ] identifier (address and contract id)
-
-- rename sway files from `.rs` to `.sw`
-- move `hello-sway` repo to here?
-
-- [ ] Integrate https://github.com/t4sk/hello-sway

@@ -1,41 +1,35 @@
 .component {
-  text-align: left;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+  background-color: var(--bg-color);
+  min-width: var(--min-main-width);
+  white-space: nowrap;
+}
+.a {
+  text-decoration: none;
+}
+.center {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.component a {
-  text-decoration: none;
-}
 .logo {
-  width: 60px;
-}
-.light {
-  width: 30px;
-  cursor: pointer;
-  margin: 0 20px 0 20px;
-}
-.dark {
-  width: 30px;
-  cursor: pointer;
-  margin: 0 20px 0 20px;
+  margin: 0 5px 0 5px;
 }
 .header {
   margin: 0;
   margin-right: auto;
 }
-.versions {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-weight: 500;
-  font-size: 1rem;
+.mode {
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
 }
-.bar {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-.version {
-  margin-right: 5px;
+.hamburger {
+  cursor: pointer;
 }

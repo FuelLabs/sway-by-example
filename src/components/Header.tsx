@@ -1,51 +1,38 @@
 import React from "react"
-import { useAppContext, Theme } from "../contexts/AppContext"
+import { useAppContext } from "../contexts/AppContext"
+import Hamburger from "./svg/Hamburger"
 import styles from "./Header.module.css"
-import logoLight from "./logo.png"
-import logoDark from "./logo-dark.png"
-// import fuelLogo from "./fuel-logo.svg"
-import fuelLogo from "./palm-trees.png"
-import modeLight from "./mode-light.png"
-import modeDark from "./mode-dark.png"
+import DarkMode from "./svg/DarkMode"
+import LightMode from "./svg/LightMode"
+import Solidity from "./svg/Solidity"
 
 function Header() {
-  const { state, setTheme } = useAppContext()
+  const { state, setTheme, toggleSideNav } = useAppContext()
 
-  let logo = state.theme == "dark" ? fuelLogo : fuelLogo
-
-  function onClickTheme(theme: Theme) {
-    setTheme(theme)
+  function onClickTheme() {
+    setTheme(state.theme == "light" ? "dark" : "light")
   }
 
-  // NOTE: need to use links for versions so that react-snap can crawl
   return (
     <div className={styles.component}>
-      <a href="/">
-        <img src={logo} alt="logo" className={styles.logo} />
-      </a>
-
-      <h3 className={styles.header}>
-        <a href="/">Sway by Example</a>
-        <div className={styles.versions}>
-          <div className={styles.version}>v0.35.4</div>
-        </div>
-      </h3>
-
-      {state.theme == "dark" ? (
-        <img
-          src={modeLight}
-          alt="light mode"
-          className={styles.light}
-          onClick={(e) => onClickTheme("light")}
-        />
-      ) : (
-        <img
-          src={modeDark}
-          alt="dark mode"
-          className={styles.dark}
-          onClick={(e) => onClickTheme("dark")}
-        />
-      )}
+      <Hamburger size={20} className={styles.hamburger} onClick={toggleSideNav} />
+      {/* <div className={styles.center}>
+        <a href="/" className={styles.a}>
+          <Solidity
+            className={styles.logo}
+            size={30}
+            fill={state.theme == "dark" ? "rgb(0, 255, 0)" : "currentColor"}
+          />
+        </a>
+        <h3 className={styles.header}>
+          <a href="/" className={styles.a}>
+            Fuel Network
+          </a>
+        </h3>
+      </div> */}
+      <button className={styles.mode} onClick={onClickTheme}>
+        {state.theme == "dark" ? <DarkMode size={20} /> : <LightMode size={20} />}
+      </button>
     </div>
   )
 }

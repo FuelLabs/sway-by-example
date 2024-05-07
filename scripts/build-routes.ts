@@ -2,6 +2,7 @@ import fs from "fs"
 import assert from "assert"
 import path from "path"
 import mustache from "mustache"
+import { buildRoute, get_files } from "./lib"
 
 const { readdir, stat, readFile, writeFile } = fs.promises
 
@@ -9,27 +10,6 @@ interface Route {
   routePath: string
   importPath: string
   componentName: string
-}
-
-function buildRoutePath(folders: string[]) {
-  const routePath = ["/"]
-
-  // ignore path up to /pages
-  const start = folders.findIndex((file) => file === "pages")
-  assert(start > 0, `Cannot find pages folder`)
-
-  for (let i = start + 1; i < folders.length; i++) {
-    const file = folders[i]
-
-    // ignore index.tsx
-    if (file === "index.tsx") {
-      continue
-    }
-
-    routePath.push(file)
-  }
-
-  return path.join(...routePath)
 }
 
 // build import path relative to src
@@ -52,50 +32,22 @@ function buildImportPath(folders: string[]) {
 
   return importPath.join("/")
 }
-
 function getComponentName(routePath: string): string {
   return `component${routePath.replace(/[/.-]/g, "_")}`
-}
-
-async function getFiles(): Promise<string[]> {
-  // traverse
-  const queue = [path.join(__dirname, "..", "src/pages")]
-
-  const files: string[] = []
-  while (true) {
-    const dir = queue.pop()
-
-    if (!dir) {
-      break
-    }
-
-    const dirs = await readdir(dir)
-
-    for (const fileName of dirs) {
-      const filePath = path.join(dir, fileName)
-
-      const fileStat = await stat(filePath)
-
-      if (fileStat.isDirectory()) {
-        queue.push(filePath)
-      } else if (fileName === "index.tsx") {
-        files.push(filePath)
-      }
-    }
-  }
-
-  return files
 }
 
 async function main() {
   const dir = path.join(__dirname, "..", "src")
 
-  const files = await getFiles()
+  const files = await get_files(
+    path.join(__dirname, "..", "src/pages"),
+    new RegExp("index.tsx"),
+  )
 
   const routes: Route[] = files.map((file) => {
     const folders = file.split("/")
 
-    const routePath = buildRoutePath(folders)
+    const routePath = buildRoute(folders)
 
     return {
       routePath: routePath === "/" ? "" : routePath,
