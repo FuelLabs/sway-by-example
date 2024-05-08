@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.8.24"
+export const version = "0.56.0"
 export const title = "WETH Permit"
 export const description = "An example of WETH permit hack"
 
@@ -45,7 +45,7 @@ const html = `<h3>Vulnerability</h3>
 </ol>
 <h3>ERC20Bank</h3>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-keyword">import</span> <span class="hljs-string">"./IERC20Permit.sol"</span>;
 
@@ -83,7 +83,7 @@ const html = `<h3>Vulnerability</h3>
 }
 </code></pre><h3>Exploit</h3>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> 0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> 0.56.0;</span>
 
 <span class="hljs-keyword">import</span> {<span class="hljs-title">Test</span>, <span class="hljs-title">console2</span>} <span class="hljs-title"><span class="hljs-keyword">from</span></span> <span class="hljs-string">"forge-std/Test.sol"</span>;
 <span class="hljs-keyword">import</span> {<span class="hljs-title">WETH</span>} <span class="hljs-title"><span class="hljs-keyword">from</span></span> <span class="hljs-string">"../../../src/hacks/weth-permit/WETH.sol"</span>;
@@ -124,7 +124,7 @@ const html = `<h3>Vulnerability</h3>
 }
 </code></pre><h3>Other contracts</h3>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">IERC20</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">totalSupply</span>(<span class="hljs-params"></span>) <span class="hljs-title"><span class="hljs-keyword">external</span></span> <span class="hljs-title"><span class="hljs-keyword">view</span></span> <span class="hljs-title"><span class="hljs-keyword">returns</span></span> (<span class="hljs-params"><span class="hljs-keyword">uint256</span></span>)</span>;
@@ -145,7 +145,7 @@ const html = `<h3>Vulnerability</h3>
     </span>)</span>;
 }
 </code></pre><pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-keyword">import</span> <span class="hljs-string">"./IERC20.sol"</span>;
 
@@ -161,7 +161,7 @@ const html = `<h3>Vulnerability</h3>
     </span>) <span class="hljs-title"><span class="hljs-keyword">external</span></span></span>;
 }
 </code></pre><pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">contract</span> <span class="hljs-title">ERC20</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">event</span> <span class="hljs-title">Transfer</span>(<span class="hljs-params"><span class="hljs-keyword">address</span> <span class="hljs-keyword">indexed</span> <span class="hljs-keyword">from</span>, <span class="hljs-keyword">address</span> <span class="hljs-keyword">indexed</span> to, <span class="hljs-keyword">uint256</span> amount</span>)</span>;
@@ -240,7 +240,7 @@ const html = `<h3>Vulnerability</h3>
     }
 }
 </code></pre><pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-keyword">import</span> <span class="hljs-string">"./ERC20.sol"</span>;
 

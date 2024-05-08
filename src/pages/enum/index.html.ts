@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.8.24"
+export const version = "0.56.0"
 export const title = "Enum"
 export const description = "Example of enums in Solidity"
 
@@ -23,7 +23,7 @@ export const codes = [
 const html = `<p>Solidity supports enumerables and they are useful to model choice and keep track of state.</p>
 <p>Enums can be declared outside of a contract.</p>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-class"><span class="hljs-keyword">contract</span> <span class="hljs-title">Enum</span> </span>{
     <span class="hljs-comment">// Enum representing shipping status</span>
@@ -67,7 +67,7 @@ const html = `<p>Solidity supports enumerables and they are useful to model choi
 </code></pre><h3>Declaring and importing Enum</h3>
 <p>File that the enum is declared in</p>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 <span class="hljs-comment">// This is saved &#x27;EnumDeclaration.sol&#x27;</span>
 
 <span class="hljs-keyword">enum</span> <span class="hljs-title">Status</span> {
@@ -79,7 +79,7 @@ const html = `<p>Solidity supports enumerables and they are useful to model choi
 }
 </code></pre><p>File that imports the enum above</p>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-keyword">import</span> <span class="hljs-string">"./EnumDeclaration.sol"</span>;
 

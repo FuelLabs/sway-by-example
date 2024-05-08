@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.8.24"
+export const version = "0.56.0"
 export const title = "Sending Ether (transfer, send, call)"
 export const description = "An example of sending Ether in Solidity"
 
@@ -47,7 +47,7 @@ const html = `<h3>How to send Ether?</h3>
 <li>using re-entrancy guard modifier</li>
 </ul>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-class"><span class="hljs-keyword">contract</span> <span class="hljs-title">ReceiveEther</span> </span>{
     <span class="hljs-comment">/*

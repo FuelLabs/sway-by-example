@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.8.24"
+export const version = "0.56.0"
 export const title = "Payable"
 export const description = "An example of how to use the keyword payable in Solidity"
 
@@ -14,7 +14,7 @@ export const codes = [
 
 const html = `<p>Functions and addresses declared <code>payable</code> can receive <code>ether</code> into the contract.</p>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-class"><span class="hljs-keyword">contract</span> <span class="hljs-title">Payable</span> </span>{
     <span class="hljs-comment">// Payable address can send Ether via transfer or send</span>

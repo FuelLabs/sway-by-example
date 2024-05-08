@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.8.24"
+export const version = "0.56.0"
 export const title = "Bitwise Operators"
 export const description = "Learn about bitwise operators in Solidity"
 
@@ -21,7 +21,7 @@ export const codes = [
 ]
 
 const html = `<pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-class"><span class="hljs-keyword">contract</span> <span class="hljs-title">BitwiseOps</span> </span>{
     <span class="hljs-comment">// x     = 1110 = 8 + 4 + 2 + 0 = 14</span>
@@ -129,7 +129,7 @@ const html = `<pre><code class="language-solidity"><span class="hljs-comment">//
 }
 </code></pre><h3>Most significant bit</h3>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-class"><span class="hljs-keyword">contract</span> <span class="hljs-title">MostSignificantBitFunction</span> </span>{
     <span class="hljs-comment">// Find most significant bit using binary search</span>
@@ -179,7 +179,7 @@ const html = `<pre><code class="language-solidity"><span class="hljs-comment">//
 }
 </code></pre><h3>Most significant bit in assembly</h3>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-class"><span class="hljs-keyword">contract</span> <span class="hljs-title">MostSignificantBitAssembly</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mostSignificantBit</span>(<span class="hljs-params"><span class="hljs-keyword">uint256</span> x</span>)

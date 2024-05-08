@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.8.24"
+export const version = "0.56.0"
 export const title = "Assembly Binary Exponentiation"
 export const description = "Example of binary exponentiation in assembly"
 
@@ -14,7 +14,7 @@ export const codes = [
 
 const html = `<p>Example of binary exponentiation in <code>assembly</code></p>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-class"><span class="hljs-keyword">contract</span> <span class="hljs-title">AssemblyBinExp</span> </span>{
     <span class="hljs-comment">// Binary exponentiation to calculate x**n</span>

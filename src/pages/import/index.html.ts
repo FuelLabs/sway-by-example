@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.8.24"
+export const version = "0.56.0"
 export const title = "Import"
 export const description = "Learn how to import other Solidity files"
 
@@ -23,7 +23,7 @@ const html = `<p>You can import local and external files in Solidity.</p>
 └── Foo.sol
 </code></pre><p>Foo.sol</p>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-keyword">struct</span> <span class="hljs-title">Point</span> {
     <span class="hljs-keyword">uint256</span> x;
@@ -41,7 +41,7 @@ const html = `<p>You can import local and external files in Solidity.</p>
 }
 </code></pre><p>Import.sol</p>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-comment">// import Foo.sol from current directory</span>
 <span class="hljs-keyword">import</span> <span class="hljs-string">"./Foo.sol"</span>;

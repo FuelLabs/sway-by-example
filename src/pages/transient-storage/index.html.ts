@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.8.24"
+export const version = "0.56.0"
 export const title = "Transient Storage"
 export const description = "transient storage"
 
@@ -13,7 +13,7 @@ export const codes = [
 ]
 
 const html = `<p>Data stored in transient storage is cleared out after transaction.</p>
-<pre><code class="language-solidity"><span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<pre><code class="language-solidity"><span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-comment">// Make sure EVM version and VM set to Cancun</span>
 

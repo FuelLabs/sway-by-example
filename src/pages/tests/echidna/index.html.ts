@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.8.24"
+export const version = "0.56.0"
 export const title = "Echidna"
 export const description = "An example of testing contracts with Echidna"
 
@@ -27,7 +27,7 @@ const html = `<p>Examples of fuzzing with <a href="https://github.com/crytic/ech
 <li>See the comments below and execute <code>echidna</code> commands.</li>
 </ol>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-comment">/*
 echidna TestEchidna.sol --contract TestCounter
@@ -95,7 +95,7 @@ echidna TestEchidna.sol --contract TestAssert --test-mode assertion
 <li><code>0x30000</code></li>
 </ul>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-comment">/*
 docker run -it --rm -v $PWD:/code trailofbits/eth-security-toolbox

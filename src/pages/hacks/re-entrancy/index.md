@@ -1,6 +1,6 @@
 ---
 title: Re-Entrancy
-version: 0.8.24
+version: 0.56.0
 description: An example of re-entrancy attack in Solidity
 keywords: [hack, security, re-entrancy]
 ---

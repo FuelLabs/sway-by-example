@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.8.24"
+export const version = "0.56.0"
 export const title = "Uniswap V3 Flash Swap Arbitrage"
 export const description = "Uniswap V3 Flash Swap Arbitrage"
 
@@ -18,7 +18,7 @@ export const codes = [
 
 const html = `<h3>Uniswap V3 Flash Swap Arbitrage Example</h3>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-keyword">address</span> <span class="hljs-keyword">constant</span> SWAP_ROUTER_02 <span class="hljs-operator">=</span> <span class="hljs-number">0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45</span>;
 
@@ -173,7 +173,7 @@ const html = `<h3>Uniswap V3 Flash Swap Arbitrage Example</h3>
 }
 </code></pre><h3>Test with Foundry</h3>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> 0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> 0.56.0;</span>
 
 <span class="hljs-keyword">import</span> {<span class="hljs-title">Test</span>, <span class="hljs-title">console2</span>} <span class="hljs-title"><span class="hljs-keyword">from</span></span> <span class="hljs-string">"forge-std/Test.sol"</span>;
 <span class="hljs-keyword">import</span> {

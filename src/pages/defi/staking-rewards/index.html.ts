@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.8.24"
+export const version = "0.56.0"
 export const title = "Staking Rewards"
 export const description =
   "Staking rewards contract based on Synthetix StakingRewards.sol"
@@ -17,7 +17,7 @@ const html = `<p>This is a minimal example of a contract that rewards users for 
 <p>Code is a stripped down version of Synthetix <a href="https://github.com/Synthetixio/synthetix/blob/develop/contracts/StakingRewards.sol" target="__blank">StakingRewards.sol</a></p>
 <h3>Staking Rewards</h3>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-class"><span class="hljs-keyword">contract</span> <span class="hljs-title">StakingRewards</span> </span>{
     IERC20 <span class="hljs-keyword">public</span> <span class="hljs-keyword">immutable</span> stakingToken;

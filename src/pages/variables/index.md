@@ -1,6 +1,6 @@
 ---
 title: Variables
-version: 0.8.24
+version: 0.56.0
 description: Local, state and global variables
 keywords: [variable, variables, local, global, state, data]
 ---

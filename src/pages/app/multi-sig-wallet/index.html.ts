@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.8.24"
+export const version = "0.56.0"
 export const title = "Multi-Sig Wallet"
 export const description = "An example of multi-sig wallet in Solidity"
 
@@ -24,7 +24,7 @@ const html = `<p>Let&#39;s create an multi-sig wallet. Here are the specificatio
 <li>anyone can execute a transaction after enough owners has approved it.</li>
 </ul>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-class"><span class="hljs-keyword">contract</span> <span class="hljs-title">MultiSigWallet</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">event</span> <span class="hljs-title">Deposit</span>(<span class="hljs-params"><span class="hljs-keyword">address</span> <span class="hljs-keyword">indexed</span> sender, <span class="hljs-keyword">uint256</span> amount, <span class="hljs-keyword">uint256</span> balance</span>)</span>;
@@ -204,7 +204,7 @@ const html = `<p>Let&#39;s create an multi-sig wallet. Here are the specificatio
 }
 </code></pre><p>Here is a contract to test sending transactions from the multi-sig wallet</p>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-class"><span class="hljs-keyword">contract</span> <span class="hljs-title">TestContract</span> </span>{
     <span class="hljs-keyword">uint256</span> <span class="hljs-keyword">public</span> i;

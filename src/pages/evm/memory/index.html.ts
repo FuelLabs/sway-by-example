@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.8.24"
+export const version = "0.56.0"
 export const title = "EVM Memory Layout in Solidity"
 export const description = "Example of EVM memory in Solidity"
 
@@ -19,7 +19,7 @@ const html = `<p>Examples of</p>
 <li>Memory management for external calls</li>
 </ul>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> 0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> 0.56.0;</span>
 
 <span class="hljs-comment">// Memory layout</span>
 <span class="hljs-comment">// array of length 2**256 (32 bytes), each element stores 1 byte (0x00 to 0xff)</span>

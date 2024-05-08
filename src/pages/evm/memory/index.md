@@ -1,6 +1,6 @@
 ---
 title: EVM Memory Layout in Solidity
-version: 0.8.24
+version: 0.56.0
 description: Example of EVM memory in Solidity
 keywords: [data, evm, memory, yul, assembly]
 ---

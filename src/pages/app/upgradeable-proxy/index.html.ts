@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.8.24"
+export const version = "0.56.0"
 export const title = "Upgradeable Proxy"
 export const description = "Example of upgradeable proxy"
 
@@ -19,7 +19,7 @@ const html = `<p>Example of upgradeable proxy contract. Never use this in produc
 <li>how to store address of <code>admin</code> and <code>implementation</code> in a specific slot.</li>
 </ul>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-comment">// Transparent upgradeable proxy pattern</span>
 

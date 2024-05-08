@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.8.24"
+export const version = "0.56.0"
 export const title = "Delegatecall"
 export const description = "An example of exploits using delegatecall in Solidity"
 
@@ -25,7 +25,7 @@ can lead to devastating results.</p>
 <li>storage layout must be the same for the contract calling <code>delegatecall</code> and the contract getting called</li>
 </ol>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-comment">/*
 HackMe is a contract that uses delegatecall to execute code.
@@ -88,7 +88,7 @@ caller of HackMe, in this case Attack.
 <p>You will need to understand how Solidity stores
 state variables before you can understand this exploit.</p>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-comment">/*
 This is a more sophisticated version of the previous exploit.

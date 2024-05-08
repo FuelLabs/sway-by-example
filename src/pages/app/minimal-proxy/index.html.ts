@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.8.24"
+export const version = "0.56.0"
 export const title = "Minimal Proxy Contract"
 export const description = "Deploy contracts cheaply with minimal proxy contract"
 
@@ -14,7 +14,7 @@ export const codes = [
 
 const html = `<p>If you have a contract that will be deployed multiple times, use minimal proxy contract to deploy them cheaply.</p>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-comment">// original code</span>
 <span class="hljs-comment">// https://github.com/optionality/clone-factory/blob/master/contracts/CloneFactory.sol</span>

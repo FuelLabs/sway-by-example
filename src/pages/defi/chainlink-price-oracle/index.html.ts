@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.8.24"
+export const version = "0.56.0"
 export const title = "Chainlink Price Oracle"
 export const description = "Chainlink Price Oracle"
 
@@ -14,7 +14,7 @@ export const codes = [
 
 const html = `<h3>ETH / USD Price Oracle</h3>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-class"><span class="hljs-keyword">contract</span> <span class="hljs-title">ChainlinkPriceOracle</span> </span>{
     AggregatorV3Interface <span class="hljs-keyword">internal</span> priceFeed;

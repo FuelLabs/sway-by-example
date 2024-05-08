@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.8.24"
+export const version = "0.56.0"
 export const title = "Uni-Directional Payment Channel"
 export const description = "An example of uni-directional payment channels in Solidity"
 
@@ -34,7 +34,7 @@ const html = `<p>Payment channels allow participants to repeatedly transfer Ethe
 </ul>
 <p>This is called a uni-directional payment channel since the payment can go only in a single direction from <code>Alice</code> to <code>Bob</code>.</p>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-keyword">import</span> <span class="hljs-string">"./ECDSA.sol"</span>;
 
@@ -123,7 +123,7 @@ const html = `<p>Payment channels allow participants to repeatedly transfer Ethe
     }
 }
 </code></pre><pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-comment">// OpenZeppelin Contracts (last updated v4.5.0) (utils/cryptography/ECDSA.sol)</span>
 

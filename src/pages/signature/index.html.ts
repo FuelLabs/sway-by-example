@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.8.24"
+export const version = "0.56.0"
 export const title = "Verifying Signature"
 export const description = "An example of how to verify signatures in Solidity"
 
@@ -22,7 +22,7 @@ export const codes = [
 const html = `<p>Messages can be signed off chain and then verified on chain using a smart contract.</p>
 <p><a href="https://github.com/t4sk/hello-erc20-permit/blob/main/test/verify-signature.js">Example using ethers.js</a></p>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.8.24;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
 
 <span class="hljs-comment">/* Signature Verification
 

@@ -1,6 +1,6 @@
 ---
 title: Calling Parent Contracts
-version: 0.8.24
+version: 0.56.0
 description: An example of calling parent contracts in Solidity
 keywords: [calling, parent, contract, contracts, inheritance, super]
 ---
