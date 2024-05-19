@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.56.0;
+pragma solidity ^0.59.0;
 
 /*
 Invariant - price of trade and amount of liquidity are determined by this equation

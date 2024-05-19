@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.56.0;
+pragma solidity ^0.59.0;
 
 /*
    Now Let's see how to guard from front running using commit reveal scheme.

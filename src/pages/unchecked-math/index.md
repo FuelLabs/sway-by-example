@@ -1,6 +1,6 @@
 ---
 title: Unchecked Math
-version: 0.56.0
+version: 0.59.0
 description: An example of unchecked math in Solidity
 keywords: [gas, unchecked, math, overflow, underflow]
 ---

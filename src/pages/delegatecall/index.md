@@ -1,6 +1,6 @@
 ---
 title: Delegatecall
-version: 0.56.0
+version: 0.59.0
 description: Example of how to use deletegatecall in Solidity
 keywords: [delegatecall, call, contract, contracts, function, functions]
 ---

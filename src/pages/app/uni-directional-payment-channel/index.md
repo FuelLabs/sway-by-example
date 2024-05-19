@@ -1,6 +1,6 @@
 ---
 title: Uni-Directional Payment Channel
-version: 0.56.0
+version: 0.59.0
 description: An example of uni-directional payment channels in Solidity
 keywords: [app, application, uni-directional, payment, channel, signature, cryptography]
 ---

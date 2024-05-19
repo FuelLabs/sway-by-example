@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.56.0"
+export const version = "0.59.0"
 export const title = "DAI Proxy Examples"
 export const description = "Borrow and repay DAI using DssProxy"
 
@@ -19,7 +19,7 @@ export const codes = [
 const html = `<h3>Example</h3>
 <p>Example of locking ETH collateral, borrowing DAI, repaying DAI and unlocking ETH using <code>DssProxy</code>.</p>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.59.0;</span>
 
 <span class="hljs-keyword">address</span> <span class="hljs-keyword">constant</span> DAI <span class="hljs-operator">=</span> <span class="hljs-number">0x6B175474E89094C44Da98b954EedeAC495271d0F</span>;
 <span class="hljs-keyword">address</span> <span class="hljs-keyword">constant</span> PROXY_REGISTRY <span class="hljs-operator">=</span> <span class="hljs-number">0x4678f0a6958e4D2Bc4F1BAF7Bc52E8F3564f3fE4</span>;
@@ -154,7 +154,7 @@ const html = `<h3>Example</h3>
 }
 </code></pre><h3>Test</h3>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> 0.56.0;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> 0.59.0;</span>
 
 <span class="hljs-keyword">import</span> {<span class="hljs-title">Test</span>, <span class="hljs-title">console2</span>} <span class="hljs-title"><span class="hljs-keyword">from</span></span> <span class="hljs-string">"forge-std/Test.sol"</span>;
 <span class="hljs-keyword">import</span> <span class="hljs-string">"../../../src/defi/dai-proxy/DaiProxy.sol"</span>;

@@ -1,6 +1,6 @@
 ---
 title: Deploy Any Contract
-version: 0.56.0
+version: 0.59.0
 description: Deploy Any Contract
 keywords: [app, application, deploy, any, contract]
 ---

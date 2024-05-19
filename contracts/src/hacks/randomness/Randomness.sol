@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.56.0;
+pragma solidity ^0.59.0;
 
 /*
 NOTE: cannot use blockhash in Remix so use ganache-cli

@@ -1,6 +1,6 @@
 ---
 title: Stable Swap AMM
-version: 0.56.0
+version: 0.59.0
 description: Curve's stable swap AMM
 keywords: [defi, curve, stable, swap, amm]
 ---

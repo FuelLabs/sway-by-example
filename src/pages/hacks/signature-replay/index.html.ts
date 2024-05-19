@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.56.0"
+export const version = "0.59.0"
 export const title = "Signature Replay"
 export const description =
   "An example of a contract vulnerable to signature replay attack"
@@ -32,7 +32,7 @@ a function is a useful technique.</p>
 <p>Same signature can be used multiple times to execute a function. This can be harmful
 if the signer&#39;s intention was to approve a transaction once.</p>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.59.0;</span>
 
 <span class="hljs-keyword">import</span> <span class="hljs-string">"./ECDSA.sol"</span>;
 
@@ -87,7 +87,7 @@ if the signer&#39;s intention was to approve a transaction once.</p>
 </code></pre><h3>Preventative Techniques</h3>
 <p>Sign messages with <code>nonce</code> and address of the contract.</p>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.59.0;</span>
 
 <span class="hljs-keyword">import</span> <span class="hljs-string">"./ECDSA.sol"</span>;
 
@@ -166,7 +166,7 @@ if the signer&#39;s intention was to approve a transaction once.</p>
 0xa240a487de1eb5bb971e920cb0677a47ddc6421e38f7b048f8aa88266b2c884a10455a52dc76a203a1a9a953418469f9eec2c59e87201bbc8db0e4d9796935cb1b
 */</span>
 </code></pre><pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.59.0;</span>
 
 <span class="hljs-comment">// OpenZeppelin Contracts (last updated v4.5.0) (utils/cryptography/ECDSA.sol)</span>
 

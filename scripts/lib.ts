@@ -88,6 +88,8 @@ export interface Metadata {
   description: string
   version: string
   keywords: string[]
+  tempFileName: string
+  tempPlaygroundLink: string
 }
 
 function findIndexOfFrontMatter(lines: string[]): number {
@@ -106,11 +108,11 @@ function getMetadata(lines: string[]): Metadata {
   assert(lines[0] === "---", "Invalid front matter")
   assert(lines[lines.length - 1] === "---", "Invalid front matter")
 
-  const { title, description, version, keywords } = yaml.parse(
+  const { title, description, version, keywords, tempFileName, tempPlaygroundLink } = yaml.parse(
     lines.slice(1, -1).join("\n"),
   )
 
-  return { title, description, version, keywords }
+  return { title, description, version, keywords, tempFileName, tempPlaygroundLink }
 }
 
 export async function parseYaml(filePath: string): Promise<{

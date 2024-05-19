@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.56.0;
+pragma solidity ^0.59.0;
 
 // original code
 // https://github.com/optionality/clone-factory/blob/master/contracts/CloneFactory.sol

@@ -1,6 +1,6 @@
 ---
 title: Immutable
-version: 0.56.0
+version: 0.59.0
 description: Immutable variables
 keywords: [constant, constants, immutable, immutables, data, variable, variables]
 ---

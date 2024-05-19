@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.56.0"
+export const version = "0.59.0"
 export const title = "Call"
 export const description =
   "In Solidity call is a low level function to interact with other contracts"
@@ -23,7 +23,7 @@ const html = `<p><code>call</code> is a low level function to interact with othe
 <li>Function existence checks are omitted</li>
 </ul>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.59.0;</span>
 
 <span class="hljs-class"><span class="hljs-keyword">contract</span> <span class="hljs-title">Receiver</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">event</span> <span class="hljs-title">Received</span>(<span class="hljs-params"><span class="hljs-keyword">address</span> caller, <span class="hljs-keyword">uint256</span> amount, <span class="hljs-keyword">string</span> message</span>)</span>;

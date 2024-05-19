@@ -1,6 +1,6 @@
 ---
 title: Front Running
-version: 0.56.0
+version: 0.59.0
 description: An example of a Solidity contract vulnerable to front running
 keywords: [hack, security, front, running]
 ---

@@ -1,30 +1,14 @@
 ---
 title: Structs
-version: 0.56.0
-description: An example of how to use structs in Solidity
+version: 0.59.0
+description: Structs in Sway
+tempFileName: "structs.sw"
+tempPlaygroundLink: "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=b9010222314e75e2a6f410cb8d339eba"
 keywords: [struct, structs, data, type, types, variable, variables]
 ---
 
-You can define your own type by creating a `struct`.
+Examples of structs in Sway
 
-They are useful for grouping together related data.
-
-Structs can be declared outside of a contract and imported in another contract.
-
-```solidity
-{{{Structs}}}
-```
-
-### Declaring and importing Struct
-
-File that the struct is declared in
-
-```solidity
-{{{StructDeclaration}}}
-```
-
-File that imports the struct above
-
-```solidity
-{{{StructImport}}}
+```rust
+{{{structs}}}
 ```

@@ -2,6 +2,7 @@ import React from "react"
 import SEO from "./SEO"
 import Html from "./Html"
 import styles from "./Example.module.css"
+// import { tempFileName } from "../pages/cheatsheet/solidity/index.html"
 
 interface Path {
   title: string
@@ -16,11 +17,13 @@ interface Code {
 interface Props {
   title: string
   description: string
-  version: "0.56.0"
+  version: "0.59.0"
   html: string
   prev: Path | null
   next: Path | null
   codes: Code[]
+  tempFileName: string
+  tempPlaygroundLink: string
 }
 
 const Example: React.FC<Props> = ({
@@ -31,11 +34,13 @@ const Example: React.FC<Props> = ({
   prev,
   next,
   codes,
+  tempFileName,
+  tempPlaygroundLink,
 }) => {
   return (
     <div className={styles.component}>
       <SEO
-        title={`${title} | Solidity by Example | ${version}`}
+        title={`${title} | Sway by Example | ${version}`}
         description={description}
       />
       <div className={styles.content}>
@@ -58,9 +63,9 @@ const Example: React.FC<Props> = ({
           )}
         </div>
 
-        <h3>Try on Remix</h3>
+        <h3>Try on Sway Playground</h3>
         <ul>
-          {codes.map(({ fileName, code }, i) => (
+          {/* {codes.map(({ fileName, code }, i) => (
             <li key={i}>
               <a
                 href={`https://remix.ethereum.org/?#code=${code}`}
@@ -70,7 +75,12 @@ const Example: React.FC<Props> = ({
                 {fileName}
               </a>
             </li>
-          ))}
+          ))} */}
+          <li>
+            <a href={tempPlaygroundLink} target="_blank" rel="noreferrer">
+              {tempFileName}
+            </a>
+          </li>
         </ul>
       </div>
     </div>

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.56.0;
+pragma solidity 0.59.0;
 
 // Memory layout
 // array of length 2**256 (32 bytes), each element stores 1 byte (0x00 to 0xff)

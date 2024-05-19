@@ -79,6 +79,8 @@ async function mdToHtml(filePath: string) {
         key: `${key}.rs`,
         val: Buffer.from(val).toString("base64"),
       })),
+      tempFileName: metadata.tempFileName,
+      tempPlaygroundLink: metadata.tempPlaygroundLink
     },
   )
 }

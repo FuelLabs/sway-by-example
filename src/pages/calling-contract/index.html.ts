@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.56.0"
+export const version = "0.59.0"
 export const title = "Calling Other Contract"
 export const description =
   "In Solidity, contract can call other contracts in several ways"
@@ -26,7 +26,7 @@ const html = `<p>Contract can call other contracts in 2 ways.</p>
 <p>Another way to call other contracts is to use the low-level <code>call</code>.</p>
 <p>This method is not recommended.</p>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.59.0;</span>
 
 <span class="hljs-class"><span class="hljs-keyword">contract</span> <span class="hljs-title">Callee</span> </span>{
     <span class="hljs-keyword">uint256</span> <span class="hljs-keyword">public</span> x;

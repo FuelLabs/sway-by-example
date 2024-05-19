@@ -1,6 +1,6 @@
 ---
 title: Import
-version: 0.56.0
+version: 0.59.0
 description: Learn how to import other Solidity files
 keywords: [import]
 ---

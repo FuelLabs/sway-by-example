@@ -1,6 +1,6 @@
 ---
 title: Honeypot
-version: 0.56.0
+version: 0.59.0
 description: An example of honeypot in Solidity
 keywords: [hack, security, honeypot]
 ---

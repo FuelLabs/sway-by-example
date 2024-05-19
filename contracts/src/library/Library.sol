@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.56.0;
+pragma solidity ^0.59.0;
 
 library Math {
     function sqrt(uint256 y) internal pure returns (uint256 z) {

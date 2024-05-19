@@ -1,6 +1,6 @@
 ---
 title: Arithmetic Overflow and Underflow
-version: 0.56.0
+version: 0.59.0
 description: An example of hacking Solidity with arithmetic overflow / underflow
 keywords: [hack, security, arithmetic, overflow, underflow]
 ---

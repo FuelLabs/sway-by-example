@@ -1,6 +1,6 @@
 ---
 title: ERC721
-version: 0.56.0
+version: 0.59.0
 description: Example of ERC721 non fungible token in Solidity
 keywords: [app, application, erc721, ierc721, nft]
 ---

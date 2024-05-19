@@ -98,7 +98,7 @@ export default function HomePage() {
           </div>
         ))}
 
-        <div>
+        {/* <div>
           <h3 className={styles.category}>Translations</h3>
           {TRANSLATIONS.map(({ lang, url }) => (
             <li className={styles.listItem} key={url}>
@@ -107,7 +107,7 @@ export default function HomePage() {
               </a>
             </li>
           ))}
-        </div>
+        </div> */}
       </>
     )
   }
@@ -115,38 +115,37 @@ export default function HomePage() {
   return (
     <div className={styles.component}>
       <SEO
-        title="Solidity by Example | 0.56.0"
+        title="Sway by Example | v0.59.0"
         description="Learn smart contract programming using Solidity"
       />
       <h1 className={styles.header}>
-        <a href="/">Solidity by Example</a>
+        <a href="/">Sway by Example</a>
       </h1>
-      <div className={styles.subHeader}>v 0.56.0</div>
+      <div className={styles.subHeader}>v0.59.0</div>
       <div className={styles.main}>
         <p>
-          Introduction to <a href="https://solidity.readthedocs.io">Solidity</a> with
-          simple examples
+          an introduction to <a href="https://docs.fuel.network/docs/sway/">Sway</a> with
+          simple examples | New! ★
         </p>
-
-        <div className={styles.youTube}>
+        {/* <div className={styles.youTube}>
           <img src={youTube} alt="logo" className={styles.youTubeLogo} />
           <a href="https://www.youtube.com/@smartcontractprogrammer" target="__blank">
             Most code are explained here
           </a>
-        </div>
+        </div> */}
 
-        <div className={styles.cryptoJobsList}>
+        {/* <div className={styles.cryptoJobsList}>
           <CryptoJobsList size={24} className={styles.cryptoJobsListLogo} />
           <a href={CRYPTO_JOBS_LIST_URL} target="__blank">
             Looking for Solidity jobs?
           </a>
-        </div>
+        </div> */}
 
-        <div className={styles.updates}>
+        {/* <div className={styles.updates}>
           {UPDATES.map((text, i) => (
             <div key={i}>{text}</div>
           ))}
-        </div>
+        </div> */}
 
         <div className={styles.search}>
           <SearchBar value={query} onChange={onChangeSearchQuery} />

@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.56.0"
+export const version = "0.59.0"
 export const title = "Accessing Private Data"
 export const description =
   "An example of accessing private data from a Solidity smart contract"
@@ -25,7 +25,7 @@ const html = `<h3>Vulnerability</h3>
 <p>All data on a smart contract can be read.</p>
 <p>Let&#39;s see how we can read <code>private</code> data. In the process you will learn how Solidity stores state variables.</p>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.59.0;</span>
 
 <span class="hljs-comment">/*
 Note: cannot use web3 on JVM, so use the contract deployed on Goerli

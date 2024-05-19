@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.56.0;
+pragma solidity ^0.59.0;
 
 /*
 Note: cannot use web3 on JVM, so use the contract deployed on Goerli

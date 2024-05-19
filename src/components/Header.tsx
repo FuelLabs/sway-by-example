@@ -16,20 +16,20 @@ function Header() {
   return (
     <div className={styles.component}>
       <Hamburger size={20} className={styles.hamburger} onClick={toggleSideNav} />
-      {/* <div className={styles.center}>
-        <a href="/" className={styles.a}>
+      <div className={styles.center}>
+        {/* <a href="/" className={styles.a}>
           <Solidity
             className={styles.logo}
             size={30}
             fill={state.theme == "dark" ? "rgb(0, 255, 0)" : "currentColor"}
           />
-        </a>
+        </a> */}
         <h3 className={styles.header}>
           <a href="/" className={styles.a}>
-            Fuel Network
+            The Way of Sway 🏖️
           </a>
         </h3>
-      </div> */}
+      </div>
       <button className={styles.mode} onClick={onClickTheme}>
         {state.theme == "dark" ? <DarkMode size={20} /> : <LightMode size={20} />}
       </button>

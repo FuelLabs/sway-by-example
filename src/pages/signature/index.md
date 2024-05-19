@@ -1,6 +1,6 @@
 ---
 title: Verifying Signature
-version: 0.56.0
+version: 0.59.0
 description: An example of how to verify signatures in Solidity
 keywords: [cryptography, verify, verifying, signature, signatures, ecrecover]
 ---

@@ -1,4 +1,4 @@
-pragma solidity ^0.56.0;
+pragma solidity ^0.59.0;
 
 // TestFallbackInputOutput -> FallbackInputOutput -> Counter
 contract FallbackInputOutput {

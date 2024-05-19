@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.56.0"
+export const version = "0.59.0"
 export const title = "EVM Storage"
 export const description = "Example of EVM storage in Solidity"
 
@@ -26,7 +26,7 @@ const html = `<p>Examples of</p>
 <li>Storage layout of different data types</li>
 </ul>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.59.0;</span>
 
 <span class="hljs-comment">// Yul - language used for Solidity inline assembly</span>
 <span class="hljs-class"><span class="hljs-keyword">contract</span> <span class="hljs-title">YulIntro</span> </span>{

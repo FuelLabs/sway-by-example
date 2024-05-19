@@ -1,6 +1,6 @@
 ---
 title: Accessing Private Data
-version: 0.56.0
+version: 0.59.0
 description: An example of accessing private data from a Solidity smart contract
 keywords: [hack, security, access, accessing, private, data, storage]
 ---

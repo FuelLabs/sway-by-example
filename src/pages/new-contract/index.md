@@ -1,6 +1,6 @@
 ---
 title: Contract that Creates other Contracts
-version: 0.56.0
+version: 0.59.0
 description: Learn how to create new contracts from inside of a contract with Solidity
 keywords: [new, contract, create, contracts, creates, new, create2, salt]
 ---

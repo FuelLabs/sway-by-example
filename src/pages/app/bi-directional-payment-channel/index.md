@@ -1,6 +1,6 @@
 ---
 title: Bi-Directional Payment Channel
-version: 0.56.0
+version: 0.59.0
 description: An example of bi-directional payment channels in Solidity
 keywords: [app, application, bi-directional, payment, channel, signature, cryptography]
 ---

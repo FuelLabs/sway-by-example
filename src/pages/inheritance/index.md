@@ -1,6 +1,6 @@
 ---
 title: Inheritance
-version: 0.56.0
+version: 0.59.0
 description: Example of inheritance in Solidity
 keywords: [inheritance, super, override, virtual, is, contract, contracts]
 ---

@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.56.0"
+export const version = "0.59.0"
 export const title = "Fallback"
 export const description = "Example of how to use fallback in Solidity"
 
@@ -33,7 +33,7 @@ const html = `<p><code>fallback</code> is a special function that is executed ei
 </ul>
 <p><code>fallback</code> has a 2300 gas limit when called by <code>transfer</code> or <code>send</code>.</p>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.59.0;</span>
 
 <span class="hljs-class"><span class="hljs-keyword">contract</span> <span class="hljs-title">Fallback</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">event</span> <span class="hljs-title">Log</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> func, <span class="hljs-keyword">uint256</span> gas</span>)</span>;
@@ -67,7 +67,7 @@ const html = `<p><code>fallback</code> is a special function that is executed ei
     }
 }
 </code></pre><p><code>fallback</code> can optionally take <code>bytes</code> for input and output</p>
-<pre><code class="language-solidity"><span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
+<pre><code class="language-solidity"><span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.59.0;</span>
 
 <span class="hljs-comment">// TestFallbackInputOutput -&gt; FallbackInputOutput -&gt; Counter</span>
 <span class="hljs-class"><span class="hljs-keyword">contract</span> <span class="hljs-title">FallbackInputOutput</span> </span>{

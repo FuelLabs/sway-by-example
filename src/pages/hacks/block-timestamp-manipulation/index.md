@@ -1,6 +1,6 @@
 ---
 title: Block Timestamp Manipulation
-version: 0.56.0
+version: 0.59.0
 description: An example of a Solidity contract vulnerable to block timestamp manipulation
 keywords: [hack, security, block, timestamp, manipulation]
 ---

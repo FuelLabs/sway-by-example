@@ -1,6 +1,6 @@
 ---
 title: WETH Permit
-version: 0.56.0
+version: 0.59.0
 description: An example of WETH permit hack
 keywords: [hack, security, weth, permit]
 ---

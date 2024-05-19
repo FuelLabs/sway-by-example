@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.56.0"
+export const version = "0.59.0"
 export const title = "First Application"
 export const description = "Example of smart contract in Solidity"
 
@@ -21,7 +21,7 @@ export const codes = [
 
 const html = `<p>Here is a simple contract that you can get, increment and decrement the count store in this contract.</p>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.59.0;</span>
 
 <span class="hljs-class"><span class="hljs-keyword">contract</span> <span class="hljs-title">Counter</span> </span>{
     <span class="hljs-keyword">uint256</span> <span class="hljs-keyword">public</span> count;

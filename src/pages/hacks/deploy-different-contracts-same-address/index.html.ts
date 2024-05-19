@@ -1,5 +1,5 @@
 // metadata
-export const version = "0.56.0"
+export const version = "0.59.0"
 export const title = "Deploy Different Contracts at the Same Address"
 export const description =
   "An example of a Solidity contract vulnerable to deploy different contracts at the same address"
@@ -30,7 +30,7 @@ const html = `<p>Contract address deployed with <code>create</code> is computed 
 <p>Hence it is possible to deploy different contracts at the same address if we can somehow reset the <code>nonce</code>.</p>
 <p>Below is an example of how a DAO can be hacked.</p>
 <pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
+<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.59.0;</span>
 
 <span class="hljs-comment">/*
 Called by Alice

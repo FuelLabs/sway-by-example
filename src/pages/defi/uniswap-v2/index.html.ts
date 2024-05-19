@@ -1,271 +1,265 @@
 // metadata
-export const version = "0.56.0"
-export const title = "Uniswap V2 Swap"
-export const description = "Uniswap V2 swap"
+export const version = "0.59.0"
+export const title = "Uniswap V2"
+export const description = "Uniswap V2"
 
-export const keywords = ["defi", "uniswap", "v2", "swap", "amm"]
+export const tempFileName = "uniswapv2.sw"
+export const tempPlaygroundLink = "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=d5f9c08ea503f022c58d77feb4149f35"
 
-export const codes = [
-  {
-    fileName: "UniswapV2SwapExamples.sol",
-    code: "Ly8gU1BEWC1MaWNlbnNlLUlkZW50aWZpZXI6IE1JVApwcmFnbWEgc29saWRpdHkgXjAuOC4yNDsKCmNvbnRyYWN0IFVuaXN3YXBWMlN3YXBFeGFtcGxlcyB7CiAgICBhZGRyZXNzIHByaXZhdGUgY29uc3RhbnQgVU5JU1dBUF9WMl9ST1VURVIgPQogICAgICAgIDB4N2EyNTBkNTYzMEI0Y0Y1Mzk3MzlkRjJDNWRBY2I0YzY1OUYyNDg4RDsKCiAgICBhZGRyZXNzIHByaXZhdGUgY29uc3RhbnQgV0VUSCA9IDB4QzAyYWFBMzliMjIzRkU4RDBBMGU1QzRGMjdlQUQ5MDgzQzc1NkNjMjsKICAgIGFkZHJlc3MgcHJpdmF0ZSBjb25zdGFudCBEQUkgPSAweDZCMTc1NDc0RTg5MDk0QzQ0RGE5OGI5NTRFZWRlQUM0OTUyNzFkMEY7CiAgICBhZGRyZXNzIGNvbnN0YW50IFVTREMgPSAweEEwYjg2OTkxYzYyMThiMzZjMWQxOUQ0YTJlOUViMGNFMzYwNmVCNDg7CgogICAgSVVuaXN3YXBWMlJvdXRlciBwcml2YXRlIHJvdXRlciA9IElVbmlzd2FwVjJSb3V0ZXIoVU5JU1dBUF9WMl9ST1VURVIpOwogICAgSUVSQzIwIHByaXZhdGUgd2V0aCA9IElFUkMyMChXRVRIKTsKICAgIElFUkMyMCBwcml2YXRlIGRhaSA9IElFUkMyMChEQUkpOwoKICAgIC8vIFN3YXAgV0VUSCB0byBEQUkKICAgIGZ1bmN0aW9uIHN3YXBTaW5nbGVIb3BFeGFjdEFtb3VudEluKHVpbnQyNTYgYW1vdW50SW4sIHVpbnQyNTYgYW1vdW50T3V0TWluKQogICAgICAgIGV4dGVybmFsCiAgICAgICAgcmV0dXJucyAodWludDI1NiBhbW91bnRPdXQpCiAgICB7CiAgICAgICAgd2V0aC50cmFuc2ZlckZyb20obXNnLnNlbmRlciwgYWRkcmVzcyh0aGlzKSwgYW1vdW50SW4pOwogICAgICAgIHdldGguYXBwcm92ZShhZGRyZXNzKHJvdXRlciksIGFtb3VudEluKTsKCiAgICAgICAgYWRkcmVzc1tdIG1lbW9yeSBwYXRoOwogICAgICAgIHBhdGggPSBuZXcgYWRkcmVzc1tdKDIpOwogICAgICAgIHBhdGhbMF0gPSBXRVRIOwogICAgICAgIHBhdGhbMV0gPSBEQUk7CgogICAgICAgIHVpbnQyNTZbXSBtZW1vcnkgYW1vdW50cyA9IHJvdXRlci5zd2FwRXhhY3RUb2tlbnNGb3JUb2tlbnMoCiAgICAgICAgICAgIGFtb3VudEluLCBhbW91bnRPdXRNaW4sIHBhdGgsIG1zZy5zZW5kZXIsIGJsb2NrLnRpbWVzdGFtcAogICAgICAgICk7CgogICAgICAgIC8vIGFtb3VudHNbMF0gPSBXRVRIIGFtb3VudCwgYW1vdW50c1sxXSA9IERBSSBhbW91bnQKICAgICAgICByZXR1cm4gYW1vdW50c1sxXTsKICAgIH0KCiAgICAvLyBTd2FwIERBSSAtPiBXRVRIIC0+IFVTREMKICAgIGZ1bmN0aW9uIHN3YXBNdWx0aUhvcEV4YWN0QW1vdW50SW4odWludDI1NiBhbW91bnRJbiwgdWludDI1NiBhbW91bnRPdXRNaW4pCiAgICAgICAgZXh0ZXJuYWwKICAgICAgICByZXR1cm5zICh1aW50MjU2IGFtb3VudE91dCkKICAgIHsKICAgICAgICBkYWkudHJhbnNmZXJGcm9tKG1zZy5zZW5kZXIsIGFkZHJlc3ModGhpcyksIGFtb3VudEluKTsKICAgICAgICBkYWkuYXBwcm92ZShhZGRyZXNzKHJvdXRlciksIGFtb3VudEluKTsKCiAgICAgICAgYWRkcmVzc1tdIG1lbW9yeSBwYXRoOwogICAgICAgIHBhdGggPSBuZXcgYWRkcmVzc1tdKDMpOwogICAgICAgIHBhdGhbMF0gPSBEQUk7CiAgICAgICAgcGF0aFsxXSA9IFdFVEg7CiAgICAgICAgcGF0aFsyXSA9IFVTREM7CgogICAgICAgIHVpbnQyNTZbXSBtZW1vcnkgYW1vdW50cyA9IHJvdXRlci5zd2FwRXhhY3RUb2tlbnNGb3JUb2tlbnMoCiAgICAgICAgICAgIGFtb3VudEluLCBhbW91bnRPdXRNaW4sIHBhdGgsIG1zZy5zZW5kZXIsIGJsb2NrLnRpbWVzdGFtcAogICAgICAgICk7CgogICAgICAgIC8vIGFtb3VudHNbMF0gPSBEQUkgYW1vdW50CiAgICAgICAgLy8gYW1vdW50c1sxXSA9IFdFVEggYW1vdW50CiAgICAgICAgLy8gYW1vdW50c1syXSA9IFVTREMgYW1vdW50CiAgICAgICAgcmV0dXJuIGFtb3VudHNbMl07CiAgICB9CgogICAgLy8gU3dhcCBXRVRIIHRvIERBSQogICAgZnVuY3Rpb24gc3dhcFNpbmdsZUhvcEV4YWN0QW1vdW50T3V0KAogICAgICAgIHVpbnQyNTYgYW1vdW50T3V0RGVzaXJlZCwKICAgICAgICB1aW50MjU2IGFtb3VudEluTWF4CiAgICApIGV4dGVybmFsIHJldHVybnMgKHVpbnQyNTYgYW1vdW50T3V0KSB7CiAgICAgICAgd2V0aC50cmFuc2ZlckZyb20obXNnLnNlbmRlciwgYWRkcmVzcyh0aGlzKSwgYW1vdW50SW5NYXgpOwogICAgICAgIHdldGguYXBwcm92ZShhZGRyZXNzKHJvdXRlciksIGFtb3VudEluTWF4KTsKCiAgICAgICAgYWRkcmVzc1tdIG1lbW9yeSBwYXRoOwogICAgICAgIHBhdGggPSBuZXcgYWRkcmVzc1tdKDIpOwogICAgICAgIHBhdGhbMF0gPSBXRVRIOwogICAgICAgIHBhdGhbMV0gPSBEQUk7CgogICAgICAgIHVpbnQyNTZbXSBtZW1vcnkgYW1vdW50cyA9IHJvdXRlci5zd2FwVG9rZW5zRm9yRXhhY3RUb2tlbnMoCiAgICAgICAgICAgIGFtb3VudE91dERlc2lyZWQsIGFtb3VudEluTWF4LCBwYXRoLCBtc2cuc2VuZGVyLCBibG9jay50aW1lc3RhbXAKICAgICAgICApOwoKICAgICAgICAvLyBSZWZ1bmQgV0VUSCB0byBtc2cuc2VuZGVyCiAgICAgICAgaWYgKGFtb3VudHNbMF0gPCBhbW91bnRJbk1heCkgewogICAgICAgICAgICB3ZXRoLnRyYW5zZmVyKG1zZy5zZW5kZXIsIGFtb3VudEluTWF4IC0gYW1vdW50c1swXSk7CiAgICAgICAgfQoKICAgICAgICByZXR1cm4gYW1vdW50c1sxXTsKICAgIH0KCiAgICAvLyBTd2FwIERBSSAtPiBXRVRIIC0+IFVTREMKICAgIGZ1bmN0aW9uIHN3YXBNdWx0aUhvcEV4YWN0QW1vdW50T3V0KAogICAgICAgIHVpbnQyNTYgYW1vdW50T3V0RGVzaXJlZCwKICAgICAgICB1aW50MjU2IGFtb3VudEluTWF4CiAgICApIGV4dGVybmFsIHJldHVybnMgKHVpbnQyNTYgYW1vdW50T3V0KSB7CiAgICAgICAgZGFpLnRyYW5zZmVyRnJvbShtc2cuc2VuZGVyLCBhZGRyZXNzKHRoaXMpLCBhbW91bnRJbk1heCk7CiAgICAgICAgZGFpLmFwcHJvdmUoYWRkcmVzcyhyb3V0ZXIpLCBhbW91bnRJbk1heCk7CgogICAgICAgIGFkZHJlc3NbXSBtZW1vcnkgcGF0aDsKICAgICAgICBwYXRoID0gbmV3IGFkZHJlc3NbXSgzKTsKICAgICAgICBwYXRoWzBdID0gREFJOwogICAgICAgIHBhdGhbMV0gPSBXRVRIOwogICAgICAgIHBhdGhbMl0gPSBVU0RDOwoKICAgICAgICB1aW50MjU2W10gbWVtb3J5IGFtb3VudHMgPSByb3V0ZXIuc3dhcFRva2Vuc0ZvckV4YWN0VG9rZW5zKAogICAgICAgICAgICBhbW91bnRPdXREZXNpcmVkLCBhbW91bnRJbk1heCwgcGF0aCwgbXNnLnNlbmRlciwgYmxvY2sudGltZXN0YW1wCiAgICAgICAgKTsKCiAgICAgICAgLy8gUmVmdW5kIERBSSB0byBtc2cuc2VuZGVyCiAgICAgICAgaWYgKGFtb3VudHNbMF0gPCBhbW91bnRJbk1heCkgewogICAgICAgICAgICBkYWkudHJhbnNmZXIobXNnLnNlbmRlciwgYW1vdW50SW5NYXggLSBhbW91bnRzWzBdKTsKICAgICAgICB9CgogICAgICAgIHJldHVybiBhbW91bnRzWzJdOwogICAgfQp9CgppbnRlcmZhY2UgSVVuaXN3YXBWMlJvdXRlciB7CiAgICBmdW5jdGlvbiBzd2FwRXhhY3RUb2tlbnNGb3JUb2tlbnMoCiAgICAgICAgdWludDI1NiBhbW91bnRJbiwKICAgICAgICB1aW50MjU2IGFtb3VudE91dE1pbiwKICAgICAgICBhZGRyZXNzW10gY2FsbGRhdGEgcGF0aCwKICAgICAgICBhZGRyZXNzIHRvLAogICAgICAgIHVpbnQyNTYgZGVhZGxpbmUKICAgICkgZXh0ZXJuYWwgcmV0dXJucyAodWludDI1NltdIG1lbW9yeSBhbW91bnRzKTsKCiAgICBmdW5jdGlvbiBzd2FwVG9rZW5zRm9yRXhhY3RUb2tlbnMoCiAgICAgICAgdWludDI1NiBhbW91bnRPdXQsCiAgICAgICAgdWludDI1NiBhbW91bnRJbk1heCwKICAgICAgICBhZGRyZXNzW10gY2FsbGRhdGEgcGF0aCwKICAgICAgICBhZGRyZXNzIHRvLAogICAgICAgIHVpbnQyNTYgZGVhZGxpbmUKICAgICkgZXh0ZXJuYWwgcmV0dXJucyAodWludDI1NltdIG1lbW9yeSBhbW91bnRzKTsKfQoKaW50ZXJmYWNlIElFUkMyMCB7CiAgICBmdW5jdGlvbiB0b3RhbFN1cHBseSgpIGV4dGVybmFsIHZpZXcgcmV0dXJucyAodWludDI1Nik7CiAgICBmdW5jdGlvbiBiYWxhbmNlT2YoYWRkcmVzcyBhY2NvdW50KSBleHRlcm5hbCB2aWV3IHJldHVybnMgKHVpbnQyNTYpOwogICAgZnVuY3Rpb24gdHJhbnNmZXIoYWRkcmVzcyByZWNpcGllbnQsIHVpbnQyNTYgYW1vdW50KQogICAgICAgIGV4dGVybmFsCiAgICAgICAgcmV0dXJucyAoYm9vbCk7CiAgICBmdW5jdGlvbiBhbGxvd2FuY2UoYWRkcmVzcyBvd25lciwgYWRkcmVzcyBzcGVuZGVyKQogICAgICAgIGV4dGVybmFsCiAgICAgICAgdmlldwogICAgICAgIHJldHVybnMgKHVpbnQyNTYpOwogICAgZnVuY3Rpb24gYXBwcm92ZShhZGRyZXNzIHNwZW5kZXIsIHVpbnQyNTYgYW1vdW50KSBleHRlcm5hbCByZXR1cm5zIChib29sKTsKICAgIGZ1bmN0aW9uIHRyYW5zZmVyRnJvbShhZGRyZXNzIHNlbmRlciwgYWRkcmVzcyByZWNpcGllbnQsIHVpbnQyNTYgYW1vdW50KQogICAgICAgIGV4dGVybmFsCiAgICAgICAgcmV0dXJucyAoYm9vbCk7Cn0KCmludGVyZmFjZSBJV0VUSCBpcyBJRVJDMjAgewogICAgZnVuY3Rpb24gZGVwb3NpdCgpIGV4dGVybmFsIHBheWFibGU7CiAgICBmdW5jdGlvbiB3aXRoZHJhdyh1aW50MjU2IGFtb3VudCkgZXh0ZXJuYWw7Cn0K",
-  },
-  {
-    fileName: "UniswapV2SwapExamplesTest.sol",
-    code: "Ly8gU1BEWC1MaWNlbnNlLUlkZW50aWZpZXI6IE1JVApwcmFnbWEgc29saWRpdHkgXjAuOC4yNDsKCmltcG9ydCB7VGVzdCwgY29uc29sZTJ9IGZyb20gImZvcmdlLXN0ZC9UZXN0LnNvbCI7CmltcG9ydCB7CiAgICBVbmlzd2FwVjJTd2FwRXhhbXBsZXMsCiAgICBJRVJDMjAsCiAgICBJV0VUSAp9IGZyb20gIi4uLy4uLy4uL3NyYy9kZWZpL3VuaXN3YXAtdjIvVW5pc3dhcFYyU3dhcEV4YW1wbGVzLnNvbCI7CgphZGRyZXNzIGNvbnN0YW50IFdFVEggPSAweEMwMmFhQTM5YjIyM0ZFOEQwQTBlNUM0RjI3ZUFEOTA4M0M3NTZDYzI7CmFkZHJlc3MgY29uc3RhbnQgREFJID0gMHg2QjE3NTQ3NEU4OTA5NEM0NERhOThiOTU0RWVkZUFDNDk1MjcxZDBGOwphZGRyZXNzIGNvbnN0YW50IFVTREMgPSAweEEwYjg2OTkxYzYyMThiMzZjMWQxOUQ0YTJlOUViMGNFMzYwNmVCNDg7Cgpjb250cmFjdCBVbmlzd2FwVjJTd2FwRXhhbXBsZXNUZXN0IGlzIFRlc3QgewogICAgSVdFVEggcHJpdmF0ZSB3ZXRoID0gSVdFVEgoV0VUSCk7CiAgICBJRVJDMjAgcHJpdmF0ZSBkYWkgPSBJRVJDMjAoREFJKTsKICAgIElFUkMyMCBwcml2YXRlIHVzZGMgPSBJRVJDMjAoVVNEQyk7CgogICAgVW5pc3dhcFYyU3dhcEV4YW1wbGVzIHByaXZhdGUgdW5pID0gbmV3IFVuaXN3YXBWMlN3YXBFeGFtcGxlcygpOwoKICAgIGZ1bmN0aW9uIHNldFVwKCkgcHVibGljIHt9CgogICAgLy8gU3dhcCBXRVRIIC0+IERBSQogICAgZnVuY3Rpb24gdGVzdFN3YXBTaW5nbGVIb3BFeGFjdEFtb3VudEluKCkgcHVibGljIHsKICAgICAgICB1aW50MjU2IHdldGhBbW91bnQgPSAxZTE4OwogICAgICAgIHdldGguZGVwb3NpdHt2YWx1ZTogd2V0aEFtb3VudH0oKTsKICAgICAgICB3ZXRoLmFwcHJvdmUoYWRkcmVzcyh1bmkpLCB3ZXRoQW1vdW50KTsKCiAgICAgICAgdWludDI1NiBkYWlBbW91bnRNaW4gPSAxOwogICAgICAgIHVpbnQyNTYgZGFpQW1vdW50T3V0ID0KICAgICAgICAgICAgdW5pLnN3YXBTaW5nbGVIb3BFeGFjdEFtb3VudEluKHdldGhBbW91bnQsIGRhaUFtb3VudE1pbik7CgogICAgICAgIGNvbnNvbGUyLmxvZygiREFJIiwgZGFpQW1vdW50T3V0KTsKICAgICAgICBhc3NlcnRHZShkYWlBbW91bnRPdXQsIGRhaUFtb3VudE1pbiwgImFtb3VudCBvdXQgPCBtaW4iKTsKICAgIH0KCiAgICAvLyBTd2FwIERBSSAtPiBXRVRIIC0+IFVTREMKICAgIGZ1bmN0aW9uIHRlc3RTd2FwTXVsdGlIb3BFeGFjdEFtb3VudEluKCkgcHVibGljIHsKICAgICAgICAvLyBTd2FwIFdFVEggLT4gREFJCiAgICAgICAgdWludDI1NiB3ZXRoQW1vdW50ID0gMWUxODsKICAgICAgICB3ZXRoLmRlcG9zaXR7dmFsdWU6IHdldGhBbW91bnR9KCk7CiAgICAgICAgd2V0aC5hcHByb3ZlKGFkZHJlc3ModW5pKSwgd2V0aEFtb3VudCk7CgogICAgICAgIHVpbnQyNTYgZGFpQW1vdW50TWluID0gMTsKICAgICAgICB1bmkuc3dhcFNpbmdsZUhvcEV4YWN0QW1vdW50SW4od2V0aEFtb3VudCwgZGFpQW1vdW50TWluKTsKCiAgICAgICAgLy8gU3dhcCBEQUkgLT4gV0VUSCAtPiBVU0RDCiAgICAgICAgdWludDI1NiBkYWlBbW91bnRJbiA9IDFlMTg7CiAgICAgICAgZGFpLmFwcHJvdmUoYWRkcmVzcyh1bmkpLCBkYWlBbW91bnRJbik7CgogICAgICAgIHVpbnQyNTYgdXNkY0Ftb3VudE91dE1pbiA9IDE7CiAgICAgICAgdWludDI1NiB1c2RjQW1vdW50T3V0ID0KICAgICAgICAgICAgdW5pLnN3YXBNdWx0aUhvcEV4YWN0QW1vdW50SW4oZGFpQW1vdW50SW4sIHVzZGNBbW91bnRPdXRNaW4pOwoKICAgICAgICBjb25zb2xlMi5sb2coIlVTREMiLCB1c2RjQW1vdW50T3V0KTsKICAgICAgICBhc3NlcnRHZSh1c2RjQW1vdW50T3V0LCB1c2RjQW1vdW50T3V0TWluLCAiYW1vdW50IG91dCA8IG1pbiIpOwogICAgfQoKICAgIC8vIFN3YXAgV0VUSCAtPiBEQUkKICAgIGZ1bmN0aW9uIHRlc3RTd2FwU2luZ2xlSG9wRXhhY3RBbW91bnRPdXQoKSBwdWJsaWMgewogICAgICAgIHVpbnQyNTYgd2V0aEFtb3VudCA9IDFlMTg7CiAgICAgICAgd2V0aC5kZXBvc2l0e3ZhbHVlOiB3ZXRoQW1vdW50fSgpOwogICAgICAgIHdldGguYXBwcm92ZShhZGRyZXNzKHVuaSksIHdldGhBbW91bnQpOwoKICAgICAgICB1aW50MjU2IGRhaUFtb3VudERlc2lyZWQgPSAxZTE4OwogICAgICAgIHVpbnQyNTYgZGFpQW1vdW50T3V0ID0KICAgICAgICAgICAgdW5pLnN3YXBTaW5nbGVIb3BFeGFjdEFtb3VudE91dChkYWlBbW91bnREZXNpcmVkLCB3ZXRoQW1vdW50KTsKCiAgICAgICAgY29uc29sZTIubG9nKCJEQUkiLCBkYWlBbW91bnRPdXQpOwogICAgICAgIGFzc2VydEVxKAogICAgICAgICAgICBkYWlBbW91bnRPdXQsIGRhaUFtb3VudERlc2lyZWQsICJhbW91bnQgb3V0ICE9IGFtb3VudCBvdXQgZGVzaXJlZCIKICAgICAgICApOwogICAgfQoKICAgIC8vIFN3YXAgREFJIC0+IFdFVEggLT4gVVNEQwogICAgZnVuY3Rpb24gdGVzdFN3YXBNdWx0aUhvcEV4YWN0QW1vdW50T3V0KCkgcHVibGljIHsKICAgICAgICAvLyBTd2FwIFdFVEggLT4gREFJCiAgICAgICAgdWludDI1NiB3ZXRoQW1vdW50ID0gMWUxODsKICAgICAgICB3ZXRoLmRlcG9zaXR7dmFsdWU6IHdldGhBbW91bnR9KCk7CiAgICAgICAgd2V0aC5hcHByb3ZlKGFkZHJlc3ModW5pKSwgd2V0aEFtb3VudCk7CgogICAgICAgIC8vIEJ1eSAxMDAgREFJCiAgICAgICAgdWludDI1NiBkYWlBbW91bnRPdXQgPSAxMDAgKiAxZTE4OwogICAgICAgIHVuaS5zd2FwU2luZ2xlSG9wRXhhY3RBbW91bnRPdXQoZGFpQW1vdW50T3V0LCB3ZXRoQW1vdW50KTsKCiAgICAgICAgLy8gU3dhcCBEQUkgLT4gV0VUSCAtPiBVU0RDCiAgICAgICAgZGFpLmFwcHJvdmUoYWRkcmVzcyh1bmkpLCBkYWlBbW91bnRPdXQpOwoKICAgICAgICB1aW50MjU2IGFtb3VudE91dERlc2lyZWQgPSAxZTY7CiAgICAgICAgdWludDI1NiBhbW91bnRPdXQgPQogICAgICAgICAgICB1bmkuc3dhcE11bHRpSG9wRXhhY3RBbW91bnRPdXQoYW1vdW50T3V0RGVzaXJlZCwgZGFpQW1vdW50T3V0KTsKCiAgICAgICAgY29uc29sZTIubG9nKCJVU0RDIiwgYW1vdW50T3V0KTsKICAgICAgICBhc3NlcnRFcSgKICAgICAgICAgICAgYW1vdW50T3V0LCBhbW91bnRPdXREZXNpcmVkLCAiYW1vdW50IG91dCAhPSBhbW91bnQgb3V0IGRlc2lyZWQiCiAgICAgICAgKTsKICAgIH0KfQo=",
-  },
+export const keywords = [
+    "defi",
+    "uniswap",
+    "v2",
+    "swap",
+    "amm",
 ]
 
-const html = `<p><code>swapExactTokensForTokens</code> sells all tokens for another.</p>
-<p><code>swapTokensForExactTokens</code> buys specific amount of tokens set by the caller.</p>
-<pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
+export const codes = [
+    {
+        fileName: "UniswapV2.rs",
+        code: "Ly8gQ29uc3RhbnQgUHJvZHVjdCBBTU0gLSBVbmlzd2FwIFYyLgpjb250cmFjdDsKCnVzZSBzcmMyMDo6U1JDMjA7CnVzZSBzdGQ6OnsKICAgIHUxMjg6OlUxMjgsCiAgICBoYXNoOjpzaGEyNTYsCiAgICBhc3NldDo6dHJhbnNmZXIsCiAgICBoYXNoOjpIYXNoLAogICAgYXNzZXRfaWQ6OkFzc2V0SWQsCiAgICBhc3NldDo6ewogICAgICAgIGJ1cm4sCiAgICAgICAgbWludF90bywKICAgIH0sCiAgICBjb250cmFjdF9pZDo6Q29udHJhY3RJZCwKICAgIGNhbGxfZnJhbWVzOjp7CiAgICAgICAgbXNnX2Fzc2V0X2lkLAogICAgfSwKICAgIGNvbnRleHQ6Om1zZ19hbW91bnQsCiAgICBzdHJpbmc6OlN0cmluZywKfTsKCmFiaSBDb25zdGFudFN1bUFNTSB7CiAgICAjW3N0b3JhZ2UocmVhZCwgd3JpdGUpLCBwYXlhYmxlXQogICAgZm4gZGVwb3NpdCgpOwoKICAgICNbc3RvcmFnZShyZWFkLCB3cml0ZSldCiAgICBmbiB3aXRoZHJhdyhyZWNpcGllbnQ6IElkZW50aXR5LCBhc3NldDogQXNzZXRJZCk7CgogICAgI1tzdG9yYWdlKHJlYWQpXQogICAgZm4gZ2V0X3Bvb2woYXNzZXRfYTogQXNzZXRJZCkgLT4gT3B0aW9uPFBvb2w+OwoKICAgICNbc3RvcmFnZShyZWFkLCB3cml0ZSksIHBheWFibGVdCiAgICBmbiBhZGRfbGlxdWlkaXR5KGFzc2V0X2E6IEFzc2V0SWQsIGFzc2V0X2I6IEFzc2V0SWQpIC0+IHU2NDsKCiAgICAjW3N0b3JhZ2UocmVhZCwgd3JpdGUpLCBwYXlhYmxlXQogICAgZm4gcmVtb3ZlX2xpcXVpZGl0eShhc3NldF9hOiBBc3NldElkLCBhc3NldF9iOiBBc3NldElkKSAtPiAodTY0LCB1NjQpOwoKICAgICNbc3RvcmFnZShyZWFkLCB3cml0ZSksIHBheWFibGVdCiAgICBmbiBzd2FwKGFzc2V0X2E6IEFzc2V0SWQsIGFzc2V0X2I6IEFzc2V0SWQpIC0+IHU2NDsKfQoKc3RydWN0IFBvb2wgewogICAgcmVzZXJ2ZV9hOiB1NjQsCiAgICByZXNlcnZlX2I6IHU2NCwKICAgIHRvdGFsX3N1cHBseTogdTY0Cn0KCnN0b3JhZ2UgewogICAgdG90YWxfcG9vbHM6IHU2NCA9IDAsCiAgICBwb29sczogU3RvcmFnZU1hcDxBc3NldElkLCBQb29sPiA9IFN0b3JhZ2VNYXAge30sCiAgICBkZXBvc2l0czogU3RvcmFnZU1hcDwoSWRlbnRpdHksIEFzc2V0SWQpLCB1NjQ+ID0gU3RvcmFnZU1hcCB7fSwKfQoKaW1wbCBTUkMyMCBmb3IgQ29udHJhY3QgewogICAgI1tzdG9yYWdlKHJlYWQpXQogICAgZm4gdG90YWxfYXNzZXRzKCkgLT4gdTY0IHsKICAgICAgICBzdG9yYWdlLnRvdGFsX3Bvb2xzLnRyeV9yZWFkKCkudW53cmFwX29yKDApCiAgICB9CgogICAgI1tzdG9yYWdlKHJlYWQpXQogICAgZm4gdG90YWxfc3VwcGx5KGFzc2V0OiBBc3NldElkKSAtPiBPcHRpb248dTY0PiB7CiAgICAgICAgbGV0IHBvb2wgPSBzdG9yYWdlLnBvb2xzLmdldChhc3NldCkudHJ5X3JlYWQoKTsKICAgICAgICAKICAgICAgICBtYXRjaCBwb29sIHsKICAgICAgICAgICAgU29tZSh4KSA9PiBTb21lKHgudG90YWxfc3VwcGx5KSwKICAgICAgICAgICAgTm9uZSA9PiBOb25lLAogICAgICAgIH0KICAgIH0KCiAgICAjW3N0b3JhZ2UocmVhZCldCiAgICBmbiBuYW1lKGFzc2V0OiBBc3NldElkKSAtPiBPcHRpb248U3RyaW5nPiB7CiAgICAgICAgU29tZShTdHJpbmc6OmZyb21fYXNjaWlfc3RyKGZyb21fc3RyX2FycmF5KF9fdG9fc3RyX2FycmF5KCJDb25zdGFudFN1bUFNTSIpKSkpCiAgICB9CgogICAgI1tzdG9yYWdlKHJlYWQpXQogICAgZm4gc3ltYm9sKGFzc2V0OiBBc3NldElkKSAtPiBPcHRpb248U3RyaW5nPiB7CiAgICAgICAgU29tZShTdHJpbmc6OmZyb21fYXNjaWlfc3RyKGZyb21fc3RyX2FycmF5KF9fdG9fc3RyX2FycmF5KCJBTU1MUCIpKSkpCiAgICB9CgogICAgI1tzdG9yYWdlKHJlYWQpXQogICAgZm4gZGVjaW1hbHMoYXNzZXQ6IEFzc2V0SWQpIC0+IE9wdGlvbjx1OD4gewogICAgICAgIFNvbWUoOSkKICAgIH0KfQoKI1tzdG9yYWdlKHJlYWQsIHdyaXRlKSwgcGF5YWJsZV0KZm4gZGVwb3NpdF9vcl9jYWxsKGFzc2V0OiBBc3NldElkKSAtPiB1NjQgewogICAgbWF0Y2ggbXNnX2Ftb3VudCgpID4gMCB7CiAgICAgICAgdHJ1ZSA9PiB7CiAgICAgICAgICAgIHJlcXVpcmUobXNnX2Fzc2V0X2lkKCkgPT0gYXNzZXQsICJpbnZhbGlkIGNhbGxlZCBhc3NldCBpZCIpOwoKICAgICAgICAgICAgbXNnX2Ftb3VudCgpCiAgICAgICAgfSwKICAgICAgICBmYWxzZSA9PiB7CiAgICAgICAgICAgIGxldCBvd25lciA9IG1zZ19zZW5kZXIoKS51bndyYXAoKTsKICAgICAgICAgICAgbGV0IGFtb3VudCA9IHN0b3JhZ2UuZGVwb3NpdHMuZ2V0KChvd25lciwgYXNzZXQpKS50cnlfcmVhZCgpLnVud3JhcF9vcigwKTsKCiAgICAgICAgICAgIGFtb3VudAogICAgICAgIH0KICAgIH0KfQoKZm4gYmlnKHZhbHVlOiB1NjQpIC0+IFUxMjggewogICAgVTEyODo6ZnJvbSgoMCwgdmFsdWUpKQp9CgpmbiBtaW4odmFsdWVfYTogVTEyOCwgdmFsdWVfYjogVTEyOCkgLT4gVTEyOCB7CiAgICBpZiB2YWx1ZV9hID4gdmFsdWVfYiB7CiAgICAgICAgdmFsdWVfYgogICAgfSBlbHNlIHsKICAgICAgICB2YWx1ZV9hCiAgICB9Cn0KCmltcGwgQ29uc3RhbnRTdW1BTU0gZm9yIENvbnRyYWN0IHsKICAgICNbc3RvcmFnZShyZWFkLCB3cml0ZSksIHBheWFibGVdCiAgICBmbiBkZXBvc2l0KCkgewogICAgICAgIHJlcXVpcmUobXNnX2Ftb3VudCgpID49IDAsICJJbmNvcnJlY3QgYW1vdW50IHByb3ZpZGVkIik7CgogICAgICAgIGxldCBvd25lciA9IG1zZ19zZW5kZXIoKS51bndyYXAoKTsKICAgICAgICBsZXQgYXNzZXRfaWQgPSBtc2dfYXNzZXRfaWQoKTsKICAgICAgICBsZXQgYW1vdW50ID0gc3RvcmFnZS5kZXBvc2l0cy5nZXQoKG93bmVyLCBhc3NldF9pZCkpLnRyeV9yZWFkKCkudW53cmFwX29yKDApOwoKICAgICAgICBzdG9yYWdlLmRlcG9zaXRzLmluc2VydCgob3duZXIsIGFzc2V0X2lkKSwgYW1vdW50ICsgbXNnX2Ftb3VudCgpKTsKICAgIH0KCiAgICAjW3N0b3JhZ2UocmVhZCwgd3JpdGUpXQogICAgZm4gd2l0aGRyYXcocmVjaXBpZW50OiBJZGVudGl0eSwgYXNzZXRfaWQ6IEFzc2V0SWQpIHsKICAgICAgICBsZXQgb3duZXIgPSBtc2dfc2VuZGVyKCkudW53cmFwKCk7CiAgICAgICAgbGV0IGJhbGFuY2UgPSBzdG9yYWdlLmRlcG9zaXRzLmdldCgob3duZXIsIGFzc2V0X2lkKSkudHJ5X3JlYWQoKS51bndyYXBfb3IoMCk7CgogICAgICAgIHRyYW5zZmVyKHJlY2lwaWVudCwgYXNzZXRfaWQsIGJhbGFuY2UpOwoKICAgICAgICBzdG9yYWdlLmRlcG9zaXRzLnJlbW92ZSgob3duZXIsIGFzc2V0X2lkKSk7CiAgICB9CgogICAgI1tzdG9yYWdlKHJlYWQsIHdyaXRlKSwgcGF5YWJsZV0KICAgIGZuIHN3YXAoYXNzZXRfYTogQXNzZXRJZCwgYXNzZXRfYjogQXNzZXRJZCkgLT4gdTY0IHsKICAgICAgICByZXF1aXJlKG1zZ19hbW91bnQoKSA+PSAwLCAiSW5jb3JyZWN0IGFtb3VudCBwcm92aWRlZCIpOwoKICAgICAgICBsZXQgb3duZXIgPSBtc2dfc2VuZGVyKCkudW53cmFwKCk7CiAgICAgICAgbGV0IGFtb3VudCA9IGRlcG9zaXRfb3JfY2FsbChhc3NldF9hKTsKCiAgICAgICAgcmVxdWlyZShhc3NldF9hID09IGFzc2V0X2IsICJpbnZhbGlkIHRva2VuIik7CgogICAgICAgIGxldCBzdWJfaWQgPSBzaGEyNTYoKGFzc2V0X2EsIGFzc2V0X2IpKTsKICAgICAgICBsZXQgcG9vbF9pZCA9IEFzc2V0SWQ6Om5ldyhDb250cmFjdElkOjp0aGlzKCksIHN1Yl9pZCk7CiAgICAgICAgbGV0IHBvb2wgPSBzdG9yYWdlLnBvb2xzLmdldChwb29sX2lkKS50cnlfcmVhZCgpLnVud3JhcCgpOwogICAgICAgIAogICAgICAgIGxldCBhbW91bnRfaW4gPSAoKGJpZyhhbW91bnQpICogYmlnKDk5NykpIC8gYmlnKDEwMDApKS5hc191NjQoKS51bndyYXAoKTsKICAgICAgICBsZXQgYW1vdW50X291dCA9ICgoYmlnKHBvb2wucmVzZXJ2ZV9iKSAqIGJpZyhhbW91bnRfaW4pKQogICAgICAgICAgICAvIChiaWcocG9vbC5yZXNlcnZlX2EpICsgYmlnKGFtb3VudF9pbikpKS5hc191NjQoKS51bndyYXAoKTsKCiAgICAgICAgc3RvcmFnZS5wb29scy5pbnNlcnQocG9vbF9pZCwgUG9vbCB7CiAgICAgICAgICAgIHJlc2VydmVfYTogcG9vbC5yZXNlcnZlX2EgKyBhbW91bnRfaW4sCiAgICAgICAgICAgIHJlc2VydmVfYjogcG9vbC5yZXNlcnZlX2IgLSBhbW91bnRfb3V0LAogICAgICAgICAgICB0b3RhbF9zdXBwbHk6IHBvb2wudG90YWxfc3VwcGx5CiAgICAgICAgfSk7CiAgICAgICAgCiAgICAgICAgdHJhbnNmZXIob3duZXIsIGFzc2V0X2IsIGFtb3VudF9vdXQpOwogICAgICAgIAogICAgICAgIGFtb3VudF9vdXQKICAgIH0KCiAgICAjW3N0b3JhZ2UocmVhZCwgd3JpdGUpLCBwYXlhYmxlXQogICAgZm4gYWRkX2xpcXVpZGl0eShhc3NldF9hOiBBc3NldElkLCBhc3NldF9iOiBBc3NldElkKSAtPiB1NjQgewogICAgICAgIGxldCBvd25lciA9IG1zZ19zZW5kZXIoKS51bndyYXAoKTsKICAgICAgICBsZXQgYW1vdW50X2EgPSBkZXBvc2l0X29yX2NhbGwoYXNzZXRfYSk7CgogICAgICAgIGxldCBhbW91bnRfYiA9IHN0b3JhZ2UuZGVwb3NpdHMuZ2V0KChvd25lciwgYXNzZXRfYikpLnRyeV9yZWFkKCkudW53cmFwX29yKDApOwogICAgICAgIGxldCBzdWJfaWQgPSBzaGEyNTYoKGFzc2V0X2EsIGFzc2V0X2IpKTsKICAgICAgICBsZXQgcG9vbF9pZCA9IEFzc2V0SWQ6Om5ldyhDb250cmFjdElkOjp0aGlzKCksIHN1Yl9pZCk7CiAgICAgICAgbGV0IHBvb2wgPSBzdG9yYWdlLnBvb2xzLmdldChwb29sX2lkKS50cnlfcmVhZCgpLnVud3JhcCgpOwogICAgICAgIGxldCBtdXQgc2hhcmVzID0gMDsKCiAgICAgICAgaWYgKHBvb2wucmVzZXJ2ZV9hID4gMCB8fCBwb29sLnJlc2VydmVfYiA+IDApIHsKICAgICAgICAgICAgcmVxdWlyZSgKICAgICAgICAgICAgICAgIGJpZyhwb29sLnJlc2VydmVfYSkgKiBiaWcoYW1vdW50X2EpID09IGJpZyhwb29sLnJlc2VydmVfYikgKiBiaWcoYW1vdW50X2IpLCAieCAvIHkgIT0gZHggLyBkeSIKICAgICAgICAgICAgKTsKICAgICAgICB9CgogICAgICAgIGlmIChwb29sLnRvdGFsX3N1cHBseSA9PSAwKSB7CiAgICAgICAgICAgIHNoYXJlcyA9IChiaWcoYW1vdW50X2EpICogYmlnKGFtb3VudF9iKSkuc3FydCgpLmFzX3U2NCgpLnVud3JhcCgpOwogICAgICAgIH0gZWxzZSB7CiAgICAgICAgICAgIHNoYXJlcyA9IG1pbigKICAgICAgICAgICAgICAgIChiaWcoYW1vdW50X2EpICogYmlnKHBvb2wudG90YWxfc3VwcGx5KSkgLyBiaWcocG9vbC5yZXNlcnZlX2EpLAogICAgICAgICAgICAgICAgKGJpZyhhbW91bnRfYikgKiBiaWcocG9vbC50b3RhbF9zdXBwbHkpKSAvIGJpZyhwb29sLnJlc2VydmVfYikKICAgICAgICAgICAgKS5hc191NjQoKS51bndyYXAoKTsKICAgICAgICB9CgogICAgICAgIHJlcXVpcmUoc2hhcmVzID4gMCwgInNoYXJlcyA9IDAiKTsKCiAgICAgICAgbWludF90byhvd25lciwgc3ViX2lkLCBzaGFyZXMpOwoKICAgICAgICBzdG9yYWdlLnBvb2xzLmluc2VydChwb29sX2lkLCBQb29sIHsKICAgICAgICAgICAgcmVzZXJ2ZV9hOiBhbW91bnRfYSArIHBvb2wucmVzZXJ2ZV9hLAogICAgICAgICAgICByZXNlcnZlX2I6IGFtb3VudF9iIC0gcG9vbC5yZXNlcnZlX2IsCiAgICAgICAgICAgIHRvdGFsX3N1cHBseTogcG9vbC50b3RhbF9zdXBwbHkgKyBzaGFyZXMKICAgICAgICB9KTsKCiAgICAgICAgc2hhcmVzCiAgICB9CgogICAgI1tzdG9yYWdlKHJlYWQsIHdyaXRlKSwgcGF5YWJsZV0KICAgIGZuIHJlbW92ZV9saXF1aWRpdHkoYXNzZXRfYTogQXNzZXRJZCwgYXNzZXRfYjogQXNzZXRJZCkgLT4gKHU2NCwgdTY0KSB7CiAgICAgICAgbGV0IG93bmVyID0gbXNnX3NlbmRlcigpLnVud3JhcCgpOwogICAgICAgIGxldCBzdWJfaWQgPSBzaGEyNTYoKGFzc2V0X2EsIGFzc2V0X2IpKTsKICAgICAgICBsZXQgcG9vbF9pZCA9IEFzc2V0SWQ6Om5ldyhDb250cmFjdElkOjp0aGlzKCksIHN1Yl9pZCk7CgogICAgICAgIGxldCBzaGFyZXMgPSBkZXBvc2l0X29yX2NhbGwocG9vbF9pZCk7CiAgICAgICAgbGV0IHBvb2wgPSBzdG9yYWdlLnBvb2xzLmdldChwb29sX2lkKS50cnlfcmVhZCgpLnVud3JhcCgpOwogICAgICAgIGxldCBhbW91bnRfYSA9ICgoYmlnKHNoYXJlcykgKiBiaWcocG9vbC5yZXNlcnZlX2EpKSAvIGJpZyhwb29sLnRvdGFsX3N1cHBseSkpLmFzX3U2NCgpLnVud3JhcCgpOwogICAgICAgIGxldCBhbW91bnRfYiA9ICgoYmlnKHNoYXJlcykgKiBiaWcocG9vbC5yZXNlcnZlX2IpKSAvIGJpZyhwb29sLnRvdGFsX3N1cHBseSkpLmFzX3U2NCgpLnVud3JhcCgpOwoKICAgICAgICByZXF1aXJlKGFtb3VudF9hID4gMCAmJiBhbW91bnRfYiA+IDAsICJhbW91bnQwIG9yIGFtb3VudDEgPSAwIik7CgogICAgICAgIGJ1cm4oc3ViX2lkLCBzaGFyZXMpOwoKICAgICAgICBzdG9yYWdlLnBvb2xzLmluc2VydChwb29sX2lkLCBQb29sIHsKICAgICAgICAgICAgcmVzZXJ2ZV9hOiBwb29sLnJlc2VydmVfYSAtIGFtb3VudF9hLAogICAgICAgICAgICByZXNlcnZlX2I6IHBvb2wucmVzZXJ2ZV9iIC0gYW1vdW50X2IsCiAgICAgICAgICAgIHRvdGFsX3N1cHBseTogcG9vbC50b3RhbF9zdXBwbHkgLSBzaGFyZXMKICAgICAgICB9KTsKCiAgICAgICAgaWYgKGFtb3VudF9hID4gMCkgewogICAgICAgICAgICB0cmFuc2Zlcihvd25lciwgYXNzZXRfYSwgYW1vdW50X2EpOwogICAgICAgIH0KICAgICAgICBpZiAoYW1vdW50X2IgPiAwKSB7CiAgICAgICAgICAgIHRyYW5zZmVyKG93bmVyLCBhc3NldF9iLCBhbW91bnRfYik7CiAgICAgICAgfQogICAgICAgIAogICAgICAgIChhbW91bnRfYSwgYW1vdW50X2IpCiAgICB9CgogICAgI1tzdG9yYWdlKHJlYWQpXQogICAgZm4gZ2V0X3Bvb2woYXNzZXRfaWQ6IEFzc2V0SWQpIC0+IE9wdGlvbjxQb29sPiB7CiAgICAgICAgc3RvcmFnZS5wb29scy5nZXQoYXNzZXRfaWQpLnRyeV9yZWFkKCkKICAgIH0KfQo=",
+    },
+]
 
-<span class="hljs-class"><span class="hljs-keyword">contract</span> <span class="hljs-title">UniswapV2SwapExamples</span> </span>{
-    <span class="hljs-keyword">address</span> <span class="hljs-keyword">private</span> <span class="hljs-keyword">constant</span> UNISWAP_V2_ROUTER <span class="hljs-operator">=</span>
-        <span class="hljs-number">0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D</span>;
+const html = `<p>Constant Product AMM (unaudited) in Sway</p>
+<pre><code class="language-rust"><span class="hljs-comment">// Constant Product AMM - Uniswap V2.</span>
+contract;
 
-    <span class="hljs-keyword">address</span> <span class="hljs-keyword">private</span> <span class="hljs-keyword">constant</span> WETH <span class="hljs-operator">=</span> <span class="hljs-number">0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2</span>;
-    <span class="hljs-keyword">address</span> <span class="hljs-keyword">private</span> <span class="hljs-keyword">constant</span> DAI <span class="hljs-operator">=</span> <span class="hljs-number">0x6B175474E89094C44Da98b954EedeAC495271d0F</span>;
-    <span class="hljs-keyword">address</span> <span class="hljs-keyword">constant</span> USDC <span class="hljs-operator">=</span> <span class="hljs-number">0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48</span>;
+<span class="hljs-keyword">use</span> src20::SRC20;
+<span class="hljs-keyword">use</span> std::{
+    <span class="hljs-type">u128</span>::U128,
+    hash::sha256,
+    asset::transfer,
+    hash::Hash,
+    asset_id::AssetId,
+    asset::{
+        burn,
+        mint_to,
+    },
+    contract_id::ContractId,
+    call_frames::{
+        msg_asset_id,
+    },
+    context::msg_amount,
+    string::<span class="hljs-type">String</span>,
+};
 
-    IUniswapV2Router <span class="hljs-keyword">private</span> router <span class="hljs-operator">=</span> IUniswapV2Router(UNISWAP_V2_ROUTER);
-    IERC20 <span class="hljs-keyword">private</span> weth <span class="hljs-operator">=</span> IERC20(WETH);
-    IERC20 <span class="hljs-keyword">private</span> dai <span class="hljs-operator">=</span> IERC20(DAI);
+abi ConstantSumAMM {
+    <span class="hljs-meta">#[storage(read, write), payable]</span>
+    <span class="hljs-keyword">fn</span> <span class="hljs-title function_">deposit</span>();
 
-    <span class="hljs-comment">// Swap WETH to DAI</span>
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">swapSingleHopExactAmountIn</span>(<span class="hljs-params"><span class="hljs-keyword">uint256</span> amountIn, <span class="hljs-keyword">uint256</span> amountOutMin</span>)
-        <span class="hljs-title"><span class="hljs-keyword">external</span></span>
-        <span class="hljs-title"><span class="hljs-keyword">returns</span></span> (<span class="hljs-params"><span class="hljs-keyword">uint256</span> amountOut</span>)
-    </span>{
-        weth.transferFrom(<span class="hljs-built_in">msg</span>.<span class="hljs-built_in">sender</span>, <span class="hljs-keyword">address</span>(<span class="hljs-built_in">this</span>), amountIn);
-        weth.approve(<span class="hljs-keyword">address</span>(router), amountIn);
+    <span class="hljs-meta">#[storage(read, write)]</span>
+    <span class="hljs-keyword">fn</span> <span class="hljs-title function_">withdraw</span>(recipient: Identity, asset: AssetId);
 
-        <span class="hljs-keyword">address</span>[] <span class="hljs-keyword">memory</span> path;
-        path <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-keyword">address</span>[](<span class="hljs-number">2</span>);
-        path[<span class="hljs-number">0</span>] <span class="hljs-operator">=</span> WETH;
-        path[<span class="hljs-number">1</span>] <span class="hljs-operator">=</span> DAI;
+    <span class="hljs-meta">#[storage(read)]</span>
+    <span class="hljs-keyword">fn</span> <span class="hljs-title function_">get_pool</span>(asset_a: AssetId) <span class="hljs-punctuation">-&gt;</span> <span class="hljs-type">Option</span>&lt;Pool&gt;;
 
-        <span class="hljs-keyword">uint256</span>[] <span class="hljs-keyword">memory</span> amounts <span class="hljs-operator">=</span> router.swapExactTokensForTokens(
-            amountIn, amountOutMin, path, <span class="hljs-built_in">msg</span>.<span class="hljs-built_in">sender</span>, <span class="hljs-built_in">block</span>.<span class="hljs-built_in">timestamp</span>
-        );
+    <span class="hljs-meta">#[storage(read, write), payable]</span>
+    <span class="hljs-keyword">fn</span> <span class="hljs-title function_">add_liquidity</span>(asset_a: AssetId, asset_b: AssetId) <span class="hljs-punctuation">-&gt;</span> <span class="hljs-type">u64</span>;
 
-        <span class="hljs-comment">// amounts[0] = WETH amount, amounts[1] = DAI amount</span>
-        <span class="hljs-keyword">return</span> amounts[<span class="hljs-number">1</span>];
+    <span class="hljs-meta">#[storage(read, write), payable]</span>
+    <span class="hljs-keyword">fn</span> <span class="hljs-title function_">remove_liquidity</span>(asset_a: AssetId, asset_b: AssetId) <span class="hljs-punctuation">-&gt;</span> (<span class="hljs-type">u64</span>, <span class="hljs-type">u64</span>);
+
+    <span class="hljs-meta">#[storage(read, write), payable]</span>
+    <span class="hljs-keyword">fn</span> <span class="hljs-title function_">swap</span>(asset_a: AssetId, asset_b: AssetId) <span class="hljs-punctuation">-&gt;</span> <span class="hljs-type">u64</span>;
+}
+
+<span class="hljs-keyword">struct</span> <span class="hljs-title class_">Pool</span> {
+    reserve_a: <span class="hljs-type">u64</span>,
+    reserve_b: <span class="hljs-type">u64</span>,
+    total_supply: <span class="hljs-type">u64</span>
+}
+
+storage {
+    total_pools: <span class="hljs-type">u64</span> = <span class="hljs-number">0</span>,
+    pools: StorageMap&lt;AssetId, Pool&gt; = StorageMap {},
+    deposits: StorageMap&lt;(Identity, AssetId), <span class="hljs-type">u64</span>&gt; = StorageMap {},
+}
+
+<span class="hljs-keyword">impl</span> <span class="hljs-title class_">SRC20</span> <span class="hljs-keyword">for</span> <span class="hljs-title class_">Contract</span> {
+    <span class="hljs-meta">#[storage(read)]</span>
+    <span class="hljs-keyword">fn</span> <span class="hljs-title function_">total_assets</span>() <span class="hljs-punctuation">-&gt;</span> <span class="hljs-type">u64</span> {
+        storage.total_pools.<span class="hljs-title function_ invoke__">try_read</span>().<span class="hljs-title function_ invoke__">unwrap_or</span>(<span class="hljs-number">0</span>)
     }
 
-    <span class="hljs-comment">// Swap DAI -&gt; WETH -&gt; USDC</span>
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">swapMultiHopExactAmountIn</span>(<span class="hljs-params"><span class="hljs-keyword">uint256</span> amountIn, <span class="hljs-keyword">uint256</span> amountOutMin</span>)
-        <span class="hljs-title"><span class="hljs-keyword">external</span></span>
-        <span class="hljs-title"><span class="hljs-keyword">returns</span></span> (<span class="hljs-params"><span class="hljs-keyword">uint256</span> amountOut</span>)
-    </span>{
-        dai.transferFrom(<span class="hljs-built_in">msg</span>.<span class="hljs-built_in">sender</span>, <span class="hljs-keyword">address</span>(<span class="hljs-built_in">this</span>), amountIn);
-        dai.approve(<span class="hljs-keyword">address</span>(router), amountIn);
-
-        <span class="hljs-keyword">address</span>[] <span class="hljs-keyword">memory</span> path;
-        path <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-keyword">address</span>[](<span class="hljs-number">3</span>);
-        path[<span class="hljs-number">0</span>] <span class="hljs-operator">=</span> DAI;
-        path[<span class="hljs-number">1</span>] <span class="hljs-operator">=</span> WETH;
-        path[<span class="hljs-number">2</span>] <span class="hljs-operator">=</span> USDC;
-
-        <span class="hljs-keyword">uint256</span>[] <span class="hljs-keyword">memory</span> amounts <span class="hljs-operator">=</span> router.swapExactTokensForTokens(
-            amountIn, amountOutMin, path, <span class="hljs-built_in">msg</span>.<span class="hljs-built_in">sender</span>, <span class="hljs-built_in">block</span>.<span class="hljs-built_in">timestamp</span>
-        );
-
-        <span class="hljs-comment">// amounts[0] = DAI amount</span>
-        <span class="hljs-comment">// amounts[1] = WETH amount</span>
-        <span class="hljs-comment">// amounts[2] = USDC amount</span>
-        <span class="hljs-keyword">return</span> amounts[<span class="hljs-number">2</span>];
+    <span class="hljs-meta">#[storage(read)]</span>
+    <span class="hljs-keyword">fn</span> <span class="hljs-title function_">total_supply</span>(asset: AssetId) <span class="hljs-punctuation">-&gt;</span> <span class="hljs-type">Option</span>&lt;<span class="hljs-type">u64</span>&gt; {
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">pool</span> = storage.pools.<span class="hljs-title function_ invoke__">get</span>(asset).<span class="hljs-title function_ invoke__">try_read</span>();
+        
+        <span class="hljs-keyword">match</span> pool {
+            <span class="hljs-title function_ invoke__">Some</span>(x) =&gt; <span class="hljs-title function_ invoke__">Some</span>(x.total_supply),
+            <span class="hljs-literal">None</span> =&gt; <span class="hljs-literal">None</span>,
+        }
     }
 
-    <span class="hljs-comment">// Swap WETH to DAI</span>
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">swapSingleHopExactAmountOut</span>(<span class="hljs-params">
-        <span class="hljs-keyword">uint256</span> amountOutDesired,
-        <span class="hljs-keyword">uint256</span> amountInMax
-    </span>) <span class="hljs-title"><span class="hljs-keyword">external</span></span> <span class="hljs-title"><span class="hljs-keyword">returns</span></span> (<span class="hljs-params"><span class="hljs-keyword">uint256</span> amountOut</span>) </span>{
-        weth.transferFrom(<span class="hljs-built_in">msg</span>.<span class="hljs-built_in">sender</span>, <span class="hljs-keyword">address</span>(<span class="hljs-built_in">this</span>), amountInMax);
-        weth.approve(<span class="hljs-keyword">address</span>(router), amountInMax);
+    <span class="hljs-meta">#[storage(read)]</span>
+    <span class="hljs-keyword">fn</span> <span class="hljs-title function_">name</span>(asset: AssetId) <span class="hljs-punctuation">-&gt;</span> <span class="hljs-type">Option</span>&lt;<span class="hljs-type">String</span>&gt; {
+        <span class="hljs-title function_ invoke__">Some</span>(<span class="hljs-type">String</span>::<span class="hljs-title function_ invoke__">from_ascii_str</span>(<span class="hljs-title function_ invoke__">from_str_array</span>(__to_str_array(<span class="hljs-string">"ConstantSumAMM"</span>))))
+    }
 
-        <span class="hljs-keyword">address</span>[] <span class="hljs-keyword">memory</span> path;
-        path <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-keyword">address</span>[](<span class="hljs-number">2</span>);
-        path[<span class="hljs-number">0</span>] <span class="hljs-operator">=</span> WETH;
-        path[<span class="hljs-number">1</span>] <span class="hljs-operator">=</span> DAI;
+    <span class="hljs-meta">#[storage(read)]</span>
+    <span class="hljs-keyword">fn</span> <span class="hljs-title function_">symbol</span>(asset: AssetId) <span class="hljs-punctuation">-&gt;</span> <span class="hljs-type">Option</span>&lt;<span class="hljs-type">String</span>&gt; {
+        <span class="hljs-title function_ invoke__">Some</span>(<span class="hljs-type">String</span>::<span class="hljs-title function_ invoke__">from_ascii_str</span>(<span class="hljs-title function_ invoke__">from_str_array</span>(__to_str_array(<span class="hljs-string">"AMMLP"</span>))))
+    }
 
-        <span class="hljs-keyword">uint256</span>[] <span class="hljs-keyword">memory</span> amounts <span class="hljs-operator">=</span> router.swapTokensForExactTokens(
-            amountOutDesired, amountInMax, path, <span class="hljs-built_in">msg</span>.<span class="hljs-built_in">sender</span>, <span class="hljs-built_in">block</span>.<span class="hljs-built_in">timestamp</span>
-        );
+    <span class="hljs-meta">#[storage(read)]</span>
+    <span class="hljs-keyword">fn</span> <span class="hljs-title function_">decimals</span>(asset: AssetId) <span class="hljs-punctuation">-&gt;</span> <span class="hljs-type">Option</span>&lt;<span class="hljs-type">u8</span>&gt; {
+        <span class="hljs-title function_ invoke__">Some</span>(<span class="hljs-number">9</span>)
+    }
+}
 
-        <span class="hljs-comment">// Refund WETH to msg.sender</span>
-        <span class="hljs-keyword">if</span> (amounts[<span class="hljs-number">0</span>] <span class="hljs-operator">&lt;</span> amountInMax) {
-            weth.<span class="hljs-built_in">transfer</span>(<span class="hljs-built_in">msg</span>.<span class="hljs-built_in">sender</span>, amountInMax <span class="hljs-operator">-</span> amounts[<span class="hljs-number">0</span>]);
+<span class="hljs-meta">#[storage(read, write), payable]</span>
+<span class="hljs-keyword">fn</span> <span class="hljs-title function_">deposit_or_call</span>(asset: AssetId) <span class="hljs-punctuation">-&gt;</span> <span class="hljs-type">u64</span> {
+    <span class="hljs-keyword">match</span> <span class="hljs-title function_ invoke__">msg_amount</span>() &gt; <span class="hljs-number">0</span> {
+        <span class="hljs-literal">true</span> =&gt; {
+            <span class="hljs-title function_ invoke__">require</span>(<span class="hljs-title function_ invoke__">msg_asset_id</span>() == asset, <span class="hljs-string">"invalid called asset id"</span>);
+
+            <span class="hljs-title function_ invoke__">msg_amount</span>()
+        },
+        <span class="hljs-literal">false</span> =&gt; {
+            <span class="hljs-keyword">let</span> <span class="hljs-variable">owner</span> = <span class="hljs-title function_ invoke__">msg_sender</span>().<span class="hljs-title function_ invoke__">unwrap</span>();
+            <span class="hljs-keyword">let</span> <span class="hljs-variable">amount</span> = storage.deposits.<span class="hljs-title function_ invoke__">get</span>((owner, asset)).<span class="hljs-title function_ invoke__">try_read</span>().<span class="hljs-title function_ invoke__">unwrap_or</span>(<span class="hljs-number">0</span>);
+
+            amount
+        }
+    }
+}
+
+<span class="hljs-keyword">fn</span> <span class="hljs-title function_">big</span>(value: <span class="hljs-type">u64</span>) <span class="hljs-punctuation">-&gt;</span> U128 {
+    U128::<span class="hljs-title function_ invoke__">from</span>((<span class="hljs-number">0</span>, value))
+}
+
+<span class="hljs-keyword">fn</span> <span class="hljs-title function_">min</span>(value_a: U128, value_b: U128) <span class="hljs-punctuation">-&gt;</span> U128 {
+    <span class="hljs-keyword">if</span> value_a &gt; value_b {
+        value_b
+    } <span class="hljs-keyword">else</span> {
+        value_a
+    }
+}
+
+<span class="hljs-keyword">impl</span> <span class="hljs-title class_">ConstantSumAMM</span> <span class="hljs-keyword">for</span> <span class="hljs-title class_">Contract</span> {
+    <span class="hljs-meta">#[storage(read, write), payable]</span>
+    <span class="hljs-keyword">fn</span> <span class="hljs-title function_">deposit</span>() {
+        <span class="hljs-title function_ invoke__">require</span>(<span class="hljs-title function_ invoke__">msg_amount</span>() &gt;= <span class="hljs-number">0</span>, <span class="hljs-string">"Incorrect amount provided"</span>);
+
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">owner</span> = <span class="hljs-title function_ invoke__">msg_sender</span>().<span class="hljs-title function_ invoke__">unwrap</span>();
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">asset_id</span> = <span class="hljs-title function_ invoke__">msg_asset_id</span>();
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">amount</span> = storage.deposits.<span class="hljs-title function_ invoke__">get</span>((owner, asset_id)).<span class="hljs-title function_ invoke__">try_read</span>().<span class="hljs-title function_ invoke__">unwrap_or</span>(<span class="hljs-number">0</span>);
+
+        storage.deposits.<span class="hljs-title function_ invoke__">insert</span>((owner, asset_id), amount + <span class="hljs-title function_ invoke__">msg_amount</span>());
+    }
+
+    <span class="hljs-meta">#[storage(read, write)]</span>
+    <span class="hljs-keyword">fn</span> <span class="hljs-title function_">withdraw</span>(recipient: Identity, asset_id: AssetId) {
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">owner</span> = <span class="hljs-title function_ invoke__">msg_sender</span>().<span class="hljs-title function_ invoke__">unwrap</span>();
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">balance</span> = storage.deposits.<span class="hljs-title function_ invoke__">get</span>((owner, asset_id)).<span class="hljs-title function_ invoke__">try_read</span>().<span class="hljs-title function_ invoke__">unwrap_or</span>(<span class="hljs-number">0</span>);
+
+        <span class="hljs-title function_ invoke__">transfer</span>(recipient, asset_id, balance);
+
+        storage.deposits.<span class="hljs-title function_ invoke__">remove</span>((owner, asset_id));
+    }
+
+    <span class="hljs-meta">#[storage(read, write), payable]</span>
+    <span class="hljs-keyword">fn</span> <span class="hljs-title function_">swap</span>(asset_a: AssetId, asset_b: AssetId) <span class="hljs-punctuation">-&gt;</span> <span class="hljs-type">u64</span> {
+        <span class="hljs-title function_ invoke__">require</span>(<span class="hljs-title function_ invoke__">msg_amount</span>() &gt;= <span class="hljs-number">0</span>, <span class="hljs-string">"Incorrect amount provided"</span>);
+
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">owner</span> = <span class="hljs-title function_ invoke__">msg_sender</span>().<span class="hljs-title function_ invoke__">unwrap</span>();
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">amount</span> = <span class="hljs-title function_ invoke__">deposit_or_call</span>(asset_a);
+
+        <span class="hljs-title function_ invoke__">require</span>(asset_a == asset_b, <span class="hljs-string">"invalid token"</span>);
+
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">sub_id</span> = <span class="hljs-title function_ invoke__">sha256</span>((asset_a, asset_b));
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">pool_id</span> = AssetId::<span class="hljs-title function_ invoke__">new</span>(ContractId::<span class="hljs-title function_ invoke__">this</span>(), sub_id);
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">pool</span> = storage.pools.<span class="hljs-title function_ invoke__">get</span>(pool_id).<span class="hljs-title function_ invoke__">try_read</span>().<span class="hljs-title function_ invoke__">unwrap</span>();
+        
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">amount_in</span> = ((<span class="hljs-title function_ invoke__">big</span>(amount) * <span class="hljs-title function_ invoke__">big</span>(<span class="hljs-number">997</span>)) / <span class="hljs-title function_ invoke__">big</span>(<span class="hljs-number">1000</span>)).<span class="hljs-title function_ invoke__">as_u64</span>().<span class="hljs-title function_ invoke__">unwrap</span>();
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">amount_out</span> = ((<span class="hljs-title function_ invoke__">big</span>(pool.reserve_b) * <span class="hljs-title function_ invoke__">big</span>(amount_in))
+            / (<span class="hljs-title function_ invoke__">big</span>(pool.reserve_a) + <span class="hljs-title function_ invoke__">big</span>(amount_in))).<span class="hljs-title function_ invoke__">as_u64</span>().<span class="hljs-title function_ invoke__">unwrap</span>();
+
+        storage.pools.<span class="hljs-title function_ invoke__">insert</span>(pool_id, Pool {
+            reserve_a: pool.reserve_a + amount_in,
+            reserve_b: pool.reserve_b - amount_out,
+            total_supply: pool.total_supply
+        });
+        
+        <span class="hljs-title function_ invoke__">transfer</span>(owner, asset_b, amount_out);
+        
+        amount_out
+    }
+
+    <span class="hljs-meta">#[storage(read, write), payable]</span>
+    <span class="hljs-keyword">fn</span> <span class="hljs-title function_">add_liquidity</span>(asset_a: AssetId, asset_b: AssetId) <span class="hljs-punctuation">-&gt;</span> <span class="hljs-type">u64</span> {
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">owner</span> = <span class="hljs-title function_ invoke__">msg_sender</span>().<span class="hljs-title function_ invoke__">unwrap</span>();
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">amount_a</span> = <span class="hljs-title function_ invoke__">deposit_or_call</span>(asset_a);
+
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">amount_b</span> = storage.deposits.<span class="hljs-title function_ invoke__">get</span>((owner, asset_b)).<span class="hljs-title function_ invoke__">try_read</span>().<span class="hljs-title function_ invoke__">unwrap_or</span>(<span class="hljs-number">0</span>);
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">sub_id</span> = <span class="hljs-title function_ invoke__">sha256</span>((asset_a, asset_b));
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">pool_id</span> = AssetId::<span class="hljs-title function_ invoke__">new</span>(ContractId::<span class="hljs-title function_ invoke__">this</span>(), sub_id);
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">pool</span> = storage.pools.<span class="hljs-title function_ invoke__">get</span>(pool_id).<span class="hljs-title function_ invoke__">try_read</span>().<span class="hljs-title function_ invoke__">unwrap</span>();
+        <span class="hljs-keyword">let</span> <span class="hljs-keyword">mut </span><span class="hljs-variable">shares</span> = <span class="hljs-number">0</span>;
+
+        <span class="hljs-keyword">if</span> (pool.reserve_a &gt; <span class="hljs-number">0</span> || pool.reserve_b &gt; <span class="hljs-number">0</span>) {
+            <span class="hljs-title function_ invoke__">require</span>(
+                <span class="hljs-title function_ invoke__">big</span>(pool.reserve_a) * <span class="hljs-title function_ invoke__">big</span>(amount_a) == <span class="hljs-title function_ invoke__">big</span>(pool.reserve_b) * <span class="hljs-title function_ invoke__">big</span>(amount_b), <span class="hljs-string">"x / y != dx / dy"</span>
+            );
         }
 
-        <span class="hljs-keyword">return</span> amounts[<span class="hljs-number">1</span>];
-    }
-
-    <span class="hljs-comment">// Swap DAI -&gt; WETH -&gt; USDC</span>
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">swapMultiHopExactAmountOut</span>(<span class="hljs-params">
-        <span class="hljs-keyword">uint256</span> amountOutDesired,
-        <span class="hljs-keyword">uint256</span> amountInMax
-    </span>) <span class="hljs-title"><span class="hljs-keyword">external</span></span> <span class="hljs-title"><span class="hljs-keyword">returns</span></span> (<span class="hljs-params"><span class="hljs-keyword">uint256</span> amountOut</span>) </span>{
-        dai.transferFrom(<span class="hljs-built_in">msg</span>.<span class="hljs-built_in">sender</span>, <span class="hljs-keyword">address</span>(<span class="hljs-built_in">this</span>), amountInMax);
-        dai.approve(<span class="hljs-keyword">address</span>(router), amountInMax);
-
-        <span class="hljs-keyword">address</span>[] <span class="hljs-keyword">memory</span> path;
-        path <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-keyword">address</span>[](<span class="hljs-number">3</span>);
-        path[<span class="hljs-number">0</span>] <span class="hljs-operator">=</span> DAI;
-        path[<span class="hljs-number">1</span>] <span class="hljs-operator">=</span> WETH;
-        path[<span class="hljs-number">2</span>] <span class="hljs-operator">=</span> USDC;
-
-        <span class="hljs-keyword">uint256</span>[] <span class="hljs-keyword">memory</span> amounts <span class="hljs-operator">=</span> router.swapTokensForExactTokens(
-            amountOutDesired, amountInMax, path, <span class="hljs-built_in">msg</span>.<span class="hljs-built_in">sender</span>, <span class="hljs-built_in">block</span>.<span class="hljs-built_in">timestamp</span>
-        );
-
-        <span class="hljs-comment">// Refund DAI to msg.sender</span>
-        <span class="hljs-keyword">if</span> (amounts[<span class="hljs-number">0</span>] <span class="hljs-operator">&lt;</span> amountInMax) {
-            dai.<span class="hljs-built_in">transfer</span>(<span class="hljs-built_in">msg</span>.<span class="hljs-built_in">sender</span>, amountInMax <span class="hljs-operator">-</span> amounts[<span class="hljs-number">0</span>]);
+        <span class="hljs-keyword">if</span> (pool.total_supply == <span class="hljs-number">0</span>) {
+            shares = (<span class="hljs-title function_ invoke__">big</span>(amount_a) * <span class="hljs-title function_ invoke__">big</span>(amount_b)).<span class="hljs-title function_ invoke__">sqrt</span>().<span class="hljs-title function_ invoke__">as_u64</span>().<span class="hljs-title function_ invoke__">unwrap</span>();
+        } <span class="hljs-keyword">else</span> {
+            shares = <span class="hljs-title function_ invoke__">min</span>(
+                (<span class="hljs-title function_ invoke__">big</span>(amount_a) * <span class="hljs-title function_ invoke__">big</span>(pool.total_supply)) / <span class="hljs-title function_ invoke__">big</span>(pool.reserve_a),
+                (<span class="hljs-title function_ invoke__">big</span>(amount_b) * <span class="hljs-title function_ invoke__">big</span>(pool.total_supply)) / <span class="hljs-title function_ invoke__">big</span>(pool.reserve_b)
+            ).<span class="hljs-title function_ invoke__">as_u64</span>().<span class="hljs-title function_ invoke__">unwrap</span>();
         }
 
-        <span class="hljs-keyword">return</span> amounts[<span class="hljs-number">2</span>];
-    }
-}
+        <span class="hljs-title function_ invoke__">require</span>(shares &gt; <span class="hljs-number">0</span>, <span class="hljs-string">"shares = 0"</span>);
 
-<span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">IUniswapV2Router</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">swapExactTokensForTokens</span>(<span class="hljs-params">
-        <span class="hljs-keyword">uint256</span> amountIn,
-        <span class="hljs-keyword">uint256</span> amountOutMin,
-        <span class="hljs-keyword">address</span>[] <span class="hljs-keyword">calldata</span> path,
-        <span class="hljs-keyword">address</span> to,
-        <span class="hljs-keyword">uint256</span> deadline
-    </span>) <span class="hljs-title"><span class="hljs-keyword">external</span></span> <span class="hljs-title"><span class="hljs-keyword">returns</span></span> (<span class="hljs-params"><span class="hljs-keyword">uint256</span>[] <span class="hljs-keyword">memory</span> amounts</span>)</span>;
+        <span class="hljs-title function_ invoke__">mint_to</span>(owner, sub_id, shares);
 
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">swapTokensForExactTokens</span>(<span class="hljs-params">
-        <span class="hljs-keyword">uint256</span> amountOut,
-        <span class="hljs-keyword">uint256</span> amountInMax,
-        <span class="hljs-keyword">address</span>[] <span class="hljs-keyword">calldata</span> path,
-        <span class="hljs-keyword">address</span> to,
-        <span class="hljs-keyword">uint256</span> deadline
-    </span>) <span class="hljs-title"><span class="hljs-keyword">external</span></span> <span class="hljs-title"><span class="hljs-keyword">returns</span></span> (<span class="hljs-params"><span class="hljs-keyword">uint256</span>[] <span class="hljs-keyword">memory</span> amounts</span>)</span>;
-}
+        storage.pools.<span class="hljs-title function_ invoke__">insert</span>(pool_id, Pool {
+            reserve_a: amount_a + pool.reserve_a,
+            reserve_b: amount_b - pool.reserve_b,
+            total_supply: pool.total_supply + shares
+        });
 
-<span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">IERC20</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">totalSupply</span>(<span class="hljs-params"></span>) <span class="hljs-title"><span class="hljs-keyword">external</span></span> <span class="hljs-title"><span class="hljs-keyword">view</span></span> <span class="hljs-title"><span class="hljs-keyword">returns</span></span> (<span class="hljs-params"><span class="hljs-keyword">uint256</span></span>)</span>;
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">balanceOf</span>(<span class="hljs-params"><span class="hljs-keyword">address</span> account</span>) <span class="hljs-title"><span class="hljs-keyword">external</span></span> <span class="hljs-title"><span class="hljs-keyword">view</span></span> <span class="hljs-title"><span class="hljs-keyword">returns</span></span> (<span class="hljs-params"><span class="hljs-keyword">uint256</span></span>)</span>;
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">transfer</span>(<span class="hljs-params"><span class="hljs-keyword">address</span> recipient, <span class="hljs-keyword">uint256</span> amount</span>)
-        <span class="hljs-title"><span class="hljs-keyword">external</span></span>
-        <span class="hljs-title"><span class="hljs-keyword">returns</span></span> (<span class="hljs-params"><span class="hljs-keyword">bool</span></span>)</span>;
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">allowance</span>(<span class="hljs-params"><span class="hljs-keyword">address</span> owner, <span class="hljs-keyword">address</span> spender</span>)
-        <span class="hljs-title"><span class="hljs-keyword">external</span></span>
-        <span class="hljs-title"><span class="hljs-keyword">view</span></span>
-        <span class="hljs-title"><span class="hljs-keyword">returns</span></span> (<span class="hljs-params"><span class="hljs-keyword">uint256</span></span>)</span>;
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">approve</span>(<span class="hljs-params"><span class="hljs-keyword">address</span> spender, <span class="hljs-keyword">uint256</span> amount</span>) <span class="hljs-title"><span class="hljs-keyword">external</span></span> <span class="hljs-title"><span class="hljs-keyword">returns</span></span> (<span class="hljs-params"><span class="hljs-keyword">bool</span></span>)</span>;
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">transferFrom</span>(<span class="hljs-params"><span class="hljs-keyword">address</span> sender, <span class="hljs-keyword">address</span> recipient, <span class="hljs-keyword">uint256</span> amount</span>)
-        <span class="hljs-title"><span class="hljs-keyword">external</span></span>
-        <span class="hljs-title"><span class="hljs-keyword">returns</span></span> (<span class="hljs-params"><span class="hljs-keyword">bool</span></span>)</span>;
-}
-
-<span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">IWETH</span> <span class="hljs-keyword">is</span> <span class="hljs-title">IERC20</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">deposit</span>(<span class="hljs-params"></span>) <span class="hljs-title"><span class="hljs-keyword">external</span></span> <span class="hljs-title"><span class="hljs-keyword">payable</span></span></span>;
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">withdraw</span>(<span class="hljs-params"><span class="hljs-keyword">uint256</span> amount</span>) <span class="hljs-title"><span class="hljs-keyword">external</span></span></span>;
-}
-</code></pre><h3>Test with Foundry</h3>
-<pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.56.0;</span>
-
-<span class="hljs-keyword">import</span> {<span class="hljs-title">Test</span>, <span class="hljs-title">console2</span>} <span class="hljs-title"><span class="hljs-keyword">from</span></span> <span class="hljs-string">"forge-std/Test.sol"</span>;
-<span class="hljs-keyword">import</span> {
-    <span class="hljs-title">UniswapV2SwapExamples</span>,
-    <span class="hljs-title">IERC20</span>,
-    <span class="hljs-title">IWETH</span>
-} <span class="hljs-title"><span class="hljs-keyword">from</span></span> <span class="hljs-string">"../../../src/defi/uniswap-v2/UniswapV2SwapExamples.sol"</span>;
-
-<span class="hljs-keyword">address</span> <span class="hljs-keyword">constant</span> WETH <span class="hljs-operator">=</span> <span class="hljs-number">0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2</span>;
-<span class="hljs-keyword">address</span> <span class="hljs-keyword">constant</span> DAI <span class="hljs-operator">=</span> <span class="hljs-number">0x6B175474E89094C44Da98b954EedeAC495271d0F</span>;
-<span class="hljs-keyword">address</span> <span class="hljs-keyword">constant</span> USDC <span class="hljs-operator">=</span> <span class="hljs-number">0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48</span>;
-
-<span class="hljs-class"><span class="hljs-keyword">contract</span> <span class="hljs-title">UniswapV2SwapExamplesTest</span> <span class="hljs-keyword">is</span> <span class="hljs-title">Test</span> </span>{
-    IWETH <span class="hljs-keyword">private</span> weth <span class="hljs-operator">=</span> IWETH(WETH);
-    IERC20 <span class="hljs-keyword">private</span> dai <span class="hljs-operator">=</span> IERC20(DAI);
-    IERC20 <span class="hljs-keyword">private</span> usdc <span class="hljs-operator">=</span> IERC20(USDC);
-
-    UniswapV2SwapExamples <span class="hljs-keyword">private</span> uni <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> UniswapV2SwapExamples();
-
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setUp</span>(<span class="hljs-params"></span>) <span class="hljs-title"><span class="hljs-keyword">public</span></span> </span>{}
-
-    <span class="hljs-comment">// Swap WETH -&gt; DAI</span>
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">testSwapSingleHopExactAmountIn</span>(<span class="hljs-params"></span>) <span class="hljs-title"><span class="hljs-keyword">public</span></span> </span>{
-        <span class="hljs-keyword">uint256</span> wethAmount <span class="hljs-operator">=</span> <span class="hljs-number">1e18</span>;
-        weth.deposit{<span class="hljs-built_in">value</span>: wethAmount}();
-        weth.approve(<span class="hljs-keyword">address</span>(uni), wethAmount);
-
-        <span class="hljs-keyword">uint256</span> daiAmountMin <span class="hljs-operator">=</span> <span class="hljs-number">1</span>;
-        <span class="hljs-keyword">uint256</span> daiAmountOut <span class="hljs-operator">=</span>
-            uni.swapSingleHopExactAmountIn(wethAmount, daiAmountMin);
-
-        console2.log(<span class="hljs-string">"DAI"</span>, daiAmountOut);
-        assertGe(daiAmountOut, daiAmountMin, <span class="hljs-string">"amount out &lt; min"</span>);
+        shares
     }
 
-    <span class="hljs-comment">// Swap DAI -&gt; WETH -&gt; USDC</span>
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">testSwapMultiHopExactAmountIn</span>(<span class="hljs-params"></span>) <span class="hljs-title"><span class="hljs-keyword">public</span></span> </span>{
-        <span class="hljs-comment">// Swap WETH -&gt; DAI</span>
-        <span class="hljs-keyword">uint256</span> wethAmount <span class="hljs-operator">=</span> <span class="hljs-number">1e18</span>;
-        weth.deposit{<span class="hljs-built_in">value</span>: wethAmount}();
-        weth.approve(<span class="hljs-keyword">address</span>(uni), wethAmount);
+    <span class="hljs-meta">#[storage(read, write), payable]</span>
+    <span class="hljs-keyword">fn</span> <span class="hljs-title function_">remove_liquidity</span>(asset_a: AssetId, asset_b: AssetId) <span class="hljs-punctuation">-&gt;</span> (<span class="hljs-type">u64</span>, <span class="hljs-type">u64</span>) {
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">owner</span> = <span class="hljs-title function_ invoke__">msg_sender</span>().<span class="hljs-title function_ invoke__">unwrap</span>();
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">sub_id</span> = <span class="hljs-title function_ invoke__">sha256</span>((asset_a, asset_b));
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">pool_id</span> = AssetId::<span class="hljs-title function_ invoke__">new</span>(ContractId::<span class="hljs-title function_ invoke__">this</span>(), sub_id);
 
-        <span class="hljs-keyword">uint256</span> daiAmountMin <span class="hljs-operator">=</span> <span class="hljs-number">1</span>;
-        uni.swapSingleHopExactAmountIn(wethAmount, daiAmountMin);
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">shares</span> = <span class="hljs-title function_ invoke__">deposit_or_call</span>(pool_id);
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">pool</span> = storage.pools.<span class="hljs-title function_ invoke__">get</span>(pool_id).<span class="hljs-title function_ invoke__">try_read</span>().<span class="hljs-title function_ invoke__">unwrap</span>();
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">amount_a</span> = ((<span class="hljs-title function_ invoke__">big</span>(shares) * <span class="hljs-title function_ invoke__">big</span>(pool.reserve_a)) / <span class="hljs-title function_ invoke__">big</span>(pool.total_supply)).<span class="hljs-title function_ invoke__">as_u64</span>().<span class="hljs-title function_ invoke__">unwrap</span>();
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">amount_b</span> = ((<span class="hljs-title function_ invoke__">big</span>(shares) * <span class="hljs-title function_ invoke__">big</span>(pool.reserve_b)) / <span class="hljs-title function_ invoke__">big</span>(pool.total_supply)).<span class="hljs-title function_ invoke__">as_u64</span>().<span class="hljs-title function_ invoke__">unwrap</span>();
 
-        <span class="hljs-comment">// Swap DAI -&gt; WETH -&gt; USDC</span>
-        <span class="hljs-keyword">uint256</span> daiAmountIn <span class="hljs-operator">=</span> <span class="hljs-number">1e18</span>;
-        dai.approve(<span class="hljs-keyword">address</span>(uni), daiAmountIn);
+        <span class="hljs-title function_ invoke__">require</span>(amount_a &gt; <span class="hljs-number">0</span> &amp;&amp; amount_b &gt; <span class="hljs-number">0</span>, <span class="hljs-string">"amount0 or amount1 = 0"</span>);
 
-        <span class="hljs-keyword">uint256</span> usdcAmountOutMin <span class="hljs-operator">=</span> <span class="hljs-number">1</span>;
-        <span class="hljs-keyword">uint256</span> usdcAmountOut <span class="hljs-operator">=</span>
-            uni.swapMultiHopExactAmountIn(daiAmountIn, usdcAmountOutMin);
+        <span class="hljs-title function_ invoke__">burn</span>(sub_id, shares);
 
-        console2.log(<span class="hljs-string">"USDC"</span>, usdcAmountOut);
-        assertGe(usdcAmountOut, usdcAmountOutMin, <span class="hljs-string">"amount out &lt; min"</span>);
+        storage.pools.<span class="hljs-title function_ invoke__">insert</span>(pool_id, Pool {
+            reserve_a: pool.reserve_a - amount_a,
+            reserve_b: pool.reserve_b - amount_b,
+            total_supply: pool.total_supply - shares
+        });
+
+        <span class="hljs-keyword">if</span> (amount_a &gt; <span class="hljs-number">0</span>) {
+            <span class="hljs-title function_ invoke__">transfer</span>(owner, asset_a, amount_a);
+        }
+        <span class="hljs-keyword">if</span> (amount_b &gt; <span class="hljs-number">0</span>) {
+            <span class="hljs-title function_ invoke__">transfer</span>(owner, asset_b, amount_b);
+        }
+        
+        (amount_a, amount_b)
     }
 
-    <span class="hljs-comment">// Swap WETH -&gt; DAI</span>
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">testSwapSingleHopExactAmountOut</span>(<span class="hljs-params"></span>) <span class="hljs-title"><span class="hljs-keyword">public</span></span> </span>{
-        <span class="hljs-keyword">uint256</span> wethAmount <span class="hljs-operator">=</span> <span class="hljs-number">1e18</span>;
-        weth.deposit{<span class="hljs-built_in">value</span>: wethAmount}();
-        weth.approve(<span class="hljs-keyword">address</span>(uni), wethAmount);
-
-        <span class="hljs-keyword">uint256</span> daiAmountDesired <span class="hljs-operator">=</span> <span class="hljs-number">1e18</span>;
-        <span class="hljs-keyword">uint256</span> daiAmountOut <span class="hljs-operator">=</span>
-            uni.swapSingleHopExactAmountOut(daiAmountDesired, wethAmount);
-
-        console2.log(<span class="hljs-string">"DAI"</span>, daiAmountOut);
-        assertEq(
-            daiAmountOut, daiAmountDesired, <span class="hljs-string">"amount out != amount out desired"</span>
-        );
-    }
-
-    <span class="hljs-comment">// Swap DAI -&gt; WETH -&gt; USDC</span>
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">testSwapMultiHopExactAmountOut</span>(<span class="hljs-params"></span>) <span class="hljs-title"><span class="hljs-keyword">public</span></span> </span>{
-        <span class="hljs-comment">// Swap WETH -&gt; DAI</span>
-        <span class="hljs-keyword">uint256</span> wethAmount <span class="hljs-operator">=</span> <span class="hljs-number">1e18</span>;
-        weth.deposit{<span class="hljs-built_in">value</span>: wethAmount}();
-        weth.approve(<span class="hljs-keyword">address</span>(uni), wethAmount);
-
-        <span class="hljs-comment">// Buy 100 DAI</span>
-        <span class="hljs-keyword">uint256</span> daiAmountOut <span class="hljs-operator">=</span> <span class="hljs-number">100</span> <span class="hljs-operator">*</span> <span class="hljs-number">1e18</span>;
-        uni.swapSingleHopExactAmountOut(daiAmountOut, wethAmount);
-
-        <span class="hljs-comment">// Swap DAI -&gt; WETH -&gt; USDC</span>
-        dai.approve(<span class="hljs-keyword">address</span>(uni), daiAmountOut);
-
-        <span class="hljs-keyword">uint256</span> amountOutDesired <span class="hljs-operator">=</span> <span class="hljs-number">1e6</span>;
-        <span class="hljs-keyword">uint256</span> amountOut <span class="hljs-operator">=</span>
-            uni.swapMultiHopExactAmountOut(amountOutDesired, daiAmountOut);
-
-        console2.log(<span class="hljs-string">"USDC"</span>, amountOut);
-        assertEq(
-            amountOut, amountOutDesired, <span class="hljs-string">"amount out != amount out desired"</span>
-        );
+    <span class="hljs-meta">#[storage(read)]</span>
+    <span class="hljs-keyword">fn</span> <span class="hljs-title function_">get_pool</span>(asset_id: AssetId) <span class="hljs-punctuation">-&gt;</span> <span class="hljs-type">Option</span>&lt;Pool&gt; {
+        storage.pools.<span class="hljs-title function_ invoke__">get</span>(asset_id).<span class="hljs-title function_ invoke__">try_read</span>()
     }
 }
 </code></pre>`

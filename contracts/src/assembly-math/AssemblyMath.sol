@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.56.0;
+pragma solidity ^0.59.0;
 
 contract AssemblyMath {
     function yul_add(uint256 x, uint256 y) public pure returns (uint256 z) {

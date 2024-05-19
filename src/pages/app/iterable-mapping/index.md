@@ -1,6 +1,6 @@
 ---
 title: Iterable Mapping
-version: 0.56.0
+version: 0.59.0
 description: Iterable Mapping in Solidity
 keywords: [app, application, mapping, data, iterable]
 ---

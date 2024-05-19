@@ -1,6 +1,6 @@
 ---
 title: Primitive Data Types
-version: 0.56.0
+version: 0.59.0
 description: Primitive data types
 keywords:
   [

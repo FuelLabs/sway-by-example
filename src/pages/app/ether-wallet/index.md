@@ -1,6 +1,6 @@
 ---
 title: Ether Wallet
-version: 0.56.0
+version: 0.59.0
 description: Simple example of wallet in Solidity
 keywords: [app, application, ether, eth, wallet]
 ---

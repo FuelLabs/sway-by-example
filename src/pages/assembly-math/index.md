@@ -1,6 +1,6 @@
 ---
 title: Assembly Math
-version: 0.56.0
+version: 0.59.0
 description: Example of math in assembly
 keywords: [assembly, yul, math, add, mul]
 ---

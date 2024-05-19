@@ -1,6 +1,6 @@
 ---
 title: Phishing with tx.origin
-version: 0.56.0
+version: 0.59.0
 description: An example of phishing with tx.origin in Solidity
 keywords: [hack, security, phishing, tx.origin]
 ---

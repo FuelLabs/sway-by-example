@@ -1,20 +1,14 @@
 ---
 title: Variables
-version: 0.56.0
-description: Local, state and global variables
-keywords: [variable, variables, local, global, state, data]
+version: 0.59.0
+description: Variables in Sway
+tempFileName: "variables.sw"
+tempPlaygroundLink: "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=26803ea06904a41f2c03a6be18f01cdd"
+keywords: [variables, variable, local, global, state, data]
 ---
 
-There are 3 types of variables in Solidity
+Examples of variables in Sway
 
-- **local**
-  - declared inside a function
-  - not stored on the blockchain
-- **state**
-  - declared outside a function
-  - stored on the blockchain
-- **global** (provides information about the blockchain)
-
-```solidity
-{{{Variables}}}
+```rust
+{{{variables}}}
 ```

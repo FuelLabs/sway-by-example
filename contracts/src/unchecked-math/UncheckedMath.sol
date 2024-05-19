@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.56.0;
+pragma solidity ^0.59.0;
 
 contract UncheckedMath {
     function add(uint256 x, uint256 y) external pure returns (uint256) {

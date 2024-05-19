@@ -1,6 +1,6 @@
 ---
 title: Simple Bytecode Contract
-version: 0.56.0
+version: 0.59.0
 description: Simple example of contract written in bytecode
 keywords: [app, application, simple, bytecode, contract]
 ---

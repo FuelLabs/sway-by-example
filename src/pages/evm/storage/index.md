@@ -1,6 +1,6 @@
 ---
 title: EVM Storage
-version: 0.56.0
+version: 0.59.0
 description: Example of EVM storage in Solidity
 keywords: [data, evm, storage, state, variable, yul, assembly]
 ---

@@ -1,4 +1,4 @@
-pragma solidity ^0.56.0;
+pragma solidity ^0.59.0;
 
 // Make sure EVM version and VM set to Cancun
 
