@@ -7,6 +7,6 @@ keywords: [if, else, conditional, statement, statements]
 
 Solidity supports conditional statements `if`, `else if` and `else`.
 
-```solidity
+```rust
 {{{IfElse}}}
 ```

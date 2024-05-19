@@ -7,12 +7,12 @@ keywords: [app, application, multi, call, staticcall]
 
 An example of contract that aggregates multiple queries using a for loop and `staticcall`.
 
-```solidity
+```rust
 {{{MultiCall}}}
 ```
 
 Contract to test `MultiCall`
 
-```solidity
+```rust
 {{{TestMultiCall}}}
 ```

@@ -1,6 +1,13 @@
 import React from "react"
 import Example from "../../components/Example"
-import html, { version, title, description, codes } from "./index.html"
+import html, {
+  version,
+  title,
+  description,
+  codes,
+  tempFileName,
+  tempPlaygroundLink,
+} from "./index.html"
 
 interface Path {
   path: string
@@ -22,6 +29,8 @@ const ExamplePage: React.FC<Props> = ({ prev, next }) => {
       prev={prev}
       next={next}
       codes={codes}
+      tempFileName={tempFileName}
+      tempPlaygroundLink={tempPlaygroundLink}
     />
   )
 }

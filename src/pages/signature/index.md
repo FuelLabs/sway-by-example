@@ -9,6 +9,6 @@ Messages can be signed off chain and then verified on chain using a smart contra
 
 [Example using ethers.js](https://github.com/t4sk/hello-erc20-permit/blob/main/test/verify-signature.js)
 
-```solidity
+```rust
 {{{Signature}}}
 ```

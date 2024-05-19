@@ -7,13 +7,13 @@ keywords: [defi, uniswap, v2, flash, swap, amm]
 
 ### Uniswap V2 Flash Swap Example
 
-```solidity
+```rust
 {{{UniswapV2FlashSwap}}}
 ```
 
 ### Test with Foundry
 
-```solidity
+```rust
 {{{UniswapV2FlashSwapTest}}}
 ```
 

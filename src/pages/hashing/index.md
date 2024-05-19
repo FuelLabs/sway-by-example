@@ -13,6 +13,6 @@ Some use cases are:
 - Commit-Reveal scheme
 - Compact cryptographic signature (by signing the hash instead of a larger input)
 
-```solidity
+```rust
 {{{Keccak256}}}
 ```

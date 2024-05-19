@@ -12,6 +12,6 @@ specify the location of the data.
 - `memory` - variable is in memory and it exists while a function is being called
 - `calldata` - special data location that contains function arguments
 
-```solidity
+```rust
 {{{DataLocations}}}
 ```

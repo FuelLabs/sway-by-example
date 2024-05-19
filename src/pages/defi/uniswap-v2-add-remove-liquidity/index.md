@@ -7,12 +7,12 @@ keywords: [defi, uniswap, v2, add, remove, liquidity, amm]
 
 ### Add / Remove Liquidity
 
-```solidity
+```rust
 {{{UniswapV2Liquidity}}}
 ```
 
 ### Test with Foundry
 
-```solidity
+```rust
 {{{UniswapV2LiquidityTest}}}
 ```

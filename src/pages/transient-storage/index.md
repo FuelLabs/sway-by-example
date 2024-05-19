@@ -7,6 +7,6 @@ keywords: [transient, storage]
 
 Data stored in transient storage is cleared out after transaction.
 
-```solidity
+```rust
 {{{TransientStorage}}}
 ```

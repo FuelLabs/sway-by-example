@@ -11,6 +11,6 @@ Getter functions can be declared `view` or `pure`.
 
 `Pure` function declares that no state variable will be changed or read.
 
-```solidity
+```rust
 {{{ViewAndPureFunctions}}}
 ```

@@ -4,31 +4,32 @@ export const title = "Primitive Types"
 export const description = "Primitive types in Sway"
 
 export const tempFileName = "primitive_types.sw"
-export const tempPlaygroundLink = "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=830e4229f8bf8c5e2198f35eeb8360b5"
+export const tempPlaygroundLink =
+  "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=830e4229f8bf8c5e2198f35eeb8360b5"
 
 export const keywords = [
-    "primitive",
-    "primitives",
-    "data",
-    "type",
-    "types",
-    "variable",
-    "variables",
-    "string",
-    "strings",
-    "boolean",
-    "uint256",
-    "int256",
-    "address",
-    "uint",
-    "int",
+  "primitive",
+  "primitives",
+  "data",
+  "type",
+  "types",
+  "variable",
+  "variables",
+  "string",
+  "strings",
+  "boolean",
+  "uint256",
+  "int256",
+  "address",
+  "uint",
+  "int",
 ]
 
 export const codes = [
-    {
-        fileName: "primitives.rs",
-        code: "Y29udHJhY3Q7CgovLyBQcmltaXRpdmUgdHlwZXMKLy8gLSBVbnNpZ25lZCBpbnRlZ2VycwovLyAtIFN0cmluZ3MKLy8gLSBCb29sZWFuCi8vIC0gMjU2IGJpdHMgPSAzMiBieXRlcwoKYWJpIE15Q29udHJhY3QgewogICAgZm4gdGVzdF9mdW5jKCkgLT4gYm9vbDsKfQoKaW1wbCBNeUNvbnRyYWN0IGZvciBDb250cmFjdCB7CiAgICBmbiB0ZXN0X2Z1bmMoKSAtPiBib29sIHsKICAgICAgICAvLyBVbnNpZ25lZCBpbnRlZ2VycwogICAgICAgIC8vIDAgPD0gdTggPD0gMioqOCAtIDEKICAgICAgICBsZXQgdV84OiB1OCA9IDEyMzsKICAgICAgICAvLyAwIDw9IHUxNiA8PSAyKioxNiAtIDEKICAgICAgICBsZXQgdV8xNjogdTE2ID0gMTIzOwogICAgICAgIC8vIDAgPD0gdTMyIDw9IDIqKjMyIC0gMQogICAgICAgIGxldCB1XzMyOiB1MzIgPSAxMjM7CiAgICAgICAgLy8gMCA8PSB1NjQgPD0gMioqNjQgLSAxCiAgICAgICAgbGV0IHVfNjQ6IHU2NCA9IDEyMzsKCiAgICAgICAgbGV0IHVfNjRfbWF4ID0gdTY0OjptYXgoKTsKCiAgICAgICAgLy8gU3RyaW5nIHNsaWNlCiAgICAgICAgbGV0IHNfc2xpY2U6IHN0ciA9ICJmdWVsIjsKCiAgICAgICAgLy8gRml4ZWQgbGVuZ3RoIHN0cmluZyBhcnJheQogICAgICAgIGxldCBzX2FycmF5OiBzdHJbNF0gPSBfX3RvX3N0cl9hcnJheSgiZnVlbCIpOwoKICAgICAgICAvLyBCb29sZWFuCiAgICAgICAgbGV0IGJvbzogYm9vbCA9IHRydWU7CiAgICAgICAgLy8gMjU2IGJpdHMgPSAzMiBieXRlcwogICAgICAgIGxldCBiXzI1NjogYjI1NiA9IDB4MTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTsKCiAgICAgICAgdHJ1ZQogICAgfQp9Cg==",
-    },
+  {
+    fileName: "primitives.rs",
+    code: "Y29udHJhY3Q7CgovLyBQcmltaXRpdmUgdHlwZXMKLy8gLSBVbnNpZ25lZCBpbnRlZ2VycwovLyAtIFN0cmluZ3MKLy8gLSBCb29sZWFuCi8vIC0gMjU2IGJpdHMgPSAzMiBieXRlcwoKYWJpIE15Q29udHJhY3QgewogICAgZm4gdGVzdF9mdW5jKCkgLT4gYm9vbDsKfQoKaW1wbCBNeUNvbnRyYWN0IGZvciBDb250cmFjdCB7CiAgICBmbiB0ZXN0X2Z1bmMoKSAtPiBib29sIHsKICAgICAgICAvLyBVbnNpZ25lZCBpbnRlZ2VycwogICAgICAgIC8vIDAgPD0gdTggPD0gMioqOCAtIDEKICAgICAgICBsZXQgdV84OiB1OCA9IDEyMzsKICAgICAgICAvLyAwIDw9IHUxNiA8PSAyKioxNiAtIDEKICAgICAgICBsZXQgdV8xNjogdTE2ID0gMTIzOwogICAgICAgIC8vIDAgPD0gdTMyIDw9IDIqKjMyIC0gMQogICAgICAgIGxldCB1XzMyOiB1MzIgPSAxMjM7CiAgICAgICAgLy8gMCA8PSB1NjQgPD0gMioqNjQgLSAxCiAgICAgICAgbGV0IHVfNjQ6IHU2NCA9IDEyMzsKCiAgICAgICAgbGV0IHVfNjRfbWF4ID0gdTY0OjptYXgoKTsKCiAgICAgICAgLy8gU3RyaW5nIHNsaWNlCiAgICAgICAgbGV0IHNfc2xpY2U6IHN0ciA9ICJmdWVsIjsKCiAgICAgICAgLy8gRml4ZWQgbGVuZ3RoIHN0cmluZyBhcnJheQogICAgICAgIGxldCBzX2FycmF5OiBzdHJbNF0gPSBfX3RvX3N0cl9hcnJheSgiZnVlbCIpOwoKICAgICAgICAvLyBCb29sZWFuCiAgICAgICAgbGV0IGJvbzogYm9vbCA9IHRydWU7CiAgICAgICAgLy8gMjU2IGJpdHMgPSAzMiBieXRlcwogICAgICAgIGxldCBiXzI1NjogYjI1NiA9IDB4MTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTsKCiAgICAgICAgdHJ1ZQogICAgfQp9Cg==",
+  },
 ]
 
 const html = `<p>Examples of primitive data types in Sway</p>

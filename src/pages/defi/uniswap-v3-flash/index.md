@@ -7,12 +7,12 @@ keywords: [defi, uniswap, v3, flash, loan, amm]
 
 ### Uniswap V3 Flash Loan Example
 
-```solidity
+```rust
 {{{UniswapV3Flash}}}
 ```
 
 ### Test with Foundry
 
-```solidity
+```rust
 {{{UniswapV3FlashTest}}}
 ```

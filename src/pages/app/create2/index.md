@@ -7,6 +7,6 @@ keywords: [app, application, create2, precompute, contract, address]
 
 Contract address can be precomputed, before the contract is deployed, using `create2`
 
-```solidity
+```rust
 {{{Create2}}}
 ```

@@ -3,14 +3,12 @@ export const version = "0.59.0"
 export const title = "Gas"
 export const description = "Example of gas and gas limit in Solidity"
 
+export const tempFileName = ""
+export const tempPlaygroundLink = ""
+
 export const keywords = ["gas"]
 
-export const codes = [
-  {
-    fileName: "Gas.sol",
-    code: "Ly8gU1BEWC1MaWNlbnNlLUlkZW50aWZpZXI6IE1JVApwcmFnbWEgc29saWRpdHkgXjAuOC4yNDsKCmNvbnRyYWN0IEdhcyB7CiAgICB1aW50MjU2IHB1YmxpYyBpID0gMDsKCiAgICAvLyBVc2luZyB1cCBhbGwgb2YgdGhlIGdhcyB0aGF0IHlvdSBzZW5kIGNhdXNlcyB5b3VyIHRyYW5zYWN0aW9uIHRvIGZhaWwuCiAgICAvLyBTdGF0ZSBjaGFuZ2VzIGFyZSB1bmRvbmUuCiAgICAvLyBHYXMgc3BlbnQgYXJlIG5vdCByZWZ1bmRlZC4KICAgIGZ1bmN0aW9uIGZvcmV2ZXIoKSBwdWJsaWMgewogICAgICAgIC8vIEhlcmUgd2UgcnVuIGEgbG9vcCB1bnRpbCBhbGwgb2YgdGhlIGdhcyBhcmUgc3BlbnQKICAgICAgICAvLyBhbmQgdGhlIHRyYW5zYWN0aW9uIGZhaWxzCiAgICAgICAgd2hpbGUgKHRydWUpIHsKICAgICAgICAgICAgaSArPSAxOwogICAgICAgIH0KICAgIH0KfQo=",
-  },
-]
+export const codes = []
 
 const html = `<h3>How much <code>ether</code> do you need to pay for a transaction?</h3>
 <p>You pay <code>gas spent * gas price</code> amount of <code>ether</code>, where</p>
@@ -27,23 +25,7 @@ const html = `<h3>How much <code>ether</code> do you need to pay for a transacti
 <li><code>gas limit</code> (max amount of gas you&#39;re willing to use for your transaction, set by you)</li>
 <li><code>block gas limit</code> (max amount of gas allowed in a block, set by the network)</li>
 </ul>
-<pre><code class="language-solidity"><span class="hljs-comment">// SPDX-License-Identifier: MIT</span>
-<span class="hljs-meta"><span class="hljs-keyword">pragma</span> <span class="hljs-keyword">solidity</span> ^0.59.0;</span>
-
-<span class="hljs-class"><span class="hljs-keyword">contract</span> <span class="hljs-title">Gas</span> </span>{
-    <span class="hljs-keyword">uint256</span> <span class="hljs-keyword">public</span> i <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;
-
-    <span class="hljs-comment">// Using up all of the gas that you send causes your transaction to fail.</span>
-    <span class="hljs-comment">// State changes are undone.</span>
-    <span class="hljs-comment">// Gas spent are not refunded.</span>
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">forever</span>(<span class="hljs-params"></span>) <span class="hljs-title"><span class="hljs-keyword">public</span></span> </span>{
-        <span class="hljs-comment">// Here we run a loop until all of the gas are spent</span>
-        <span class="hljs-comment">// and the transaction fails</span>
-        <span class="hljs-keyword">while</span> (<span class="hljs-literal">true</span>) {
-            i <span class="hljs-operator">+</span><span class="hljs-operator">=</span> <span class="hljs-number">1</span>;
-        }
-    }
-}
+<pre><code class="language-rust">
 </code></pre>`
 
 export default html

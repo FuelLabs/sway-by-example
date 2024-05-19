@@ -9,6 +9,6 @@ keywords: [abi, decode, bytes]
 
 `abi.decode` decodes `bytes` back into data.
 
-```solidity
+```rust
 {{{AbiDecode}}}
 ```

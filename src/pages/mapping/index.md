@@ -13,6 +13,6 @@ The `keyType` can be any built-in value type, bytes, string, or any contract.
 
 Mappings are not iterable.
 
-```solidity
+```rust
 {{{Mapping}}}
 ```

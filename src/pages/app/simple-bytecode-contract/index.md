@@ -7,6 +7,6 @@ keywords: [app, application, simple, bytecode, contract]
 
 Simple example of contract written in bytecode
 
-```solidity
+```rust
 {{{Factory}}}
 ```

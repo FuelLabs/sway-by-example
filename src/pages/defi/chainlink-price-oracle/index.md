@@ -7,6 +7,6 @@ keywords: [defi, chainlink, price, oracle, oracles]
 
 ### ETH / USD Price Oracle
 
-```solidity
+```rust
 {{{Chainlink}}}
 ```

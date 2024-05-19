@@ -15,6 +15,6 @@ Dutch auction for NFT.
 4. Participants can buy by depositing ETH greater than the current price computed by the smart contract.
 5. Auction ends when a buyer buys the NFT.
 
-```solidity
+```rust
 {{{DutchAuction}}}
 ```

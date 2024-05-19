@@ -11,7 +11,7 @@ All data on a smart contract can be read.
 
 Let's see how we can read `private` data. In the process you will learn how Solidity stores state variables.
 
-```solidity
+```rust
 {{{Vault}}}
 ```
 

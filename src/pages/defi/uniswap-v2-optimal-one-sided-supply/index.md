@@ -7,6 +7,6 @@ keywords: [defi, uniswap, v2, optimal, one, sided, supply, amm]
 
 ### Optimal One Sided Supply
 
-```solidity
+```rust
 {{{Optimal}}}
 ```

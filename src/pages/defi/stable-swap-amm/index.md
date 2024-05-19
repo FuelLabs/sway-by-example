@@ -7,6 +7,6 @@ keywords: [defi, curve, stable, swap, amm]
 
 Simplified version of Curve's stable swap AMM
 
-```solidity
+```rust
 {{{StableSwap}}}
 ```

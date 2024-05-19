@@ -7,6 +7,6 @@ keywords: [assembly, yul, math, add, mul]
 
 Example of math in `assembly`
 
-```solidity
+```rust
 {{{AssemblyMath}}}
 ```

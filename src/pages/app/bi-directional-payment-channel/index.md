@@ -9,10 +9,10 @@ Bi-directional payment channels allow participants `Alice` and `Bob` to repeated
 
 Payments can go both ways, `Alice` pays `Bob` and `Bob` pays `Alice`.
 
-```solidity
+```rust
 {{{BiDirectionalPaymentChannel}}}
 ```
 
-```solidity
+```rust
 {{{ECDSA}}}
 ```

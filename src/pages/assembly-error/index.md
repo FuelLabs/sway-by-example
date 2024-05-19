@@ -7,6 +7,6 @@ keywords: [assembly, yul, error, revert]
 
 Example of error in `assembly`
 
-```solidity
+```rust
 {{{AssemblyError}}}
 ```

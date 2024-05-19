@@ -10,6 +10,6 @@ in the child contract.
 
 Let's learn how to correctly override inherited state variables.
 
-```solidity
+```rust
 {{{Shadow}}}
 ```

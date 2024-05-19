@@ -10,6 +10,6 @@ keywords: [event, events]
 - Listening for events and updating user interface
 - A cheap form of storage
 
-```solidity
+```rust
 {{{Events}}}
 ```

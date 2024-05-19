@@ -5,18 +5,18 @@ description: Learn about bitwise operators in Solidity
 keywords: [bitwise, most, significant, bit, assembly]
 ---
 
-```solidity
+```rust
 {{{Bitwise}}}
 ```
 
 ### Most significant bit
 
-```solidity
+```rust
 {{{MostSignificantBitFunction}}}
 ```
 
 ### Most significant bit in assembly
 
-```solidity
+```rust
 {{{MostSignificantBitAssembly}}}
 ```

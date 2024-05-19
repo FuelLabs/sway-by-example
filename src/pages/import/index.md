@@ -18,13 +18,13 @@ Here is our folder structure.
 
 Foo.sol
 
-```solidity
+```rust
 {{{Foo}}}
 ```
 
 Import.sol
 
-```solidity
+```rust
 {{{Import}}}
 ```
 
@@ -32,7 +32,7 @@ Import.sol
 
 You can also import from [GitHub](https://github.com) by simply copying the url
 
-```solidity
+```rust
 // https://github.com/owner/repo/blob/branch/path/to/Contract.sol
 import "https://github.com/owner/repo/blob/branch/path/to/Contract.sol";
 

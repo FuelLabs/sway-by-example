@@ -7,6 +7,6 @@ keywords: [defi, constant, product, amm]
 
 Constant product AMM `XY = K`
 
-```solidity
+```rust
 {{{CPAMM}}}
 ```

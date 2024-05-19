@@ -9,6 +9,6 @@ Overflow and underflow of numbers in Solidity 0.8 throw an error. This can be di
 
 Disabling overflow / underflow check saves gas.
 
-```solidity
+```rust
 {{{UncheckedMath}}}
 ```

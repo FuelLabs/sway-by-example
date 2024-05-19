@@ -17,6 +17,6 @@ However it is not the recommend way to call existing functions.
 - Type checks are bypassed
 - Function existence checks are omitted
 
-```solidity
+```rust
 {{{Call}}}
 ```

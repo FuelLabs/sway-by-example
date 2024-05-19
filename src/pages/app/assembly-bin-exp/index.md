@@ -7,6 +7,6 @@ keywords: [assembly, yul, binary, exponentiation, math]
 
 Example of binary exponentiation in `assembly`
 
-```solidity
+```rust
 {{{AssemblyBinExp}}}
 ```

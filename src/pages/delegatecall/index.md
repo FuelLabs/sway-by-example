@@ -11,6 +11,6 @@ When contract `A` executes `delegatecall` to contract `B`, `B`'s code is execute
 
 with contract `A`'s storage, `msg.sender` and `msg.value`.
 
-```solidity
+```rust
 {{{Delegatecall}}}
 ```

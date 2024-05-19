@@ -18,7 +18,7 @@ Inside docker, your code will be stored at `/code`, in the root directory.
 
 3. See the comments below and execute `echidna` commands.
 
-```solidity
+```rust
 {{{TestEchidna}}}
 ```
 
@@ -32,6 +32,6 @@ Contract callers can also be set in the configuration. Default accounts are
 - `0x20000`
 - `0x30000`
 
-```solidity
+```rust
 {{{EchidnaTestTimeAndCaller}}}
 ```

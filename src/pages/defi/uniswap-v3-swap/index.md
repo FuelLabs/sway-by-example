@@ -7,13 +7,13 @@ keywords: [defi, uniswap, v3, swap, amm]
 
 ### Uniswap V3 Single Hop Swap
 
-```solidity
+```rust
 {{{UniswapV3SingleHopSwap}}}
 ```
 
 ### Uniswap V3 Multi Hop Swap
 
-```solidity
+```rust
 {{{UniswapV3MultiHopSwap}}}
 ```
 
@@ -21,12 +21,12 @@ keywords: [defi, uniswap, v3, swap, amm]
 
 Single hop test
 
-```solidity
+```rust
 {{{UniswapV3SingleHopSwapTest}}}
 ```
 
 Multi hop test
 
-```solidity
+```rust
 {{{UniswapV3MultiHopSwapTest}}}
 ```

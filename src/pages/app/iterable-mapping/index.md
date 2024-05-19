@@ -7,6 +7,6 @@ keywords: [app, application, mapping, data, iterable]
 
 You cannot iterate through a `mapping`. So here is an example of how to create an iterable `mapping`.
 
-```solidity
+```rust
 {{{IterableMapping}}}
 ```

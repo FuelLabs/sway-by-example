@@ -12,12 +12,12 @@ keywords: [fallback, function, functions, receive, payable, send, ether, eth, tr
 
 `fallback` has a 2300 gas limit when called by `transfer` or `send`.
 
-```solidity
+```rust
 {{{Fallback}}}
 ```
 
 `fallback` can optionally take `bytes` for input and output
 
-```solidity
+```rust
 {{{FallbackInputOutput}}}
 ```

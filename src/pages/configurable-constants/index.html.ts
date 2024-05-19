@@ -4,25 +4,26 @@ export const title = "Configurable Constants"
 export const description = "Configurable constants in Sway"
 
 export const tempFileName = "configurable_constants.sw"
-export const tempPlaygroundLink = "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=7da7f0d28272421d798dfa1b4669c103"
+export const tempPlaygroundLink =
+  "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=7da7f0d28272421d798dfa1b4669c103"
 
 export const keywords = [
-    "constant",
-    "constants",
-    "configurable",
-    "configurables",
-    "config",
-    "configs",
-    "data",
-    "variable",
-    "variables",
+  "constant",
+  "constants",
+  "configurable",
+  "configurables",
+  "config",
+  "configs",
+  "data",
+  "variable",
+  "variables",
 ]
 
 export const codes = [
-    {
-        fileName: "config_const.rs",
-        code: "Y29udHJhY3Q7CgovLyBDb25maWd1cmFibGUgY29uc3RhbnRzCgpjb25maWd1cmFibGUgewogICAgTVlfTlVNOiB1NjQgPSAxMjMsCiAgICBPV05FUjogQWRkcmVzcyA9IEFkZHJlc3M6OmZyb20oMHgzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzKSwKICAgIFBPSU5UOiBQb2ludCA9IFBvaW50IHsgeDogMSwgeTogMiB9LAp9CgpzdHJ1Y3QgUG9pbnQgewogICAgeDogdTY0LAogICAgeTogdTY0LAp9CgphYmkgTXlDb250cmFjdCB7CiAgICBmbiB0ZXN0X2Z1bmMoKSAtPiAodTY0LCBBZGRyZXNzLCBQb2ludCk7Cn0KCmltcGwgTXlDb250cmFjdCBmb3IgQ29udHJhY3QgewogICAgZm4gdGVzdF9mdW5jKCkgLT4gKHU2NCwgQWRkcmVzcywgUG9pbnQpIHsKICAgICAgICAoTVlfTlVNLCBPV05FUiwgUE9JTlQpCiAgICB9Cn0K",
-    },
+  {
+    fileName: "config_const.rs",
+    code: "Y29udHJhY3Q7CgovLyBDb25maWd1cmFibGUgY29uc3RhbnRzCgpjb25maWd1cmFibGUgewogICAgTVlfTlVNOiB1NjQgPSAxMjMsCiAgICBPV05FUjogQWRkcmVzcyA9IEFkZHJlc3M6OmZyb20oMHgzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzKSwKICAgIFBPSU5UOiBQb2ludCA9IFBvaW50IHsgeDogMSwgeTogMiB9LAp9CgpzdHJ1Y3QgUG9pbnQgewogICAgeDogdTY0LAogICAgeTogdTY0LAp9CgphYmkgTXlDb250cmFjdCB7CiAgICBmbiB0ZXN0X2Z1bmMoKSAtPiAodTY0LCBBZGRyZXNzLCBQb2ludCk7Cn0KCmltcGwgTXlDb250cmFjdCBmb3IgQ29udHJhY3QgewogICAgZm4gdGVzdF9mdW5jKCkgLT4gKHU2NCwgQWRkcmVzcywgUG9pbnQpIHsKICAgICAgICAoTVlfTlVNLCBPV05FUiwgUE9JTlQpCiAgICB9Cn0K",
+  },
 ]
 
 const html = `<p>Examples of configurable constants in Sway</p>

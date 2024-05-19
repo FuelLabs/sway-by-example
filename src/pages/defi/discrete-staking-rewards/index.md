@@ -9,6 +9,6 @@ Similar to staking rewards contract. Difference is that reward amount may vary a
 
 ### Discrete Staking Rewards
 
-```solidity
+```rust
 {{{DiscreteStakingRewards}}}
 ```

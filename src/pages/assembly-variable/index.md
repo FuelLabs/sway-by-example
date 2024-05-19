@@ -7,6 +7,6 @@ keywords: [assembly, variable, yul]
 
 Example of how to declare variables inside `assembly`
 
-```solidity
+```rust
 {{{AssemblyVariable}}}
 ```

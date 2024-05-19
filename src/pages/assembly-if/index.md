@@ -7,6 +7,6 @@ keywords: [assembly, yul, if, switch]
 
 Example of conditional statements in `assembly`
 
-```solidity
+```rust
 {{{AssemblyIf}}}
 ```

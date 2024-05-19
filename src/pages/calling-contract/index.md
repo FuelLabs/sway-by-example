@@ -13,6 +13,6 @@ Another way to call other contracts is to use the low-level `call`.
 
 This method is not recommended.
 
-```solidity
+```rust
 {{{CallingContract}}}
 ```

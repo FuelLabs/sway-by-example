@@ -18,7 +18,7 @@ For example this technique is used to:
 Same signature can be used multiple times to execute a function. This can be harmful
 if the signer's intention was to approve a transaction once.
 
-```solidity
+```rust
 {{{SigReplay}}}
 ```
 
@@ -26,10 +26,10 @@ if the signer's intention was to approve a transaction once.
 
 Sign messages with `nonce` and address of the contract.
 
-```solidity
+```rust
 {{{PreventSigReplay}}}
 ```
 
-```solidity
+```rust
 {{{ECDSA}}}
 ```

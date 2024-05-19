@@ -10,6 +10,6 @@ After a mimimum waiting period, the transaction can be executed.
 
 `TimeLock`s are commonly used in DAOs.
 
-```solidity
+```rust
 {{{TimeLock}}}
 ```

@@ -7,13 +7,13 @@ keywords: [defi, uniswap, v3, liquidity, amm]
 
 Examples of minting new position, collect fees, increase and decrease liquidity.
 
-```solidity
+```rust
 {{{UniswapV3Liquidity}}}
 ```
 
 ### Test with Foundry
 
-```solidity
+```rust
 {{{UniswapV3LiquidityTest}}}
 ```
 

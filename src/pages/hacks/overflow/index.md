@@ -15,7 +15,7 @@ Integers in Solidity overflow / underflow without any errors
 
 Default behaviour of Solidity 0.8 for overflow / underflow is to throw an error.
 
-```solidity
+```rust
 {{{Overflow}}}
 ```
 

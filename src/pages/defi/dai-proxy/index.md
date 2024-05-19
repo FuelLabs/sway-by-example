@@ -9,12 +9,12 @@ keywords: [defi, dai, proxy]
 
 Example of locking ETH collateral, borrowing DAI, repaying DAI and unlocking ETH using `DssProxy`.
 
-```solidity
+```rust
 {{{DaiProxy}}}
 ```
 
 ### Test
 
-```solidity
+```rust
 {{{DaiProxyTest}}}
 ```

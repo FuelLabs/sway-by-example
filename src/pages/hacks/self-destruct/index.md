@@ -15,7 +15,7 @@ designated address.
 A malicious contract can use `selfdestruct` to
 force sending Ether to any contract.
 
-```solidity
+```rust
 {{{ForceEther}}}
 ```
 
@@ -23,6 +23,6 @@ force sending Ether to any contract.
 
 Don't rely on `address(this).balance`
 
-```solidity
+```rust
 {{{PreventForceEther}}}
 ```

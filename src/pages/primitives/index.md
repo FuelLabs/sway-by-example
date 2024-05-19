@@ -27,6 +27,6 @@ Here we introduce you to some primitive data types available in Solidity.
 - `int256`
 - `address`
 
-```solidity
+```rust
 {{{Primitives}}}
 ```

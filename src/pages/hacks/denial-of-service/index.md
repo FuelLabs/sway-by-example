@@ -11,7 +11,7 @@ There are many ways to attack a smart contract to make it unusable.
 
 One exploit we introduce here is denial of service by making the function to send Ether fail.
 
-```solidity
+```rust
 {{{DenialOfService}}}
 ```
 
@@ -21,6 +21,6 @@ One way to prevent this is to allow the users to withdraw their Ether instead of
 
 Here is a example.
 
-```solidity
+```rust
 {{{PreventDenialOfService}}}
 ```

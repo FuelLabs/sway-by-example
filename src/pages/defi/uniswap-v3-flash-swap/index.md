@@ -7,13 +7,13 @@ keywords: [defi, uniswap, v3, swap, arbitrage, amm]
 
 ### Uniswap V3 Flash Swap Arbitrage Example
 
-```solidity
+```rust
 {{{UniswapV3FlashSwap}}}
 ```
 
 ### Test with Foundry
 
-```solidity
+```rust
 {{{UniswapV3FlashSwapTest}}}
 ```
 

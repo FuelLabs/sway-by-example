@@ -14,13 +14,13 @@ ERC20 tokens provide functionalities to
 
 Here is the interface for ERC20.
 
-```solidity
+```rust
 {{{IERC20}}}
 ```
 
 Example of `ERC20` token contract.
 
-```solidity
+```rust
 {{{ERC20}}}
 ```
 
@@ -30,7 +30,7 @@ Using <a href="https://github.com/OpenZeppelin/openzeppelin-contracts" target="_
 
 Here is an example
 
-```solidity
+```rust
 {{{MyToken}}}
 ```
 
@@ -40,7 +40,7 @@ Here is an example contract, `TokenSwap`, to trade one ERC20 token for another.
 
 This contract will swap tokens by calling
 
-```solidity
+```rust
 transferFrom(address sender, address recipient, uint256 amount)
 
 ```
@@ -54,6 +54,6 @@ For `transferFrom` to succeed, `sender` must
 
 prior to `TokenSwap` calling `transferFrom`
 
-```solidity
+```rust
 {{{TokenSwap}}}
 ```

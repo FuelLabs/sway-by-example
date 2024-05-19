@@ -7,7 +7,7 @@ keywords: [data, variable, variables, array, arrays]
 
 Array can have a compile-time fixed size or a dynamic size.
 
-```solidity
+```rust
 {{{Array}}}
 ```
 
@@ -15,12 +15,12 @@ Array can have a compile-time fixed size or a dynamic size.
 
 Remove array element by shifting elements from right to left
 
-```solidity
+```rust
 {{{ArrayRemoveByShifting}}}
 ```
 
 Remove array element by copying last element into to the place to remove
 
-```solidity
+```rust
 {{{ArrayReplaceFromEnd}}}
 ```

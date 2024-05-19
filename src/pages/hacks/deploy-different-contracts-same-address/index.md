@@ -18,6 +18,6 @@ Hence it is possible to deploy different contracts at the same address if we can
 
 Below is an example of how a DAO can be hacked.
 
-```solidity
+```rust
 {{{TornadoHack}}}
 ```

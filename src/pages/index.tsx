@@ -124,8 +124,8 @@ export default function HomePage() {
       <div className={styles.subHeader}>v0.59.0</div>
       <div className={styles.main}>
         <p>
-          an introduction to <a href="https://docs.fuel.network/docs/sway/">Sway</a> with
-          simple examples | New! ★
+          an introduction to <a href="https://docs.fuel.network/docs/sway/">Sway</a>{" "}
+          with simple examples | New! ★
         </p>
         {/* <div className={styles.youTube}>
           <img src={youTube} alt="logo" className={styles.youTubeLogo} />

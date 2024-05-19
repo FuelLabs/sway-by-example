@@ -10,6 +10,6 @@ Examples of
 - Reading and writing to storage with `assembly`
 - Storage layout of different data types
 
-```solidity
+```rust
 {{{EVMStorage}}}
 ```

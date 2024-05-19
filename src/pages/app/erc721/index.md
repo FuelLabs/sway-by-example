@@ -7,6 +7,6 @@ keywords: [app, application, erc721, ierc721, nft]
 
 Example of ERC721
 
-```solidity
+```rust
 {{{ERC721}}}
 ```

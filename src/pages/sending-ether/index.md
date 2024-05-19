@@ -45,6 +45,6 @@ Guard against re-entrancy by
 - making all state changes before calling other contracts
 - using re-entrancy guard modifier
 
-```solidity
+```rust
 {{{SendingEther}}}
 ```

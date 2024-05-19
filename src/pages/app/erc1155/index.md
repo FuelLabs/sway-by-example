@@ -7,6 +7,6 @@ keywords: [app, application, erc1155, nft, ierc1155]
 
 Example of ERC1155
 
-```solidity
+```rust
 {{{ERC1155}}}
 ```

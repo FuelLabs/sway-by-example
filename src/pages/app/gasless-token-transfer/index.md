@@ -7,12 +7,12 @@ keywords: [app, application, gasless, token, transfer, ERC20, permit]
 
 Gasless ERC20 token transfer with Meta transaction
 
-```solidity
+```rust
 {{{GaslessTokenTransfer}}}
 ```
 
 Example `ERC20` that implements `permit` copied from solmate
 
-```solidity
+```rust
 {{{ERC20Permit}}}
 ```

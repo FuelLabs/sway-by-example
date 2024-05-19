@@ -12,6 +12,6 @@ Order of declaration and the type of state variables define which slots it will 
 
 However using assembly, you can write to any slot.
 
-```solidity
+```rust
 {{{Slot}}}
 ```

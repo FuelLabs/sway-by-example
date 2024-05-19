@@ -12,6 +12,6 @@ A library is embedded into the contract if all library functions are internal.
 
 Otherwise the library must be deployed and then linked before the contract is deployed.
 
-```solidity
+```rust
 {{{Library}}}
 ```

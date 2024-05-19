@@ -19,6 +19,6 @@ English auction for NFT.
 1. Highest bidder becomes the new owner of NFT.
 2. The seller receives the highest bid of ETH.
 
-```solidity
+```rust
 {{{EnglishAuction}}}
 ```

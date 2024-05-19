@@ -11,6 +11,6 @@ Don't write loops that are unbounded as this can hit the gas limit, causing your
 
 For the reason above, `while` and `do while` loops are rarely used.
 
-```solidity
+```rust
 {{{Loop}}}
 ```

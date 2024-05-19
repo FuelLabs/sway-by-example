@@ -9,6 +9,6 @@ To write or update a state variable you need to send a transaction.
 
 On the other hand, you can read state variables, for free, without any transaction fee.
 
-```solidity
+```rust
 {{{SimpleStorage}}}
 ```

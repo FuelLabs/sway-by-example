@@ -16,12 +16,12 @@ You can throw an error by calling `require`, `revert` or `assert`.
 
 Use custom error to save gas.
 
-```solidity
+```rust
 {{{Error}}}
 ```
 
 Here is another example
 
-```solidity
+```rust
 {{{Account}}}
 ```

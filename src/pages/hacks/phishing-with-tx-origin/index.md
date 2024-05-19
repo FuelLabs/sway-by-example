@@ -14,7 +14,7 @@ If contract A calls B, and B calls C, in C `msg.sender` is B and `tx.origin` is 
 A malicious contract can deceive the owner of a contract into calling a
 function that only the owner should be able to call.
 
-```solidity
+```rust
 {{{TxOrigin}}}
 ```
 
@@ -22,7 +22,7 @@ function that only the owner should be able to call.
 
 Use `msg.sender` instead of `tx.origin`
 
-```solidity
+```rust
 function transfer(address payable _to, uint256 _amount) public {
   require(msg.sender == owner, "Not owner");
 

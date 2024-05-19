@@ -11,7 +11,7 @@ Examples of
 - Memory layout in Solidity of different data types
 - Memory management for external calls
 
-```solidity
+```rust
 {{{YulMem}}}
 ```
 

@@ -13,6 +13,6 @@ Combining two exploits, reentrancy and hiding malicious code, we can build a con
 
 that will catch malicious users.
 
-```solidity
+```rust
 {{{HoneyPot}}}
 ```

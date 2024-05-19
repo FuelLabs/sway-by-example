@@ -12,7 +12,7 @@ keywords: [hack, security, block, timestamp, manipulation]
 - it cannot be stamped with an earlier time than its parent
 - it cannot be too far in the future
 
-```solidity
+```rust
 {{{BlockTimestamp}}}
 ```
 

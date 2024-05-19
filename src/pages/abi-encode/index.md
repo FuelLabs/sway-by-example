@@ -5,6 +5,6 @@ description: ABI encode
 keywords: [abi, encode, bytes, encodeWithSelector, encodeWithSignature, encodeCall]
 ---
 
-```solidity
+```rust
 {{{AbiEncode}}}
 ```

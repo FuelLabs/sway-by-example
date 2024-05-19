@@ -16,6 +16,6 @@ Functions can be declared as
 
 State variables can be declared as `public`, `private`, or `internal` but not `external`.
 
-```solidity
+```rust
 {{{Visibility}}}
 ```

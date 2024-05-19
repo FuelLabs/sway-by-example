@@ -7,6 +7,6 @@ keywords: [assembly, loop, yul, while, for]
 
 Example of loop in assembly
 
-```solidity
+```rust
 {{{AssemblyLoop}}}
 ```

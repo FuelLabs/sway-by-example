@@ -22,30 +22,30 @@ This is because the `fallback` inside `WETH` is execute when `permit` is called.
 
 ### ERC20Bank
 
-```solidity
+```rust
 {{{ERC20Bank}}}
 ```
 
 ### Exploit
 
-```solidity
+```rust
 {{{ERC20BankExploitTest}}}
 ```
 
 ### Other contracts
 
-```solidity
+```rust
 {{{IERC20}}}
 ```
 
-```solidity
+```rust
 {{{IERC20Permit}}}
 ```
 
-```solidity
+```rust
 {{{ERC20}}}
 ```
 
-```solidity
+```rust
 {{{WETH}}}
 ```

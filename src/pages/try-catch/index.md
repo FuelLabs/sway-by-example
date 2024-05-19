@@ -7,6 +7,6 @@ keywords: [try, catch, error, errors]
 
 `try / catch` can only catch errors from external function calls and contract creation.
 
-```solidity
+```rust
 {{{TryCatch}}}
 ```

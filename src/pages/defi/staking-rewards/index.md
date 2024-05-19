@@ -5,4 +5,4 @@ description: Staking rewards contract based on Synthetix StakingRewards.sol
 keywords: [defi, staking, reward, rewards]
 ---
 
-🏗️ WORK IN PROGRESS 
+🏗️ WORK IN PROGRESS

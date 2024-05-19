@@ -7,6 +7,6 @@ keywords: [new, contract, create, contracts, creates, new, create2, salt]
 
 Contracts can be created by other contracts using the `new` keyword. Since 0.8.0, `new` keyword supports `create2` feature by specifying `salt` options.
 
-```solidity
+```rust
 {{{NewContract}}}
 ```

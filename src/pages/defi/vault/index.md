@@ -15,6 +15,6 @@ Most vaults on the mainnet are more complex. Here we will focus on the math for 
 2. The DeFi protocol would use the users' deposits to generate yield (somehow).
 3. User burn shares to withdraw his tokens + yield.
 
-```solidity
+```rust
 {{{Vault}}}
 ```

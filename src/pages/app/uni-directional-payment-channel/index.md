@@ -16,10 +16,10 @@ Here is how this contract is used:
 
 This is called a uni-directional payment channel since the payment can go only in a single direction from `Alice` to `Bob`.
 
-```solidity
+```rust
 {{{UniDirectionalPaymentChannel}}}
 ```
 
-```solidity
+```rust
 {{{ECDSA}}}
 ```

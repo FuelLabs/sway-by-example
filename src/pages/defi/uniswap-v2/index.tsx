@@ -1,6 +1,13 @@
 import React from "react"
 import Example from "../../../components/Example"
-import html, { version, title, description, codes, tempFileName, tempPlaygroundLink } from "./index.html"
+import html, {
+  version,
+  title,
+  description,
+  codes,
+  tempFileName,
+  tempPlaygroundLink,
+} from "./index.html"
 
 interface Path {
   path: string

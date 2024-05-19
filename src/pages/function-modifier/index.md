@@ -13,6 +13,6 @@ Modifiers can be used to:
 - Validate inputs
 - Guard against reentrancy hack
 
-```solidity
+```rust
 {{{FunctionModifier}}}
 ```

@@ -13,6 +13,6 @@ Some gas saving techniques.
 - Caching array elements
 - Short circuit
 
-```solidity
+```rust
 {{{GasGolf}}}
 ```

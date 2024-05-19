@@ -12,7 +12,7 @@ even if the contract at the address is not the one being casted.
 
 This can be exploited to hide malicious code. Let's see how.
 
-```solidity
+```rust
 {{{ExternalContract}}}
 ```
 
@@ -22,7 +22,7 @@ This can be exploited to hide malicious code. Let's see how.
 - Make the address of external contract `public` so that the code of the
   external contract can be reviewed
 
-```solidity
+```rust
 Bar public bar;
 
 constructor() public {

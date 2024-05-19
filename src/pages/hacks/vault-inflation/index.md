@@ -27,6 +27,6 @@ User 0 front runs user 1's deposit.
 - Dead shares -> contract is first depositor
 - Decimal offset (OpenZeppelin ERC4626)
 
-```solidity
+```rust
 {{{VaultInflation}}}
 ```

@@ -7,6 +7,6 @@ keywords: [app, application, multi, delegatecall]
 
 An example of calling multiple functions with a single transaction, using `delegatecall`.
 
-```solidity
+```rust
 {{{MultiDelegatecall}}}
 ```
