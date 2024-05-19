@@ -2,6 +2,8 @@
 title: Gas
 version: 0.59.0
 description: Example of gas and gas limit in Solidity
+tempFileName: ""
+tempPlaygroundLink: ""
 keywords: [gas]
 ---
 

@@ -141,70 +141,70 @@ interface Route {
 }
 
 const routes: Route[] = [
-    {
-        path: "/abi-decode",
-        component: component_abi_decode
-    },
-    {
-        path: "/abi-encode",
-        component: component_abi_encode
-    },
-    {
-        path: "/app/assembly-bin-exp",
-        component: component_app_assembly_bin_exp
-    },
-    {
-        path: "/app/bi-directional-payment-channel",
-        component: component_app_bi_directional_payment_channel
-    },
-    {
-        path: "/app/create2",
-        component: component_app_create2
-    },
-    {
-        path: "/app/crowd-fund",
-        component: component_app_crowd_fund
-    },
-    {
-        path: "/app/deploy-any-contract",
-        component: component_app_deploy_any_contract
-    },
-    {
-        path: "/app/dutch-auction",
-        component: component_app_dutch_auction
-    },
-    {
-        path: "/app/english-auction",
-        component: component_app_english_auction
-    },
-    {
-        path: "/app/erc1155",
-        component: component_app_erc1155
-    },
-    {
-        path: "/app/erc20",
-        component: component_app_erc20
-    },
-    {
-        path: "/app/erc721",
-        component: component_app_erc721
-    },
-    {
-        path: "/app/ether-wallet",
-        component: component_app_ether_wallet
-    },
-    {
-        path: "/app/gasless-token-transfer",
-        component: component_app_gasless_token_transfer
-    },
-    {
-        path: "/app/iterable-mapping",
-        component: component_app_iterable_mapping
-    },
-    {
-        path: "/app/merkle-tree",
-        component: component_app_merkle_tree
-    },
+    // {
+    //     path: "/abi-decode",
+    //     component: component_abi_decode
+    // },
+    // {
+    //     path: "/abi-encode",
+    //     component: component_abi_encode
+    // },
+    // {
+    //     path: "/app/assembly-bin-exp",
+    //     component: component_app_assembly_bin_exp
+    // },
+    // {
+    //     path: "/app/bi-directional-payment-channel",
+    //     component: component_app_bi_directional_payment_channel
+    // },
+    // {
+    //     path: "/app/create2",
+    //     component: component_app_create2
+    // },
+    // {
+    //     path: "/app/crowd-fund",
+    //     component: component_app_crowd_fund
+    // },
+    // {
+    //     path: "/app/deploy-any-contract",
+    //     component: component_app_deploy_any_contract
+    // },
+    // {
+    //     path: "/app/dutch-auction",
+    //     component: component_app_dutch_auction
+    // },
+    // {
+    //     path: "/app/english-auction",
+    //     component: component_app_english_auction
+    // },
+    // {
+    //     path: "/app/erc1155",
+    //     component: component_app_erc1155
+    // },
+    // {
+    //     path: "/app/erc20",
+    //     component: component_app_erc20
+    // },
+    // {
+    //     path: "/app/erc721",
+    //     component: component_app_erc721
+    // },
+    // {
+    //     path: "/app/ether-wallet",
+    //     component: component_app_ether_wallet
+    // },
+    // {
+    //     path: "/app/gasless-token-transfer",
+    //     component: component_app_gasless_token_transfer
+    // },
+    // {
+    //     path: "/app/iterable-mapping",
+    //     component: component_app_iterable_mapping
+    // },
+    // {
+    //     path: "/app/merkle-tree",
+    //     component: component_app_merkle_tree
+    // },
     {
         path: "/app/minimal-proxy",
         component: component_app_minimal_proxy
