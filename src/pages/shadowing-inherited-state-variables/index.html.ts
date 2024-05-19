@@ -7,15 +7,16 @@ export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
 export const keywords = [
-  "state",
-  "variables",
-  "variable",
-  "shadow",
-  "shadowing",
-  "inheritance",
+    "state",
+    "variables",
+    "variable",
+    "shadow",
+    "shadowing",
+    "inheritance",
 ]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Unlike functions, state variables cannot be overridden by re-declaring it
 in the child contract.</p>

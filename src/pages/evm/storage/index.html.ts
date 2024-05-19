@@ -7,16 +7,17 @@ export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
 export const keywords = [
-  "data",
-  "evm",
-  "storage",
-  "state",
-  "variable",
-  "yul",
-  "assembly",
+    "data",
+    "evm",
+    "storage",
+    "state",
+    "variable",
+    "yul",
+    "assembly",
 ]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Examples of</p>
 <ul>

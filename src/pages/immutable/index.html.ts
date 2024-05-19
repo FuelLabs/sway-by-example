@@ -7,16 +7,17 @@ export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
 export const keywords = [
-  "constant",
-  "constants",
-  "immutable",
-  "immutables",
-  "data",
-  "variable",
-  "variables",
+    "constant",
+    "constants",
+    "immutable",
+    "immutables",
+    "data",
+    "variable",
+    "variables",
 ]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Immutable variables are like constants. Values of immutable variables can be set inside the constructor but cannot be modified afterwards.</p>
 <pre><code class="language-rust">

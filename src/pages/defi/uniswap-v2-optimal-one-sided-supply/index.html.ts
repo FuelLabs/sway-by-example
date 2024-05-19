@@ -7,17 +7,18 @@ export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
 export const keywords = [
-  "defi",
-  "uniswap",
-  "v2",
-  "optimal",
-  "one",
-  "sided",
-  "supply",
-  "amm",
+    "defi",
+    "uniswap",
+    "v2",
+    "optimal",
+    "one",
+    "sided",
+    "supply",
+    "amm",
 ]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<h3>Optimal One Sided Supply</h3>
 <pre><code class="language-rust">

@@ -6,9 +6,15 @@ export const description = "Constant sum AMM"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["defi", "constant", "sum", "amm"]
+export const keywords = [
+    "defi",
+    "constant",
+    "sum",
+    "amm",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Constant sum AMM <code>X + Y = K</code></p>
 <p>Tokens trade one to one.</p>

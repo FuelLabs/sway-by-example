@@ -6,9 +6,17 @@ export const description = "Write to Any Slot"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["app", "application", "write", "any", "slot", "storage"]
+export const keywords = [
+    "app",
+    "application",
+    "write",
+    "any",
+    "slot",
+    "storage",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Solidity storage is like an array of length 2^256.
 Each slot in the array can store 32 bytes.</p>

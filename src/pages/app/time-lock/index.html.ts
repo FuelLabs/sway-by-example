@@ -6,9 +6,15 @@ export const description = "Time Lock"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["app", "application", "time", "lock"]
+export const keywords = [
+    "app",
+    "application",
+    "time",
+    "lock",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p><code>TimeLock</code> is a contract that publishes a transaction to be executed in the future.
 After a mimimum waiting period, the transaction can be executed.</p>

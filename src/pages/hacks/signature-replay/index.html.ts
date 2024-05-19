@@ -1,15 +1,21 @@
 // metadata
 export const version = "0.59.0"
 export const title = "Signature Replay"
-export const description =
-  "An example of a contract vulnerable to signature replay attack"
+export const description = "An example of a contract vulnerable to signature replay attack"
 
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["hack", "security", "cryptography", "signature", "replay"]
+export const keywords = [
+    "hack",
+    "security",
+    "cryptography",
+    "signature",
+    "replay",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Signing messages off-chain and having a contract that requires that signature before executing
 a function is a useful technique.</p>

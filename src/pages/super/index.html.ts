@@ -7,15 +7,16 @@ export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
 export const keywords = [
-  "calling",
-  "parent",
-  "contract",
-  "contracts",
-  "inheritance",
-  "super",
+    "calling",
+    "parent",
+    "contract",
+    "contracts",
+    "inheritance",
+    "super",
 ]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Parent contracts can be called directly, or by using the keyword <code>super</code>.</p>
 <p>By using the keyword <code>super</code>, all of the immediate parent contracts will be called.</p>

@@ -6,9 +6,16 @@ export const description = "Example of ERC1155 multi token in Solidity"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["app", "application", "erc1155", "nft", "ierc1155"]
+export const keywords = [
+    "app",
+    "application",
+    "erc1155",
+    "nft",
+    "ierc1155",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Example of ERC1155</p>
 <pre><code class="language-rust">

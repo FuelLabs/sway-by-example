@@ -7,15 +7,16 @@ export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
 export const keywords = [
-  "app",
-  "application",
-  "create2",
-  "precompute",
-  "contract",
-  "address",
+    "app",
+    "application",
+    "create2",
+    "precompute",
+    "contract",
+    "address",
 ]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Contract address can be precomputed, before the contract is deployed, using <code>create2</code></p>
 <pre><code class="language-rust">

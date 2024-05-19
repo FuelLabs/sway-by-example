@@ -7,21 +7,22 @@ export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
 export const keywords = [
-  "sending",
-  "send",
-  "ether",
-  "eth",
-  "transfer",
-  "send",
-  "call",
-  "fallback",
-  "receive",
-  "payable",
-  "function",
-  "functions",
+    "sending",
+    "send",
+    "ether",
+    "eth",
+    "transfer",
+    "send",
+    "call",
+    "fallback",
+    "receive",
+    "payable",
+    "function",
+    "functions",
 ]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<h3>How to send Ether?</h3>
 <p>You can send Ether to other contracts by</p>

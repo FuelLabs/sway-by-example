@@ -6,9 +6,13 @@ export const description = "Example of how to emit events in Solidity"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["event", "events"]
+export const keywords = [
+    "event",
+    "events",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p><code>Events</code> allow logging to the Ethereum blockchain. Some use cases for events are:</p>
 <ul>

@@ -6,9 +6,16 @@ export const description = "Uniswap V3 liquidity examples"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["defi", "uniswap", "v3", "liquidity", "amm"]
+export const keywords = [
+    "defi",
+    "uniswap",
+    "v3",
+    "liquidity",
+    "amm",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Examples of minting new position, collect fees, increase and decrease liquidity.</p>
 <pre><code class="language-rust">

@@ -6,9 +6,17 @@ export const description = "Uniswap V3 Flash Swap Arbitrage"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["defi", "uniswap", "v3", "swap", "arbitrage", "amm"]
+export const keywords = [
+    "defi",
+    "uniswap",
+    "v3",
+    "swap",
+    "arbitrage",
+    "amm",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<h3>Uniswap V3 Flash Swap Arbitrage Example</h3>
 <pre><code class="language-rust">

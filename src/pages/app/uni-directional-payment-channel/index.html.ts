@@ -7,16 +7,17 @@ export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
 export const keywords = [
-  "app",
-  "application",
-  "uni-directional",
-  "payment",
-  "channel",
-  "signature",
-  "cryptography",
+    "app",
+    "application",
+    "uni-directional",
+    "payment",
+    "channel",
+    "signature",
+    "cryptography",
 ]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Payment channels allow participants to repeatedly transfer Ether off chain.</p>
 <p>Here is how this contract is used:</p>

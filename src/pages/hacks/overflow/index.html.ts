@@ -1,15 +1,21 @@
 // metadata
 export const version = "0.59.0"
 export const title = "Arithmetic Overflow and Underflow"
-export const description =
-  "An example of hacking Solidity with arithmetic overflow / underflow"
+export const description = "An example of hacking Solidity with arithmetic overflow / underflow"
 
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["hack", "security", "arithmetic", "overflow", "underflow"]
+export const keywords = [
+    "hack",
+    "security",
+    "arithmetic",
+    "overflow",
+    "underflow",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<h3>Vulnerability</h3>
 <h5>Solidity &lt; 0.8</h5>

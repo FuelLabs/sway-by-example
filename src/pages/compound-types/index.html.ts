@@ -4,40 +4,39 @@ export const title = "Compound Types"
 export const description = "Compound types in Sway"
 
 export const tempFileName = "compound_types.sw"
-export const tempPlaygroundLink =
-  "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=8030fee56754e3dfaf502d7a55c6090a"
+export const tempPlaygroundLink = "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=8030fee56754e3dfaf502d7a55c6090a"
 
 export const keywords = [
-  "compound",
-  "compounds",
-  "data",
-  "type",
-  "types",
-  "variable",
-  "variables",
-  "string",
-  "strings",
-  "boolean",
-  "uint256",
-  "int256",
-  "address",
-  "uint",
-  "int",
-  "tuple",
-  "tuples",
-  "destructure",
-  "destructuring",
-  "struct",
-  "structs",
-  "array",
-  "arrays",
+    "compound",
+    "compounds",
+    "data",
+    "type",
+    "types",
+    "variable",
+    "variables",
+    "string",
+    "strings",
+    "boolean",
+    "uint256",
+    "int256",
+    "address",
+    "uint",
+    "int",
+    "tuple",
+    "tuples",
+    "destructure",
+    "destructuring",
+    "struct",
+    "structs",
+    "array",
+    "arrays",
 ]
 
 export const codes = [
-  {
-    fileName: "compounds.rs",
-    code: "Y29udHJhY3Q7CgovLyBDb21wb3VuZCB0eXBlcwovLyAtIFR1cGxlcwovLyAtIGRlc3RydWN0dXJpbmcKLy8gLSBTdHJ1Y3RzCi8vIC0gQXJyYXlzCgpzdHJ1Y3QgUG9pbnQgewogICAgeDogdTY0LAogICAgeTogdTY0LAp9CgphYmkgTXlDb250cmFjdCB7CiAgICBmbiB0ZXN0X2Z1bmMoKSAtPiBQb2ludDsKfQoKaW1wbCBNeUNvbnRyYWN0IGZvciBDb250cmFjdCB7CiAgICBmbiB0ZXN0X2Z1bmMoKSAtPiBQb2ludCB7CiAgICAgICAgLy8gVHVwbGVzCiAgICAgICAgbGV0IHQ6ICh1NjQsIGJvb2wpID0gKDQyLCB0cnVlKTsKICAgICAgICAvLyBBY2Nlc3MgdHVwbGUgdmFsdWUKICAgICAgICBhc3NlcnQodC4wID09IDQyKTsKICAgICAgICBhc3NlcnQodC4xKTsKCiAgICAgICAgLy8gRGVzdHJ1Y3R1cmluZyBhIHR1cGxlICh0eXBlIGFubm90YXRpb24gaXMgb3B0aW9uYWwpCiAgICAgICAgbGV0IChudW0sIGJvbykgPSB0OwoKICAgICAgICAvLyBUdXBsZSBvZiBsZW5ndGggMQogICAgICAgIGxldCBvbmU6ICh1NjQsICkgPSAoMTIzLCApOwoKICAgICAgICAvLyBTdHJ1Y3QKICAgICAgICBsZXQgcCA9IFBvaW50IHsgeDogMSwgeTogMiB9OwogICAgICAgIC8vIEFjY2VzcyBzdHJ1Y3QgZmllbGRzCiAgICAgICAgYXNzZXJ0KHAueCA9PSAxKTsKICAgICAgICBhc3NlcnQocC55ID09IDIpOwoKICAgICAgICAvLyBBcnJheQogICAgICAgIGxldCB1X2FycjogW3U4OyA1XSA9IFsxLCAyLCAzLCA0LCA1XTsKICAgICAgICBsZXQgc19hcnI6IFtzdHI7IDRdID0gWyJjYXQiLCAiZG9nIiwgInNuYWtlIiwgImZpc2giXTsKCiAgICAgICAgbGV0IHN0cnVjdF9hcnI6IFtQb2ludDsgMl0gPSBbUG9pbnQgeyB4OiAxLCB5OiAyIH0sIFBvaW50IHsgeDogMTEsIHk6IDIyIH1dOwoKICAgICAgICAvLyBNdXRhdGluZyBhcnJheQogICAgICAgIGxldCBtdXQgbXV0X2FycjogW2Jvb2w7IDJdID0gW3RydWUsIGZhbHNlXTsKICAgICAgICBtdXRfYXJyWzFdID0gdHJ1ZTsKCiAgICAgICAgcAogICAgfQoKfQo=",
-  },
+    {
+        fileName: "compounds.rs",
+        code: "Y29udHJhY3Q7CgovLyBDb21wb3VuZCB0eXBlcwovLyAtIFR1cGxlcwovLyAtIGRlc3RydWN0dXJpbmcKLy8gLSBTdHJ1Y3RzCi8vIC0gQXJyYXlzCgpzdHJ1Y3QgUG9pbnQgewogICAgeDogdTY0LAogICAgeTogdTY0LAp9CgphYmkgTXlDb250cmFjdCB7CiAgICBmbiB0ZXN0X2Z1bmMoKSAtPiBQb2ludDsKfQoKaW1wbCBNeUNvbnRyYWN0IGZvciBDb250cmFjdCB7CiAgICBmbiB0ZXN0X2Z1bmMoKSAtPiBQb2ludCB7CiAgICAgICAgLy8gVHVwbGVzCiAgICAgICAgbGV0IHQ6ICh1NjQsIGJvb2wpID0gKDQyLCB0cnVlKTsKICAgICAgICAvLyBBY2Nlc3MgdHVwbGUgdmFsdWUKICAgICAgICBhc3NlcnQodC4wID09IDQyKTsKICAgICAgICBhc3NlcnQodC4xKTsKCiAgICAgICAgLy8gRGVzdHJ1Y3R1cmluZyBhIHR1cGxlICh0eXBlIGFubm90YXRpb24gaXMgb3B0aW9uYWwpCiAgICAgICAgbGV0IChudW0sIGJvbykgPSB0OwoKICAgICAgICAvLyBUdXBsZSBvZiBsZW5ndGggMQogICAgICAgIGxldCBvbmU6ICh1NjQsICkgPSAoMTIzLCApOwoKICAgICAgICAvLyBTdHJ1Y3QKICAgICAgICBsZXQgcCA9IFBvaW50IHsgeDogMSwgeTogMiB9OwogICAgICAgIC8vIEFjY2VzcyBzdHJ1Y3QgZmllbGRzCiAgICAgICAgYXNzZXJ0KHAueCA9PSAxKTsKICAgICAgICBhc3NlcnQocC55ID09IDIpOwoKICAgICAgICAvLyBBcnJheQogICAgICAgIGxldCB1X2FycjogW3U4OyA1XSA9IFsxLCAyLCAzLCA0LCA1XTsKICAgICAgICBsZXQgc19hcnI6IFtzdHI7IDRdID0gWyJjYXQiLCAiZG9nIiwgInNuYWtlIiwgImZpc2giXTsKCiAgICAgICAgbGV0IHN0cnVjdF9hcnI6IFtQb2ludDsgMl0gPSBbUG9pbnQgeyB4OiAxLCB5OiAyIH0sIFBvaW50IHsgeDogMTEsIHk6IDIyIH1dOwoKICAgICAgICAvLyBNdXRhdGluZyBhcnJheQogICAgICAgIGxldCBtdXQgbXV0X2FycjogW2Jvb2w7IDJdID0gW3RydWUsIGZhbHNlXTsKICAgICAgICBtdXRfYXJyWzFdID0gdHJ1ZTsKCiAgICAgICAgcAogICAgfQoKfQo=",
+    },
 ]
 
 const html = `<p>Examples of compound data types in Sway</p>

@@ -6,9 +6,16 @@ export const description = "Example of binary exponentiation in assembly"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["assembly", "yul", "binary", "exponentiation", "math"]
+export const keywords = [
+    "assembly",
+    "yul",
+    "binary",
+    "exponentiation",
+    "math",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Example of binary exponentiation in <code>assembly</code></p>
 <pre><code class="language-rust">

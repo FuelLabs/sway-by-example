@@ -6,9 +6,15 @@ export const description = "Example of how function selectors are computed"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["function", "functions", "selector", "selectors"]
+export const keywords = [
+    "function",
+    "functions",
+    "selector",
+    "selectors",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>When a function is called, the first 4 bytes of <code>calldata</code> specifies which function to call.</p>
 <p>This 4 bytes is called a function selector.</p>

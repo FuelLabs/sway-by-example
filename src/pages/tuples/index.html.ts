@@ -4,16 +4,18 @@ export const title = "Tuples"
 export const description = "Tuples in Sway"
 
 export const tempFileName = "tuples.sw"
-export const tempPlaygroundLink =
-  "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=100b9f3390d027364e3e8d13c772d1d7"
+export const tempPlaygroundLink = "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=100b9f3390d027364e3e8d13c772d1d7"
 
-export const keywords = ["tuple", "tuples"]
+export const keywords = [
+    "tuple",
+    "tuples",
+]
 
 export const codes = [
-  {
-    fileName: "tuples.rs",
-    code: "Y29udHJhY3Q7CgovLyBUdXBsZXMKLy8gLSBDcmVhdGUsIHJlYWQsIHVwZGF0ZQovLyAtIE5lc3RlZAovLyAtIERlc3RydWN0dXJlIGFuZCAiXyIKCmFiaSBNeUNvbnRyYWN0IHsKICAgIGZuIHRlc3RfZnVuYygpIC0+ICh1NjQsIChzdHJbNF0sIGJvb2wpKTsKfQoKaW1wbCBNeUNvbnRyYWN0IGZvciBDb250cmFjdCB7CiAgICBmbiB0ZXN0X2Z1bmMoKSAtPiAodTY0LCAoc3RyWzRdLCBib29sKSkgewogICAgICAgIGxldCBtdXQgdHVwbGU6ICh1NjQsIGJvb2wsIHU2NCkgPSAoMSwgZmFsc2UsIDIpOwogICAgICAgIHR1cGxlLjAgPSAxMjM7CiAgICAgICAgbGV0IHggPSB0dXBsZS4wOwoKICAgICAgICBsZXQgbmVzdGVkID0gKDEsICgiRnVlbCIsIGZhbHNlKSk7CiAgICAgICAgbGV0IHMgPSBuZXN0ZWQuMS4wOwoKICAgICAgICBsZXQgKG4sIChzLCBiKSkgPSBuZXN0ZWQ7CiAgICAgICAgLy8gU2tpcCB2YXJpYWJsZXMgZm9yIDAgYW5kIDEuMSAKICAgICAgICBsZXQgKF8sIChzLCBfKSkgPSBuZXN0ZWQ7CgogICAgICAgIG5lc3RlZAogICAgfQp9Cg==",
-  },
+    {
+        fileName: "tuples.rs",
+        code: "Y29udHJhY3Q7CgovLyBUdXBsZXMKLy8gLSBDcmVhdGUsIHJlYWQsIHVwZGF0ZQovLyAtIE5lc3RlZAovLyAtIERlc3RydWN0dXJlIGFuZCAiXyIKCmFiaSBNeUNvbnRyYWN0IHsKICAgIGZuIHRlc3RfZnVuYygpIC0+ICh1NjQsIChzdHJbNF0sIGJvb2wpKTsKfQoKaW1wbCBNeUNvbnRyYWN0IGZvciBDb250cmFjdCB7CiAgICBmbiB0ZXN0X2Z1bmMoKSAtPiAodTY0LCAoc3RyWzRdLCBib29sKSkgewogICAgICAgIGxldCBtdXQgdHVwbGU6ICh1NjQsIGJvb2wsIHU2NCkgPSAoMSwgZmFsc2UsIDIpOwogICAgICAgIHR1cGxlLjAgPSAxMjM7CiAgICAgICAgbGV0IHggPSB0dXBsZS4wOwoKICAgICAgICBsZXQgbmVzdGVkID0gKDEsICgiRnVlbCIsIGZhbHNlKSk7CiAgICAgICAgbGV0IHMgPSBuZXN0ZWQuMS4wOwoKICAgICAgICBsZXQgKG4sIChzLCBiKSkgPSBuZXN0ZWQ7CiAgICAgICAgLy8gU2tpcCB2YXJpYWJsZXMgZm9yIDAgYW5kIDEuMSAKICAgICAgICBsZXQgKF8sIChzLCBfKSkgPSBuZXN0ZWQ7CgogICAgICAgIG5lc3RlZAogICAgfQp9Cg==",
+    },
 ]
 
 const html = `<p>Examples of tuples in Sway</p>

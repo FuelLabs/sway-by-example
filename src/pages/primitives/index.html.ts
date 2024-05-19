@@ -7,22 +7,23 @@ export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
 export const keywords = [
-  "primitive",
-  "primitives",
-  "data",
-  "type",
-  "types",
-  "variable",
-  "variables",
-  "boolean",
-  "uint256",
-  "int256",
-  "address",
-  "uint",
-  "int",
+    "primitive",
+    "primitives",
+    "data",
+    "type",
+    "types",
+    "variable",
+    "variables",
+    "boolean",
+    "uint256",
+    "int256",
+    "address",
+    "uint",
+    "int",
 ]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Here we introduce you to some primitive data types available in Solidity.</p>
 <ul>

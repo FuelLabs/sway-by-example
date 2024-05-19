@@ -4,16 +4,18 @@ export const title = "Options"
 export const description = "Options in Sway"
 
 export const tempFileName = "options.sw"
-export const tempPlaygroundLink =
-  "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=2b47b794b06c094042cb76968dc4a07c"
+export const tempPlaygroundLink = "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=2b47b794b06c094042cb76968dc4a07c"
 
-export const keywords = ["option", "options"]
+export const keywords = [
+    "option",
+    "options",
+]
 
 export const codes = [
-  {
-    fileName: "options.rs",
-    code: "Y29udHJhY3Q7CgovLyBPcHRpb248VD4gPSBTb21lKFQpIHwgTm9uZQoKYWJpIE15Q29udHJhY3QgewogICAgZm4gdGVzdF9mdW5jKCkgLT4gKE9wdGlvbjxib29sPiwgT3B0aW9uPGJvb2w+LCBPcHRpb248Ym9vbD4pOwp9CgppbXBsIE15Q29udHJhY3QgZm9yIENvbnRyYWN0IHsKICAgIGZuIHRlc3RfZnVuYygpIC0+IChPcHRpb248Ym9vbD4sIE9wdGlvbjxib29sPiwgT3B0aW9uPGJvb2w+KSB7CiAgICAgICAgbGV0IGxpa2VkID0gT3B0aW9uOjpTb21lKHRydWUpOwogICAgICAgIGxldCBkaXNsaWtlZCA9IE9wdGlvbjo6U29tZShmYWxzZSk7CiAgICAgICAgbGV0IG5vbmUgPSBPcHRpb246Ok5vbmU7CiAgICAgICAgKGxpa2VkLCBkaXNsaWtlZCwgbm9uZSkKICAgIH0KfQo=",
-  },
+    {
+        fileName: "options.rs",
+        code: "Y29udHJhY3Q7CgovLyBPcHRpb248VD4gPSBTb21lKFQpIHwgTm9uZQoKYWJpIE15Q29udHJhY3QgewogICAgZm4gdGVzdF9mdW5jKCkgLT4gKE9wdGlvbjxib29sPiwgT3B0aW9uPGJvb2w+LCBPcHRpb248Ym9vbD4pOwp9CgppbXBsIE15Q29udHJhY3QgZm9yIENvbnRyYWN0IHsKICAgIGZuIHRlc3RfZnVuYygpIC0+IChPcHRpb248Ym9vbD4sIE9wdGlvbjxib29sPiwgT3B0aW9uPGJvb2w+KSB7CiAgICAgICAgbGV0IGxpa2VkID0gT3B0aW9uOjpTb21lKHRydWUpOwogICAgICAgIGxldCBkaXNsaWtlZCA9IE9wdGlvbjo6U29tZShmYWxzZSk7CiAgICAgICAgbGV0IG5vbmUgPSBPcHRpb246Ok5vbmU7CiAgICAgICAgKGxpa2VkLCBkaXNsaWtlZCwgbm9uZSkKICAgIH0KfQo=",
+    },
 ]
 
 const html = `<p>Examples of options in Sway</p>

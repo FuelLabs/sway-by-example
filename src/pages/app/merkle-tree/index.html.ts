@@ -6,9 +6,16 @@ export const description = "Learn about Merkle tree in Solidity"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["app", "application", "merkle", "tree", "cryptography"]
+export const keywords = [
+    "app",
+    "application",
+    "merkle",
+    "tree",
+    "cryptography",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Merkle tree allows you to cryptographically prove that an element is contained</p>
 <p>in a set without revealing the entire set.</p>

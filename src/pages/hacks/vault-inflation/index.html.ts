@@ -6,9 +6,16 @@ export const description = "An example of vault inflation"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["hack", "security", "inflation", "erc4626", "vault"]
+export const keywords = [
+    "hack",
+    "security",
+    "inflation",
+    "erc4626",
+    "vault",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<h3>Vulnerability</h3>
 <p>Vault shares can be inflated by donating ERC20 token to the vault.</p>

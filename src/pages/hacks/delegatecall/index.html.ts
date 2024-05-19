@@ -6,9 +6,14 @@ export const description = "An example of exploits using delegatecall in Solidit
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["hack", "security", "delegatecall"]
+export const keywords = [
+    "hack",
+    "security",
+    "delegatecall",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<h3>Vulnerability</h3>
 <p><code>delegatecall</code> is tricky to use and wrong usage or incorrect understanding

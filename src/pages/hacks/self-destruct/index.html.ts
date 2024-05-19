@@ -1,15 +1,19 @@
 // metadata
 export const version = "0.59.0"
 export const title = "Self Destruct"
-export const description =
-  "An example of how to delete your smart contract by calling seldestruct in Solidity"
+export const description = "An example of how to delete your smart contract by calling seldestruct in Solidity"
 
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["hack", "security", "selfdestruct"]
+export const keywords = [
+    "hack",
+    "security",
+    "selfdestruct",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Contracts can be deleted from the blockchain by calling <code>selfdestruct</code>.</p>
 <p><code>selfdestruct</code> sends all remaining Ether stored in the contract to a

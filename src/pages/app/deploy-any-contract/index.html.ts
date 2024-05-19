@@ -6,9 +6,16 @@ export const description = "Deploy Any Contract"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["app", "application", "deploy", "any", "contract"]
+export const keywords = [
+    "app",
+    "application",
+    "deploy",
+    "any",
+    "contract",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Deploy any contract by calling <code>Proxy.deploy(bytes memory _code)</code></p>
 <p>For this example, you can get the contract bytecodes by calling <code>Helper.getBytecode1</code> and <code>Helper.getBytecode2</code></p>

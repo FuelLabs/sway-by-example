@@ -5,6 +5,7 @@ import styles from "./App.module.css"
 import Layout from "./components/Layout"
 import routes from "./routes"
 import { getPrevNextPaths } from "./nav"
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const { state, init } = useAppContext()
@@ -38,6 +39,7 @@ function App() {
           })}
         </Routes>
       </Layout>
+      <Analytics />
     </Router>
   )
 }

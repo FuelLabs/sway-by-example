@@ -6,9 +6,14 @@ export const description = "Borrow and repay DAI using DssProxy"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["defi", "dai", "proxy"]
+export const keywords = [
+    "defi",
+    "dai",
+    "proxy",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<h3>Example</h3>
 <p>Example of locking ETH collateral, borrowing DAI, repaying DAI and unlocking ETH using <code>DssProxy</code>.</p>

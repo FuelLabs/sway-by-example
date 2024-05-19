@@ -6,9 +6,16 @@ export const description = "Example of ERC20 token in Solidity"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["app", "application", "erc20", "ierc20", "token"]
+export const keywords = [
+    "app",
+    "application",
+    "erc20",
+    "ierc20",
+    "token",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Any contract that follow the <a href="https://eips.ethereum.org/EIPS/eip-20" target="__blank">ERC20 standard</a> is a ERC20 token.</p>
 <p>ERC20 tokens provide functionalities to</p>

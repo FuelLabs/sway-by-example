@@ -7,15 +7,16 @@ export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
 export const keywords = [
-  "cryptography",
-  "verify",
-  "verifying",
-  "signature",
-  "signatures",
-  "ecrecover",
+    "cryptography",
+    "verify",
+    "verifying",
+    "signature",
+    "signatures",
+    "ecrecover",
 ]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Messages can be signed off chain and then verified on chain using a smart contract.</p>
 <p><a href="https://github.com/t4sk/hello-erc20-permit/blob/main/test/verify-signature.js">Example using ethers.js</a></p>

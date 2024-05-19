@@ -6,9 +6,16 @@ export const description = "Discrete staking rewards"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["defi", "discrete", "staking", "reward", "rewards"]
+export const keywords = [
+    "defi",
+    "discrete",
+    "staking",
+    "reward",
+    "rewards",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Similar to staking rewards contract. Difference is that reward amount may vary at each second.</p>
 <h3>Discrete Staking Rewards</h3>

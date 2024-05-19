@@ -6,9 +6,15 @@ export const description = "An example of phishing with tx.origin in Solidity"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["hack", "security", "phishing", "tx.origin"]
+export const keywords = [
+    "hack",
+    "security",
+    "phishing",
+    "tx.origin",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<h3>What&#39;s the difference between <code>msg.sender</code> and <code>tx.origin</code>?</h3>
 <p>If contract A calls B, and B calls C, in C <code>msg.sender</code> is B and <code>tx.origin</code> is A.</p>

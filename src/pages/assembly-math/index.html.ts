@@ -6,9 +6,16 @@ export const description = "Example of math in assembly"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["assembly", "yul", "math", "add", "mul"]
+export const keywords = [
+    "assembly",
+    "yul",
+    "math",
+    "add",
+    "mul",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Example of math in <code>assembly</code></p>
 <pre><code class="language-rust">

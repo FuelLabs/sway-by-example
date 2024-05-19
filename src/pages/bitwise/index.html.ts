@@ -6,9 +6,16 @@ export const description = "Learn about bitwise operators in Solidity"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["bitwise", "most", "significant", "bit", "assembly"]
+export const keywords = [
+    "bitwise",
+    "most",
+    "significant",
+    "bit",
+    "assembly",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<pre><code class="language-rust">
 </code></pre><h3>Most significant bit</h3>

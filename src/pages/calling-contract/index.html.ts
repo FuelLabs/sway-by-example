@@ -1,23 +1,23 @@
 // metadata
 export const version = "0.59.0"
 export const title = "Calling Other Contract"
-export const description =
-  "In Solidity, contract can call other contracts in several ways"
+export const description = "In Solidity, contract can call other contracts in several ways"
 
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
 export const keywords = [
-  "calling",
-  "other",
-  "contract",
-  "contracts",
-  "call",
-  "function",
-  "functions",
+    "calling",
+    "other",
+    "contract",
+    "contracts",
+    "call",
+    "function",
+    "functions",
 ]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Contract can call other contracts in 2 ways.</p>
 <p>The easiest way to is to just call it, like <code>A.foo(x, y, z)</code>.</p>

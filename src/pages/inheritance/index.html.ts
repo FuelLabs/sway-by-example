@@ -7,16 +7,17 @@ export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
 export const keywords = [
-  "inheritance",
-  "super",
-  "override",
-  "virtual",
-  "is",
-  "contract",
-  "contracts",
+    "inheritance",
+    "super",
+    "override",
+    "virtual",
+    "is",
+    "contract",
+    "contracts",
 ]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Solidity supports multiple inheritance. Contracts can inherit other contract by using the <code>is</code> keyword.</p>
 <p>Function that is going to be overridden by a child contract must be declared as <code>virtual</code>.</p>

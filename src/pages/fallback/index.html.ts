@@ -7,18 +7,19 @@ export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
 export const keywords = [
-  "fallback",
-  "function",
-  "functions",
-  "receive",
-  "payable",
-  "send",
-  "ether",
-  "eth",
-  "transfer",
+    "fallback",
+    "function",
+    "functions",
+    "receive",
+    "payable",
+    "send",
+    "ether",
+    "eth",
+    "transfer",
 ]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p><code>fallback</code> is a special function that is executed either when</p>
 <ul>

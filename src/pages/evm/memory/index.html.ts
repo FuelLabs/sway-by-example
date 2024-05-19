@@ -6,9 +6,16 @@ export const description = "Example of EVM memory in Solidity"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["data", "evm", "memory", "yul", "assembly"]
+export const keywords = [
+    "data",
+    "evm",
+    "memory",
+    "yul",
+    "assembly",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Examples of</p>
 <ul>

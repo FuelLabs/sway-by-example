@@ -6,9 +6,12 @@ export const description = "Learn how to import other Solidity files"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["import"]
+export const keywords = [
+    "import",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>You can import local and external files in Solidity.</p>
 <h3>Local</h3>

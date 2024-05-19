@@ -6,9 +6,16 @@ export const description = "An example of unchecked math in Solidity"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["gas", "unchecked", "math", "overflow", "underflow"]
+export const keywords = [
+    "gas",
+    "unchecked",
+    "math",
+    "overflow",
+    "underflow",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Overflow and underflow of numbers in Solidity 0.8 throw an error. This can be disabled by using <code>unchecked</code>.</p>
 <p>Disabling overflow / underflow check saves gas.</p>

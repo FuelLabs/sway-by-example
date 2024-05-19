@@ -6,9 +6,16 @@ export const description = "Uniswap V3 swap examples"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["defi", "uniswap", "v3", "swap", "amm"]
+export const keywords = [
+    "defi",
+    "uniswap",
+    "v3",
+    "swap",
+    "amm",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<h3>Uniswap V3 Single Hop Swap</h3>
 <pre><code class="language-rust">

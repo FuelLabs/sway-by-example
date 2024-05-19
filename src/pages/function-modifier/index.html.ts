@@ -6,9 +6,16 @@ export const description = "Example of how to write function modifier in Solidit
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["function", "functions", "modifier", "modifiers", "_"]
+export const keywords = [
+    "function",
+    "functions",
+    "modifier",
+    "modifiers",
+    "_",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Modifiers are code that can be run before and / or after a function call.</p>
 <p>Modifiers can be used to:</p>

@@ -7,15 +7,16 @@ export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
 export const keywords = [
-  "abi",
-  "encode",
-  "bytes",
-  "encodeWithSelector",
-  "encodeWithSignature",
-  "encodeCall",
+    "abi",
+    "encode",
+    "bytes",
+    "encodeWithSelector",
+    "encodeWithSignature",
+    "encodeCall",
 ]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<pre><code class="language-rust">
 </code></pre>`

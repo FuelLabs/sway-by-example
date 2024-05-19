@@ -1,23 +1,23 @@
 // metadata
 export const version = "0.59.0"
 export const title = "Visibility"
-export const description =
-  "An example of external, internal, private and public functions in Solidity"
+export const description = "An example of external, internal, private and public functions in Solidity"
 
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
 export const keywords = [
-  "visibility",
-  "function",
-  "functions",
-  "internal",
-  "private",
-  "public",
-  "external",
+    "visibility",
+    "function",
+    "functions",
+    "internal",
+    "private",
+    "public",
+    "external",
 ]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Functions and state variables have to declare whether they are accessible by other contracts.</p>
 <p>Functions can be declared as</p>

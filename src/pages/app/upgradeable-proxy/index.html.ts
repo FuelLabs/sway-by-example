@@ -6,9 +6,16 @@ export const description = "Example of upgradeable proxy"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["app", "application", "delegatecall", "upgradeable", "proxy"]
+export const keywords = [
+    "app",
+    "application",
+    "delegatecall",
+    "upgradeable",
+    "proxy",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Example of upgradeable proxy contract. Never use this in production.</p>
 <p>This example shows</p>

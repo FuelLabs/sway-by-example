@@ -1,24 +1,24 @@
 // metadata
 export const version = "0.59.0"
 export const title = "Hiding Malicious Code with External Contract"
-export const description =
-  "An example of exploit where malicious code is hidden in an external contract in Solidity"
+export const description = "An example of exploit where malicious code is hidden in an external contract in Solidity"
 
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
 export const keywords = [
-  "hack",
-  "security",
-  "hide",
-  "hiding",
-  "malicious",
-  "code",
-  "external",
-  "contract",
+    "hack",
+    "security",
+    "hide",
+    "hiding",
+    "malicious",
+    "code",
+    "external",
+    "contract",
 ]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<h3>Vulnerability</h3>
 <p>In Solidity any address can be casted into specific contract,

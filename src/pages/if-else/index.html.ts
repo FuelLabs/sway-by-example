@@ -6,9 +6,16 @@ export const description = "If / Else conditional statement in Solidity"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["if", "else", "conditional", "statement", "statements"]
+export const keywords = [
+    "if",
+    "else",
+    "conditional",
+    "statement",
+    "statements",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Solidity supports conditional statements <code>if</code>, <code>else if</code> and <code>else</code>.</p>
 <pre><code class="language-rust">

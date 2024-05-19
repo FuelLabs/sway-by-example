@@ -7,16 +7,17 @@ export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
 export const keywords = [
-  "reading",
-  "writing",
-  "state",
-  "variable",
-  "variables",
-  "app",
-  "application",
+    "reading",
+    "writing",
+    "state",
+    "variable",
+    "variables",
+    "app",
+    "application",
 ]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>To write or update a state variable you need to send a transaction.</p>
 <p>On the other hand, you can read state variables, for free, without any transaction fee.</p>

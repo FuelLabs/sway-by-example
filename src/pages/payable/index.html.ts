@@ -6,9 +6,15 @@ export const description = "An example of how to use the keyword payable in Soli
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["payable", "eth", "send", "ether"]
+export const keywords = [
+    "payable",
+    "eth",
+    "send",
+    "ether",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Functions and addresses declared <code>payable</code> can receive <code>ether</code> into the contract.</p>
 <pre><code class="language-rust">

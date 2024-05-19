@@ -6,9 +6,15 @@ export const description = "An example of denial of service hack in Solidity"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["hack", "security", "denial", "service"]
+export const keywords = [
+    "hack",
+    "security",
+    "denial",
+    "service",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<h3>Vulnerability</h3>
 <p>There are many ways to attack a smart contract to make it unusable.</p>

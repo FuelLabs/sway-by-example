@@ -6,9 +6,12 @@ export const description = "Example of gas and gas limit in Solidity"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["gas"]
+export const keywords = [
+    "gas",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<h3>How much <code>ether</code> do you need to pay for a transaction?</h3>
 <p>You pay <code>gas spent * gas price</code> amount of <code>ether</code>, where</p>

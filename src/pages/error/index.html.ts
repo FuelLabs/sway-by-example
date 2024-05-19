@@ -6,9 +6,16 @@ export const description = "Example of how to throw errors in Solidity"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["error", "errors", "require", "revert", "assert"]
+export const keywords = [
+    "error",
+    "errors",
+    "require",
+    "revert",
+    "assert",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>An error will undo all changes made to the state during a transaction.</p>
 <p>You can throw an error by calling <code>require</code>, <code>revert</code> or <code>assert</code>.</p>

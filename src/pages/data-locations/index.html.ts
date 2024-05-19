@@ -7,15 +7,16 @@ export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
 export const keywords = [
-  "data",
-  "location",
-  "locations",
-  "storage",
-  "memory",
-  "calldata",
+    "data",
+    "location",
+    "locations",
+    "storage",
+    "memory",
+    "calldata",
 ]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Variables are declared as either <code>storage</code>, <code>memory</code> or <code>calldata</code> to explicitly
 specify the location of the data.</p>

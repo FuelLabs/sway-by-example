@@ -6,9 +6,16 @@ export const description = "Deploy contracts cheaply with minimal proxy contract
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["app", "application", "minimal", "proxy", "contract"]
+export const keywords = [
+    "app",
+    "application",
+    "minimal",
+    "proxy",
+    "contract",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>🏗️ WORK IN PROGRESS</p>
 `

@@ -6,9 +6,16 @@ export const description = "Curve's stable swap AMM"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["defi", "curve", "stable", "swap", "amm"]
+export const keywords = [
+    "defi",
+    "curve",
+    "stable",
+    "swap",
+    "amm",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Simplified version of Curve&#39;s stable swap AMM</p>
 <pre><code class="language-rust">

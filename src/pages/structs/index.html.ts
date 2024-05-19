@@ -4,24 +4,23 @@ export const title = "Structs"
 export const description = "Structs in Sway"
 
 export const tempFileName = "structs.sw"
-export const tempPlaygroundLink =
-  "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=b9010222314e75e2a6f410cb8d339eba"
+export const tempPlaygroundLink = "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=b9010222314e75e2a6f410cb8d339eba"
 
 export const keywords = [
-  "struct",
-  "structs",
-  "data",
-  "type",
-  "types",
-  "variable",
-  "variables",
+    "struct",
+    "structs",
+    "data",
+    "type",
+    "types",
+    "variable",
+    "variables",
 ]
 
 export const codes = [
-  {
-    fileName: "structs.rs",
-    code: "Y29udHJhY3Q7CgovLyBTdHJ1Y3RzCi8vIC0gQ3JlYXRlLCByZWFkIGFuZCB1cGRhdGUKLy8gLSBTaG9ydGhhbmQgbm90YXRpb24KLy8gLSBEZXN0cnVjdHVyZQoKc3RydWN0IFBvaW50IHsKICAgIHg6IHU2NCwKICAgIHk6IHU2NCwKfQoKLy8gTmVzdGVkIHN0cnVjdApzdHJ1Y3QgTGluZSB7CiAgICBwMDogUG9pbnQsCiAgICBwMTogUG9pbnQsCn0KCmFiaSBNeUNvbnRyYWN0IHsKICAgIGZuIHRlc3RfZnVuYygpIC0+IExpbmU7Cn0KCmltcGwgTXlDb250cmFjdCBmb3IgQ29udHJhY3QgewogICAgZm4gdGVzdF9mdW5jKCkgLT4gTGluZSB7CiAgICAgICAgLy8gQ3JlYXRlLCByZWFkIGFuZCB1cGRhdGUKICAgICAgICBsZXQgbXV0IHAwID0gUG9pbnQgeyB4OiAxLCB5OiAyIH07CgogICAgICAgIHAwLnggPSAxMTsKCiAgICAgICAgLy8gU2hvcnRoYW5kCiAgICAgICAgbGV0IHg6IHU2NCA9IDEyMzsKICAgICAgICBsZXQgeTogdTY0ID0gMTIzOwoKICAgICAgICBsZXQgcDEgPSBQb2ludCB7IHgsIHkgfTsKCiAgICAgICAgLy8gTmVzdGVkIHN0cnVjdHMKICAgICAgICBsZXQgbGluZSA9IExpbmUgeyBwMCwgcDEgfTsKCiAgICAgICAgLy8gRGVzdHJ1Y3R1cmUKICAgICAgICBsZXQgTGluZSB7CiAgICAgICAgICAgIHAwOiBQb2ludCB7IHg6IHgwLCB5OiB5MCB9LAogICAgICAgICAgICBwMTogUG9pbnQgeyB4OiB4MSwgeTogeTFsIH0sCiAgICAgICAgfSA9IGxpbmU7CgogICAgICAgIGxpbmUKICAgIH0KfQo=",
-  },
+    {
+        fileName: "structs.rs",
+        code: "Y29udHJhY3Q7CgovLyBTdHJ1Y3RzCi8vIC0gQ3JlYXRlLCByZWFkIGFuZCB1cGRhdGUKLy8gLSBTaG9ydGhhbmQgbm90YXRpb24KLy8gLSBEZXN0cnVjdHVyZQoKc3RydWN0IFBvaW50IHsKICAgIHg6IHU2NCwKICAgIHk6IHU2NCwKfQoKLy8gTmVzdGVkIHN0cnVjdApzdHJ1Y3QgTGluZSB7CiAgICBwMDogUG9pbnQsCiAgICBwMTogUG9pbnQsCn0KCmFiaSBNeUNvbnRyYWN0IHsKICAgIGZuIHRlc3RfZnVuYygpIC0+IExpbmU7Cn0KCmltcGwgTXlDb250cmFjdCBmb3IgQ29udHJhY3QgewogICAgZm4gdGVzdF9mdW5jKCkgLT4gTGluZSB7CiAgICAgICAgLy8gQ3JlYXRlLCByZWFkIGFuZCB1cGRhdGUKICAgICAgICBsZXQgbXV0IHAwID0gUG9pbnQgeyB4OiAxLCB5OiAyIH07CgogICAgICAgIHAwLnggPSAxMTsKCiAgICAgICAgLy8gU2hvcnRoYW5kCiAgICAgICAgbGV0IHg6IHU2NCA9IDEyMzsKICAgICAgICBsZXQgeTogdTY0ID0gMTIzOwoKICAgICAgICBsZXQgcDEgPSBQb2ludCB7IHgsIHkgfTsKCiAgICAgICAgLy8gTmVzdGVkIHN0cnVjdHMKICAgICAgICBsZXQgbGluZSA9IExpbmUgeyBwMCwgcDEgfTsKCiAgICAgICAgLy8gRGVzdHJ1Y3R1cmUKICAgICAgICBsZXQgTGluZSB7CiAgICAgICAgICAgIHAwOiBQb2ludCB7IHg6IHgwLCB5OiB5MCB9LAogICAgICAgICAgICBwMTogUG9pbnQgeyB4OiB4MSwgeTogeTFsIH0sCiAgICAgICAgfSA9IGxpbmU7CgogICAgICAgIGxpbmUKICAgIH0KfQo=",
+    },
 ]
 
 const html = `<p>Examples of structs in Sway</p>

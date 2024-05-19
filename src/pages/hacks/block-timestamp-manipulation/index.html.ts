@@ -1,15 +1,21 @@
 // metadata
 export const version = "0.59.0"
 export const title = "Block Timestamp Manipulation"
-export const description =
-  "An example of a Solidity contract vulnerable to block timestamp manipulation"
+export const description = "An example of a Solidity contract vulnerable to block timestamp manipulation"
 
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["hack", "security", "block", "timestamp", "manipulation"]
+export const keywords = [
+    "hack",
+    "security",
+    "block",
+    "timestamp",
+    "manipulation",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<h3>Vulnerability</h3>
 <p><code>block.timestamp</code> can be manipulated by miners with the following constraints</p>

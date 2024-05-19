@@ -6,9 +6,13 @@ export const description = "transient storage"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["transient", "storage"]
+export const keywords = [
+    "transient",
+    "storage",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Data stored in transient storage is cleared out after transaction.</p>
 <pre><code class="language-rust">

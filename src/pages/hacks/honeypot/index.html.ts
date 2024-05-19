@@ -6,9 +6,14 @@ export const description = "An example of honeypot in Solidity"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["hack", "security", "honeypot"]
+export const keywords = [
+    "hack",
+    "security",
+    "honeypot",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>A honeypot is a trap to catch hackers.</p>
 <h3>Vulnerability</h3>

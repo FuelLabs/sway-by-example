@@ -6,9 +6,13 @@ export const description = "An example of testing contracts with Echidna"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["test", "echidna"]
+export const keywords = [
+    "test",
+    "echidna",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Examples of fuzzing with <a href="https://github.com/crytic/echidna">Echidna</a>.</p>
 <ol>

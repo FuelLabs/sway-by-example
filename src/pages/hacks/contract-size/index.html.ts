@@ -7,16 +7,17 @@ export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
 export const keywords = [
-  "hack",
-  "security",
-  "bypass",
-  "contract",
-  "size",
-  "check",
-  "extcodesize",
+    "hack",
+    "security",
+    "bypass",
+    "contract",
+    "size",
+    "check",
+    "extcodesize",
 ]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<h3>Vulnerability</h3>
 <p>If an address is a contract then the size of code stored at the address will be greater than 0 right?</p>

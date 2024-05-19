@@ -4,24 +4,23 @@ export const title = "Base Asset"
 export const description = "Base asset in Sway"
 
 export const tempFileName = "base_asset.sw"
-export const tempPlaygroundLink =
-  "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=06d9ad29e06c49f295191d7b054763bd"
+export const tempPlaygroundLink = "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=06d9ad29e06c49f295191d7b054763bd"
 
 export const keywords = [
-  "base",
-  "asset",
-  "assets",
-  "ethereum",
-  "token",
-  "tokens",
-  "eth",
+    "base",
+    "asset",
+    "assets",
+    "ethereum",
+    "token",
+    "tokens",
+    "eth",
 ]
 
 export const codes = [
-  {
-    fileName: "base_asset.rs",
-    code: "Y29udHJhY3Q7Cgp1c2Ugc3RkOjp7CiAgICBhdXRoOjp7CiAgICAgICAgbXNnX3NlbmRlciwKICAgIH0sCiAgICBjYWxsX2ZyYW1lczo6ewogICAgICAgIG1zZ19hc3NldF9pZCwKICAgIH0sCiAgICBjb250cmFjdF9pZDo6Q29udHJhY3RJZCwKICAgIGNvbnRleHQ6OnsKICAgICAgICBiYWxhbmNlX29mLAogICAgICAgIG1zZ19hbW91bnQsCiAgICB9LAogICAgYXNzZXQ6OnsKICAgICAgICB0cmFuc2ZlciwKICAgIH0sCn07CgphYmkgTXlDb250cmFjdCB7CiAgICAjW3BheWFibGVdCiAgICBmbiBkZXBvc2l0KCk7CiAgICBmbiB3aXRoZHJhdyhhbW91bnQ6IHU2NCk7CiAgICBmbiBnZXRfYmFsYW5jZSgpIC0+IHU2NDsKfQoKaW1wbCBNeUNvbnRyYWN0IGZvciBDb250cmFjdCB7CiAgICAjW3BheWFibGVdCiAgICBmbiBkZXBvc2l0KCkgewogICAgICAgIHJlcXVpcmUobXNnX2Fzc2V0X2lkKCkgPT0gQXNzZXRJZDo6YmFzZSgpLCAibm90IGJhc2UgYXNzZXQiKTsKICAgICAgICByZXF1aXJlKG1zZ19hbW91bnQoKSA+IDAsICJhbW91bnQgPSAwIik7CiAgICB9CgogICAgZm4gd2l0aGRyYXcoYW1vdW50OiB1NjQpIHsKICAgICAgICB0cmFuc2Zlcihtc2dfc2VuZGVyKCkudW53cmFwKCksIEFzc2V0SWQ6OmJhc2UoKSwgYW1vdW50KTsKICAgIH0KCiAgICBmbiBnZXRfYmFsYW5jZSgpIC0+IHU2NCB7CiAgICAgICAgYmFsYW5jZV9vZihDb250cmFjdElkOjp0aGlzKCksIEFzc2V0SWQ6OmJhc2UoKSkKICAgIH0KfQo=",
-  },
+    {
+        fileName: "base_asset.rs",
+        code: "Y29udHJhY3Q7Cgp1c2Ugc3RkOjp7CiAgICBhdXRoOjp7CiAgICAgICAgbXNnX3NlbmRlciwKICAgIH0sCiAgICBjYWxsX2ZyYW1lczo6ewogICAgICAgIG1zZ19hc3NldF9pZCwKICAgIH0sCiAgICBjb250cmFjdF9pZDo6Q29udHJhY3RJZCwKICAgIGNvbnRleHQ6OnsKICAgICAgICBiYWxhbmNlX29mLAogICAgICAgIG1zZ19hbW91bnQsCiAgICB9LAogICAgYXNzZXQ6OnsKICAgICAgICB0cmFuc2ZlciwKICAgIH0sCn07CgphYmkgTXlDb250cmFjdCB7CiAgICAjW3BheWFibGVdCiAgICBmbiBkZXBvc2l0KCk7CiAgICBmbiB3aXRoZHJhdyhhbW91bnQ6IHU2NCk7CiAgICBmbiBnZXRfYmFsYW5jZSgpIC0+IHU2NDsKfQoKaW1wbCBNeUNvbnRyYWN0IGZvciBDb250cmFjdCB7CiAgICAjW3BheWFibGVdCiAgICBmbiBkZXBvc2l0KCkgewogICAgICAgIHJlcXVpcmUobXNnX2Fzc2V0X2lkKCkgPT0gQXNzZXRJZDo6YmFzZSgpLCAibm90IGJhc2UgYXNzZXQiKTsKICAgICAgICByZXF1aXJlKG1zZ19hbW91bnQoKSA+IDAsICJhbW91bnQgPSAwIik7CiAgICB9CgogICAgZm4gd2l0aGRyYXcoYW1vdW50OiB1NjQpIHsKICAgICAgICB0cmFuc2Zlcihtc2dfc2VuZGVyKCkudW53cmFwKCksIEFzc2V0SWQ6OmJhc2UoKSwgYW1vdW50KTsKICAgIH0KCiAgICBmbiBnZXRfYmFsYW5jZSgpIC0+IHU2NCB7CiAgICAgICAgYmFsYW5jZV9vZihDb250cmFjdElkOjp0aGlzKCksIEFzc2V0SWQ6OmJhc2UoKSkKICAgIH0KfQo=",
+    },
 ]
 
 const html = `<p>Examples of base asset in Sway</p>

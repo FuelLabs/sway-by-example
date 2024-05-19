@@ -6,9 +6,16 @@ export const description = "Simple example of wallet in Solidity"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["app", "application", "ether", "eth", "wallet"]
+export const keywords = [
+    "app",
+    "application",
+    "ether",
+    "eth",
+    "wallet",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>An example of a basic wallet.</p>
 <ul>

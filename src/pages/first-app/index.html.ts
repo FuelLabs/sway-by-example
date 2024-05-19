@@ -7,15 +7,16 @@ export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
 export const keywords = [
-  "contract",
-  "contracts",
-  "app",
-  "first",
-  "application",
-  "counter",
+    "contract",
+    "contracts",
+    "app",
+    "first",
+    "application",
+    "counter",
 ]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Here is a simple contract that you can get, increment and decrement the count store in this contract.</p>
 <pre><code class="language-rust">

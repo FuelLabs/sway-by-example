@@ -7,15 +7,16 @@ export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
 export const keywords = [
-  "delegatecall",
-  "call",
-  "contract",
-  "contracts",
-  "function",
-  "functions",
+    "delegatecall",
+    "call",
+    "contract",
+    "contracts",
+    "function",
+    "functions",
 ]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p><code>delegatecall</code> is a low level function similar to <code>call</code>.</p>
 <p>When contract <code>A</code> executes <code>delegatecall</code> to contract <code>B</code>, <code>B</code>&#39;s code is executed</p>

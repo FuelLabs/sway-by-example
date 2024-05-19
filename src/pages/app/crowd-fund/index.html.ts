@@ -6,9 +6,16 @@ export const description = "An example of crowd funding contract"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["app", "application", "crowd", "fund", "funding"]
+export const keywords = [
+    "app",
+    "application",
+    "crowd",
+    "fund",
+    "funding",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Crowd fund ERC20 token</p>
 <ol>

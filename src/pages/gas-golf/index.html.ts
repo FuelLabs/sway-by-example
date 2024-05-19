@@ -6,9 +6,13 @@ export const description = "Some gas saving techniques"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["gas", "golf"]
+export const keywords = [
+    "gas",
+    "golf",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Some gas saving techniques.</p>
 <ul>

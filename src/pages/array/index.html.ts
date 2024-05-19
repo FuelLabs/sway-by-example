@@ -6,9 +6,16 @@ export const description = "Learn about arrays in Solidity"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["data", "variable", "variables", "array", "arrays"]
+export const keywords = [
+    "data",
+    "variable",
+    "variables",
+    "array",
+    "arrays",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Array can have a compile-time fixed size or a dynamic size.</p>
 <pre><code class="language-rust">

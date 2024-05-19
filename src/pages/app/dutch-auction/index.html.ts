@@ -6,9 +6,16 @@ export const description = "An example of Dutch auction in Solidity"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["app", "application", "dutch", "auction", "auctions"]
+export const keywords = [
+    "app",
+    "application",
+    "dutch",
+    "auction",
+    "auctions",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Dutch auction for NFT.</p>
 <h3>Auction</h3>

@@ -6,9 +6,15 @@ export const description = "An example of interface in Solidity"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["interface", "interfaces", "contract", "contracts"]
+export const keywords = [
+    "interface",
+    "interfaces",
+    "contract",
+    "contracts",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>You can interact with other contracts by declaring an <code>Interface</code>.</p>
 <p>Interface</p>

@@ -7,15 +7,16 @@ export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
 export const keywords = [
-  "hash",
-  "hashing",
-  "function",
-  "functions",
-  "keccak256",
-  "cryptography",
+    "hash",
+    "hashing",
+    "function",
+    "functions",
+    "keccak256",
+    "cryptography",
 ]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p><code>keccak256</code> computes the Keccak-256 hash of the input.</p>
 <p>Some use cases are:</p>

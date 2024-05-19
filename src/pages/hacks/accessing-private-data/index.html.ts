@@ -1,23 +1,23 @@
 // metadata
 export const version = "0.59.0"
 export const title = "Accessing Private Data"
-export const description =
-  "An example of accessing private data from a Solidity smart contract"
+export const description = "An example of accessing private data from a Solidity smart contract"
 
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
 export const keywords = [
-  "hack",
-  "security",
-  "access",
-  "accessing",
-  "private",
-  "data",
-  "storage",
+    "hack",
+    "security",
+    "access",
+    "accessing",
+    "private",
+    "data",
+    "storage",
 ]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<h3>Vulnerability</h3>
 <p>All data on a smart contract can be read.</p>

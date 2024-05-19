@@ -6,9 +6,15 @@ export const description = "Example of error in assembly"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["assembly", "yul", "error", "revert"]
+export const keywords = [
+    "assembly",
+    "yul",
+    "error",
+    "revert",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Example of error in <code>assembly</code></p>
 <pre><code class="language-rust">

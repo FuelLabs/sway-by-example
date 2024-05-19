@@ -6,9 +6,16 @@ export const description = "Chainlink Price Oracle"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["defi", "chainlink", "price", "oracle", "oracles"]
+export const keywords = [
+    "defi",
+    "chainlink",
+    "price",
+    "oracle",
+    "oracles",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<h3>ETH / USD Price Oracle</h3>
 <pre><code class="language-rust">

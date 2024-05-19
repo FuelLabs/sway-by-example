@@ -6,9 +6,15 @@ export const description = "An example of WETH permit hack"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["hack", "security", "weth", "permit"]
+export const keywords = [
+    "hack",
+    "security",
+    "weth",
+    "permit",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<h3>Vulnerability</h3>
 <p>Most ERC20 have the <code>permit</code> function to approve a spender if a valid signature is provided.</p>

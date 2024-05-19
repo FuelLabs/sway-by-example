@@ -6,9 +6,13 @@ export const description = "Vault"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["defi", "vault"]
+export const keywords = [
+    "defi",
+    "vault",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<p>Simple example of vault contract, commonly used in DeFi protocols.</p>
 <p>Most vaults on the mainnet are more complex. Here we will focus on the math for calculating shares to mint on deposit and the amount of token to withdraw.</p>

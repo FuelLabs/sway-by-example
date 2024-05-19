@@ -6,9 +6,17 @@ export const description = "Uniswap V3 Flash Loan"
 export const tempFileName = ""
 export const tempPlaygroundLink = ""
 
-export const keywords = ["defi", "uniswap", "v3", "flash", "loan", "amm"]
+export const keywords = [
+    "defi",
+    "uniswap",
+    "v3",
+    "flash",
+    "loan",
+    "amm",
+]
 
-export const codes = []
+export const codes = [
+]
 
 const html = `<h3>Uniswap V3 Flash Loan Example</h3>
 <pre><code class="language-rust">
