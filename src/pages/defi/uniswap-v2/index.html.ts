@@ -4,7 +4,7 @@ export const title = "Uniswap V2"
 export const description = "Uniswap V2"
 
 export const tempFileName = "uniswapv2.sw"
-export const tempPlaygroundLink = "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=d5f9c08ea503f022c58d77feb4149f35"
+export const tempPlaygroundLink = "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=2dd146d75151b0680c6b2190abbab523"
 
 export const keywords = [
     "defi",
