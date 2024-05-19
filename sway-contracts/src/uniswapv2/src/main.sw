@@ -1,7 +1,7 @@
 // Constant Product AMM - Uniswap V2.
 contract;
 
-use src20::SRC20;
+use standards::src20::SRC20;
 use std::{
     u128::U128,
     hash::sha256,

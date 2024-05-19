@@ -3,8 +3,8 @@ name = "core"
 source = "path+from-root-148AAAB4460F1A9D"
 
 [[package]]
-name = "src20"
-source = "git+https://github.com/FuelLabs/sway-standards?tag=v0.3.3#4198b4b07449ad16104cc8a0501f3013670fdcfd"
+name = "standards"
+source = "git+https://github.com/FuelLabs/sway-standards?tag=v0.4.4#a001d3c248595112aae67e5633a06ef9bc0536ae"
 dependencies = ["std"]
 
 [[package]]
@@ -16,6 +16,6 @@ dependencies = ["core"]
 name = "uniswapv2"
 source = "member"
 dependencies = [
-    "src20",
+    "standards",
     "std",
 ]
