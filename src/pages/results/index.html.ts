@@ -1,12 +1,21 @@
 // metadata
-export const version = "0.37"
+export const version = "0.59.0"
 export const title = "Results"
 export const description = "Results in Sway"
+
+export const tempFileName = "results.sw"
+export const tempPlaygroundLink = "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=32ce18783a53f863cb174b97ff785cb3"
+
+export const keywords = [
+    "result",
+    "results",
+]
+
 export const codes = [
-  {
-    fileName: "results",
-    code: "Y29udHJhY3Q7CgovLyBSZXN1bHQ8VCwgRT4gPSBPayhUKSB8IEVycihFKQoKZW51bSBNYXRoRXJyb3IgewogICAgRGl2QnlaZXJvOiAoKSwKfQoKZm4gZGl2KHg6IHU2NCwgeTogdTY0KSAtPiBSZXN1bHQ8dTY0LCBNYXRoRXJyb3I+IHsKICAgIGlmIHkgPT0gMCB7CiAgICAgICAgcmV0dXJuIFJlc3VsdDo6RXJyKE1hdGhFcnJvcjo6RGl2QnlaZXJvKTsKICAgIH0KCiAgICBSZXN1bHQ6Ok9rKHggLyB5KQp9CgphYmkgTXlDb250cmFjdCB7CiAgICBmbiB0ZXN0X2Rpdih4OiB1NjQsIHk6IHU2NCkgLT4gdTY0Owp9CgppbXBsIE15Q29udHJhY3QgZm9yIENvbnRyYWN0IHsKICAgIGZuIHRlc3RfZGl2KHg6IHU2NCwgeTogdTY0KSAtPiB1NjQgewogICAgICAgIGxldCByZXMgPSBkaXYoeCwgeSk7CiAgICAgICAgbWF0Y2ggcmVzIHsKICAgICAgICAgICAgUmVzdWx0OjpPayh2YWwpID0+IHZhbCwKICAgICAgICAgICAgUmVzdWx0OjpFcnIoZXJyKSA9PiByZXZlcnQoMCksCiAgICAgICAgfQogICAgfQp9Cg==",
-  },
+    {
+        fileName: "results.rs",
+        code: "Y29udHJhY3Q7CgovLyBSZXN1bHQ8VCwgRT4gPSBPayhUKSB8IEVycihFKQoKZW51bSBNYXRoRXJyb3IgewogICAgRGl2QnlaZXJvOiAoKSwKfQoKZm4gZGl2KHg6IHU2NCwgeTogdTY0KSAtPiBSZXN1bHQ8dTY0LCBNYXRoRXJyb3I+IHsKICAgIGlmIHkgPT0gMCB7CiAgICAgICAgcmV0dXJuIFJlc3VsdDo6RXJyKE1hdGhFcnJvcjo6RGl2QnlaZXJvKTsKICAgIH0KCiAgICBSZXN1bHQ6Ok9rKHggLyB5KQp9CgphYmkgTXlDb250cmFjdCB7CiAgICBmbiB0ZXN0X2Rpdih4OiB1NjQsIHk6IHU2NCkgLT4gdTY0Owp9CgppbXBsIE15Q29udHJhY3QgZm9yIENvbnRyYWN0IHsKICAgIGZuIHRlc3RfZGl2KHg6IHU2NCwgeTogdTY0KSAtPiB1NjQgewogICAgICAgIGxldCByZXMgPSBkaXYoeCwgeSk7CiAgICAgICAgbWF0Y2ggcmVzIHsKICAgICAgICAgICAgUmVzdWx0OjpPayh2YWwpID0+IHZhbCwKICAgICAgICAgICAgUmVzdWx0OjpFcnIoZXJyKSA9PiByZXZlcnQoMCksCiAgICAgICAgfQogICAgfQp9Cg==",
+    },
 ]
 
 const html = `<p>Examples of results in Sway</p>
@@ -39,7 +48,6 @@ abi MyContract {
         }
     }
 }
-</code></pre>
-`
+</code></pre>`
 
 export default html

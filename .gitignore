@@ -5,7 +5,6 @@
 /.pnp
 .pnp.js
 package-lock.json
-yarn.lock
 
 # testing
 /coverage
@@ -15,7 +14,9 @@ yarn.lock
 
 # misc
 .DS_Store
+.env
 .env.local
+.env.production
 .env.development.local
 .env.test.local
 .env.production.local

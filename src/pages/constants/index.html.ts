@@ -1,12 +1,24 @@
 // metadata
-export const version = "0.37"
+export const version = "0.59.0"
 export const title = "Constants"
 export const description = "Constants in Sway"
+
+export const tempFileName = "constants.sw"
+export const tempPlaygroundLink = "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=bb40306362c1e9471daaff3edd82da06"
+
+export const keywords = [
+    "constant",
+    "constants",
+    "data",
+    "variable",
+    "variables",
+]
+
 export const codes = [
-  {
-    fileName: "constants",
-    code: "CmNvbnRyYWN0OwoKLy8gQ29uc3RhbnRzCgovLyAweDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAKY29uc3QgWkVST19CMjU2OiBiMjU2ID0gYjI1Njo6bWluKCk7CmNvbnN0IFpFUk9fQUREUkVTUyA9IEFkZHJlc3M6OmZyb20oWkVST19CMjU2KTsKCi8vIEFzc29jaWF0ZWQgY29uc3RhbnRzCnN0cnVjdCBQb2ludCB7CiAgICB4OiB1NjQsCiAgICB5OiB1NjQsCn0KCmltcGwgUG9pbnQgewogICAgY29uc3QgWkVSTzogUG9pbnQgPSBQb2ludCB7IHg6IDAsIHk6IDAgfTsKfQoKYWJpIE15Q29udHJhY3QgewogICAgZm4gdGVzdF9mdW5jKCkgLT4gUG9pbnQ7Cn0KCmltcGwgTXlDb250cmFjdCBmb3IgQ29udHJhY3QgewogICAgZm4gdGVzdF9mdW5jKCkgLT4gUG9pbnQgewogICAgICAgIC8vIENhbiBhbHNvIGRlZmluZSBhIGNvbnN0YW50IGluc2lkZSBhIGZ1bmN0aW9uCiAgICAgICAgY29uc3QgTVlfTlVNOiB1NjQgPSAxMjM7CiAgICAgICAgUG9pbnQ6OlpFUk8KICAgIH0KfQo=",
-  },
+    {
+        fileName: "constants.rs",
+        code: "CmNvbnRyYWN0OwoKLy8gQ29uc3RhbnRzCgovLyAweDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAKY29uc3QgWkVST19CMjU2OiBiMjU2ID0gYjI1Njo6bWluKCk7CmNvbnN0IFpFUk9fQUREUkVTUyA9IEFkZHJlc3M6OmZyb20oWkVST19CMjU2KTsKCi8vIEFzc29jaWF0ZWQgY29uc3RhbnRzCnN0cnVjdCBQb2ludCB7CiAgICB4OiB1NjQsCiAgICB5OiB1NjQsCn0KCmltcGwgUG9pbnQgewogICAgY29uc3QgWkVSTzogUG9pbnQgPSBQb2ludCB7IHg6IDAsIHk6IDAgfTsKfQoKYWJpIE15Q29udHJhY3QgewogICAgZm4gdGVzdF9mdW5jKCkgLT4gUG9pbnQ7Cn0KCmltcGwgTXlDb250cmFjdCBmb3IgQ29udHJhY3QgewogICAgZm4gdGVzdF9mdW5jKCkgLT4gUG9pbnQgewogICAgICAgIC8vIENhbiBhbHNvIGRlZmluZSBhIGNvbnN0YW50IGluc2lkZSBhIGZ1bmN0aW9uCiAgICAgICAgY29uc3QgTVlfTlVNOiB1NjQgPSAxMjM7CiAgICAgICAgUG9pbnQ6OlpFUk8KICAgIH0KfQo=",
+    },
 ]
 
 const html = `<p>Examples of constants in Sway</p>
@@ -40,7 +52,6 @@ abi MyContract {
         Point::ZERO
     }
 }
-</code></pre>
-`
+</code></pre>`
 
 export default html

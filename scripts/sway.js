@@ -20,7 +20,7 @@ export default function(hljs) {
       regex.lookahead(/\s*\(/))
   };
   const NUMBER_SUFFIX = '([u](8|16|32|64))\?';
-  
+
   const KEYWORDS = [
     "abi",
     "as",
@@ -65,7 +65,7 @@ export default function(hljs) {
     "Err",
   ];
   const BUILTINS = [
-    
+
   ];
   const TYPES = [
     "bool", "char", "u8", "u16", "u32", "u64", "b256", "str", "Self"

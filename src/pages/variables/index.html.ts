@@ -1,12 +1,25 @@
 // metadata
-export const version = "0.37"
+export const version = "0.59.0"
 export const title = "Variables"
 export const description = "Variables in Sway"
+
+export const tempFileName = "variables.sw"
+export const tempPlaygroundLink = "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=26803ea06904a41f2c03a6be18f01cdd"
+
+export const keywords = [
+    "variables",
+    "variable",
+    "local",
+    "global",
+    "state",
+    "data",
+]
+
 export const codes = [
-  {
-    fileName: "variables",
-    code: "Y29udHJhY3Q7CgphYmkgTXlDb250cmFjdCB7CiAgICBmbiB0ZXN0X2Z1bmMoKSAtPiB1NjQ7Cn0KCmltcGwgTXlDb250cmFjdCBmb3IgQ29udHJhY3QgewogICAgZm4gdGVzdF9mdW5jKCkgLT4gdTY0IHsKICAgICAgICAvLyBJbW11dGFibGUKICAgICAgICAvLyAwIDw9IHU2NCA8PSAyKio2NCAtIDEKICAgICAgICBsZXQgeCA9IDU7CiAgICAgICAgLy8gQ2Fubm90IHJlLWFzc2lnbiB4IHRvIGFub3RoZXIgdmFsdWUKICAgICAgICAvLyB4ID0gNjsKCiAgICAgICAgLy8gTXV0YWJsZQogICAgICAgIGxldCBtdXQgeSA9IDU7CiAgICAgICAgeSA9IDY7CgogICAgICAgIC8vIFR5cGUgYW5ub3RhdGlvbnMKICAgICAgICBsZXQgaTogdTMyID0gMTIzOwoKICAgICAgICB5CiAgICB9Cn0K",
-  },
+    {
+        fileName: "variables.rs",
+        code: "Y29udHJhY3Q7CgphYmkgTXlDb250cmFjdCB7CiAgICBmbiB0ZXN0X2Z1bmMoKSAtPiB1NjQ7Cn0KCmltcGwgTXlDb250cmFjdCBmb3IgQ29udHJhY3QgewogICAgZm4gdGVzdF9mdW5jKCkgLT4gdTY0IHsKICAgICAgICAvLyBJbW11dGFibGUKICAgICAgICAvLyAwIDw9IHU2NCA8PSAyKio2NCAtIDEKICAgICAgICBsZXQgeCA9IDU7CiAgICAgICAgLy8gQ2Fubm90IHJlLWFzc2lnbiB4IHRvIGFub3RoZXIgdmFsdWUKICAgICAgICAvLyB4ID0gNjsKCiAgICAgICAgLy8gTXV0YWJsZQogICAgICAgIGxldCBtdXQgeSA9IDU7CiAgICAgICAgeSA9IDY7CgogICAgICAgIC8vIFR5cGUgYW5ub3RhdGlvbnMKICAgICAgICBsZXQgaTogdTMyID0gMTIzOwoKICAgICAgICB5CiAgICB9Cn0K",
+    },
 ]
 
 const html = `<p>Examples of variables in Sway</p>
@@ -34,7 +47,6 @@ abi MyContract {
         y
     }
 }
-</code></pre>
-`
+</code></pre>`
 
 export default html

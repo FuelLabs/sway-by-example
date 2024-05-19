@@ -1,7 +1,8 @@
 ---
 title: Interface
-version: 0.37
+version: 0.59.0
 description: An example of interface in Solidity
+keywords: [interface, interfaces, contract, contracts]
 ---
 
 You can interact with other contracts by declaring an `Interface`.
@@ -16,12 +17,4 @@ Interface
 
 ```rust
 {{{Interface}}}
-```
-
-- blah
-- blah
-- blah
-
-```rust
-{{{Interface2}}}
 ```

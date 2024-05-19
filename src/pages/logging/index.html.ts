@@ -1,12 +1,22 @@
 // metadata
-export const version = "0.37"
+export const version = "0.59.0"
 export const title = "Logging"
 export const description = "Logging in Sway"
+
+export const tempFileName = "log.sw"
+export const tempPlaygroundLink = "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=482f66e84b069054c075ac03cd728bb3"
+
+export const keywords = [
+    "log",
+    "logs",
+    "logging",
+]
+
 export const codes = [
-  {
-    fileName: "logging",
-    code: "Y29udHJhY3Q7Cgp1c2Ugc3RkOjpsb2dnaW5nOjpsb2c7CgphYmkgTXlDb250cmFjdCB7CiAgICBmbiB0ZXN0X2Z1bmMobXNnOiBzdHJbNF0pOwp9CgppbXBsIE15Q29udHJhY3QgZm9yIENvbnRyYWN0IHsKICAgIGZuIHRlc3RfZnVuYyhtc2c6IHN0cls0XSkgewogICAgICAgIGxvZyhtc2cpOwogICAgfQp9Cg==",
-  },
+    {
+        fileName: "logging.rs",
+        code: "Y29udHJhY3Q7Cgp1c2Ugc3RkOjpsb2dnaW5nOjpsb2c7CgphYmkgTXlDb250cmFjdCB7CiAgICBmbiB0ZXN0X2Z1bmMobXNnOiBzdHJbNF0pOwp9CgppbXBsIE15Q29udHJhY3QgZm9yIENvbnRyYWN0IHsKICAgIGZuIHRlc3RfZnVuYyhtc2c6IHN0cls0XSkgewogICAgICAgIGxvZyhtc2cpOwogICAgfQp9Cg==",
+    },
 ]
 
 const html = `<p>Examples of logging in Sway</p>
@@ -23,7 +33,6 @@ abi MyContract {
         <span class="hljs-title function_ invoke__">log</span>(msg);
     }
 }
-</code></pre>
-`
+</code></pre>`
 
 export default html

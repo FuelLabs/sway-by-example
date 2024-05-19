@@ -1,19 +1,15 @@
 ---
 title: Events
-version: 0.37
-description: Introduction to Sway
+version: 0.59.0
+description: Example of how to emit events in Solidity
+keywords: [event, events]
 ---
 
-In Sway `events` are defined as `structs` typically as its own library to be imported in like errors or interfaces. By utilizing `logs` from the standard library, custom events can be `emitted` to be picked up and indexed at the end of function runs.
+`Events` allow logging to the Ethereum blockchain. Some use cases for events are:
 
-`main.sw`
-
-```rust
-{{{events}}}
-```
-
-`events.sw`
+- Listening for events and updating user interface
+- A cheap form of storage
 
 ```rust
-{{{lib}}}
+{{{Events}}}
 ```

@@ -2,6 +2,7 @@ import React from "react"
 import SEO from "./SEO"
 import Html from "./Html"
 import styles from "./Example.module.css"
+// import { tempFileName } from "../pages/cheatsheet/solidity/index.html"
 
 interface Path {
   title: string
@@ -16,11 +17,13 @@ interface Code {
 interface Props {
   title: string
   description: string
-  version: "0.37"
+  version: "0.59.0"
   html: string
   prev: Path | null
   next: Path | null
   codes: Code[]
+  tempFileName: string
+  tempPlaygroundLink: string
 }
 
 const Example: React.FC<Props> = ({
@@ -31,6 +34,8 @@ const Example: React.FC<Props> = ({
   prev,
   next,
   codes,
+  tempFileName,
+  tempPlaygroundLink,
 }) => {
   return (
     <div className={styles.component}>
@@ -57,6 +62,26 @@ const Example: React.FC<Props> = ({
             </a>
           )}
         </div>
+
+        <h3>Try on Sway Playground</h3>
+        <ul>
+          {/* {codes.map(({ fileName, code }, i) => (
+            <li key={i}>
+              <a
+                href={`https://remix.ethereum.org/?#code=${code}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {fileName}
+              </a>
+            </li>
+          ))} */}
+          <li>
+            <a href={tempPlaygroundLink} target="_blank" rel="noreferrer">
+              {tempFileName}
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   )

@@ -1,12 +1,42 @@
 // metadata
-export const version = "0.37"
+export const version = "0.59.0"
 export const title = "Compound Types"
 export const description = "Compound types in Sway"
+
+export const tempFileName = "compound_types.sw"
+export const tempPlaygroundLink = "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=8030fee56754e3dfaf502d7a55c6090a"
+
+export const keywords = [
+    "compound",
+    "compounds",
+    "data",
+    "type",
+    "types",
+    "variable",
+    "variables",
+    "string",
+    "strings",
+    "boolean",
+    "uint256",
+    "int256",
+    "address",
+    "uint",
+    "int",
+    "tuple",
+    "tuples",
+    "destructure",
+    "destructuring",
+    "struct",
+    "structs",
+    "array",
+    "arrays",
+]
+
 export const codes = [
-  {
-    fileName: "compounds",
-    code: "Y29udHJhY3Q7CgovLyBDb21wb3VuZCB0eXBlcwovLyAtIFR1cGxlcwovLyAgIC0gZGVzdHJ1Y3R1cmluZwovLyAtIFN0cnVjdHMKLy8gLSBBcnJheXMKCnN0cnVjdCBQb2ludCB7CiAgICB4OiB1NjQsCiAgICB5OiB1NjQsCn0KCmFiaSBNeUNvbnRyYWN0IHsKICAgIGZuIHRlc3RfZnVuYygpIC0+IFBvaW50Owp9CgppbXBsIE15Q29udHJhY3QgZm9yIENvbnRyYWN0IHsKICAgIGZuIHRlc3RfZnVuYygpIC0+IFBvaW50IHsKICAgICAgICAvLyBUdXBsZXMKICAgICAgICBsZXQgdDogKHU2NCwgYm9vbCkgPSAoNDIsIHRydWUpOwogICAgICAgIC8vIEFjY2VzcyB0dXBsZSB2YWx1ZQogICAgICAgIGFzc2VydCh0LjAgPT0gNDIpOwogICAgICAgIGFzc2VydCh0LjEpOwoKICAgICAgICAvLyBEZXN0cnVjdHVyaW5nIGEgdHVwbGUgKHR5cGUgYW5ub3RhdGlvbiBpcyBvcHRpb25hbCkKICAgICAgICBsZXQgKG51bSwgYm9vKSA9IHQ7CgogICAgICAgIC8vIFR1cGxlIG9mIGxlbmd0aCAxCiAgICAgICAgbGV0IG9uZTogKHU2NCwgKSA9ICgxMjMsICk7CgogICAgICAgIC8vIFN0cnVjdAogICAgICAgIGxldCBwID0gUG9pbnQgeyB4OiAxLCB5OiAyIH07CiAgICAgICAgLy8gQWNjZXNzIHN0cnVjdCBmaWVsZHMKICAgICAgICBhc3NlcnQocC54ID09IDEpOwogICAgICAgIGFzc2VydChwLnkgPT0gMik7CgogICAgICAgIC8vIEFycmF5CiAgICAgICAgbGV0IHVfYXJyOiBbdTg7IDVdID0gWzEsIDIsIDMsIDQsIDVdOwogICAgICAgIGxldCBzX2FycjogW3N0clszXTsgM10gPSBbImNhdCIsICJkb2ciLCAicmF0Il07CgogICAgICAgIGxldCBzdHJ1Y3RfYXJyOiBbUG9pbnQ7IDJdID0gW1BvaW50IHsgeDogMSwgeTogMiB9LCBQb2ludCB7IHg6IDExLCB5OiAyMiB9XTsKCiAgICAgICAgLy8gTXV0YXRpbmcgYXJyYXkKICAgICAgICBsZXQgbXV0IG11dF9hcnI6IFtib29sOyAyXSA9IFt0cnVlLCBmYWxzZV07CiAgICAgICAgbXV0X2FyclsxXSA9IHRydWU7CgogICAgICAgIHAKICAgIH0KCn0K",
-  },
+    {
+        fileName: "compounds.rs",
+        code: "Y29udHJhY3Q7CgovLyBDb21wb3VuZCB0eXBlcwovLyAtIFR1cGxlcwovLyAtIGRlc3RydWN0dXJpbmcKLy8gLSBTdHJ1Y3RzCi8vIC0gQXJyYXlzCgpzdHJ1Y3QgUG9pbnQgewogICAgeDogdTY0LAogICAgeTogdTY0LAp9CgphYmkgTXlDb250cmFjdCB7CiAgICBmbiB0ZXN0X2Z1bmMoKSAtPiBQb2ludDsKfQoKaW1wbCBNeUNvbnRyYWN0IGZvciBDb250cmFjdCB7CiAgICBmbiB0ZXN0X2Z1bmMoKSAtPiBQb2ludCB7CiAgICAgICAgLy8gVHVwbGVzCiAgICAgICAgbGV0IHQ6ICh1NjQsIGJvb2wpID0gKDQyLCB0cnVlKTsKICAgICAgICAvLyBBY2Nlc3MgdHVwbGUgdmFsdWUKICAgICAgICBhc3NlcnQodC4wID09IDQyKTsKICAgICAgICBhc3NlcnQodC4xKTsKCiAgICAgICAgLy8gRGVzdHJ1Y3R1cmluZyBhIHR1cGxlICh0eXBlIGFubm90YXRpb24gaXMgb3B0aW9uYWwpCiAgICAgICAgbGV0IChudW0sIGJvbykgPSB0OwoKICAgICAgICAvLyBUdXBsZSBvZiBsZW5ndGggMQogICAgICAgIGxldCBvbmU6ICh1NjQsICkgPSAoMTIzLCApOwoKICAgICAgICAvLyBTdHJ1Y3QKICAgICAgICBsZXQgcCA9IFBvaW50IHsgeDogMSwgeTogMiB9OwogICAgICAgIC8vIEFjY2VzcyBzdHJ1Y3QgZmllbGRzCiAgICAgICAgYXNzZXJ0KHAueCA9PSAxKTsKICAgICAgICBhc3NlcnQocC55ID09IDIpOwoKICAgICAgICAvLyBBcnJheQogICAgICAgIGxldCB1X2FycjogW3U4OyA1XSA9IFsxLCAyLCAzLCA0LCA1XTsKICAgICAgICBsZXQgc19hcnI6IFtzdHI7IDRdID0gWyJjYXQiLCAiZG9nIiwgInNuYWtlIiwgImZpc2giXTsKCiAgICAgICAgbGV0IHN0cnVjdF9hcnI6IFtQb2ludDsgMl0gPSBbUG9pbnQgeyB4OiAxLCB5OiAyIH0sIFBvaW50IHsgeDogMTEsIHk6IDIyIH1dOwoKICAgICAgICAvLyBNdXRhdGluZyBhcnJheQogICAgICAgIGxldCBtdXQgbXV0X2FycjogW2Jvb2w7IDJdID0gW3RydWUsIGZhbHNlXTsKICAgICAgICBtdXRfYXJyWzFdID0gdHJ1ZTsKCiAgICAgICAgcAogICAgfQoKfQo=",
+    },
 ]
 
 const html = `<p>Examples of compound data types in Sway</p>
@@ -14,7 +44,7 @@ const html = `<p>Examples of compound data types in Sway</p>
 
 <span class="hljs-comment">// Compound types</span>
 <span class="hljs-comment">// - Tuples</span>
-<span class="hljs-comment">//   - destructuring</span>
+<span class="hljs-comment">// - destructuring</span>
 <span class="hljs-comment">// - Structs</span>
 <span class="hljs-comment">// - Arrays</span>
 
@@ -49,7 +79,7 @@ abi MyContract {
 
         <span class="hljs-comment">// Array</span>
         <span class="hljs-keyword">let</span> <span class="hljs-variable">u_arr</span>: [<span class="hljs-type">u8</span>; <span class="hljs-number">5</span>] = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>];
-        <span class="hljs-keyword">let</span> <span class="hljs-variable">s_arr</span>: [<span class="hljs-type">str</span>[<span class="hljs-number">3</span>]; <span class="hljs-number">3</span>] = [<span class="hljs-string">"cat"</span>, <span class="hljs-string">"dog"</span>, <span class="hljs-string">"rat"</span>];
+        <span class="hljs-keyword">let</span> <span class="hljs-variable">s_arr</span>: [<span class="hljs-type">str</span>; <span class="hljs-number">4</span>] = [<span class="hljs-string">"cat"</span>, <span class="hljs-string">"dog"</span>, <span class="hljs-string">"snake"</span>, <span class="hljs-string">"fish"</span>];
 
         <span class="hljs-keyword">let</span> <span class="hljs-variable">struct_arr</span>: [Point; <span class="hljs-number">2</span>] = [Point { x: <span class="hljs-number">1</span>, y: <span class="hljs-number">2</span> }, Point { x: <span class="hljs-number">11</span>, y: <span class="hljs-number">22</span> }];
 
@@ -61,7 +91,6 @@ abi MyContract {
     }
 
 }
-</code></pre>
-`
+</code></pre>`
 
 export default html
