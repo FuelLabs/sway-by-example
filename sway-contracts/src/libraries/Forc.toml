@@ -1,0 +1,5 @@
+[project]
+authors = ["Kin Chan"]
+entry = "lib.sw"
+license = "Apache-2.0"
+name = "libraries"

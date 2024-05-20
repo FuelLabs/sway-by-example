@@ -1,8 +1,8 @@
 [project]
-authors = ["Kin Chan"]
+authors = ["Call Delegation"]
 entry = "main.sw"
 license = "Apache-2.0"
 name = "imports"
 
 [dependencies]
-libraries = { path = "../libraries" }
+libraries = { path = "../libraries/" }

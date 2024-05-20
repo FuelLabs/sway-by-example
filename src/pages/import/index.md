@@ -1,42 +1,59 @@
 ---
-title: Import
+title: Imports
 version: 0.59.0
-description: Learn how to import other Solidity files
-keywords: [import]
+description: Importing libraries in Sway
+tempFileName: "imports.sw"
+tempPlaygroundLink: "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=ceb06dd4b2978d0767e750927a232ccd"
+keywords: [import, imports, library, libraries]
 ---
 
-You can import local and external files in Solidity.
+Imports are very useful for code reuseability and interactions. Generally all Sway program types follow the same import paradigm.
+
+`main.sw`
+
+```rust
+{{{imports}}}
+```
+
+### Standard Library
 
 ### Local
 
-Here is our folder structure.
+This is the folder structure.
 
 ```
-├── Import.sol
-└── Foo.sol
-```
-
-Foo.sol
-
-```rust
-{{{Foo}}}
-```
-
-Import.sol
-
-```rust
-{{{Import}}}
+└── Import
+    └── src
+        ├── main.sw
+        └── imports_library.sw
 ```
 
 ### External
 
-You can also import from [GitHub](https://github.com) by simply copying the url
+This is the project structure.
+
+```
+├── Import
+│   ├── src
+│   │   └── main.sw
+│   └── Forc.toml
+└── libraries
+    ├── data_structures.sw
+    └── lib.sw
+```
+
+External imports should be defined as a dependacy within `Forc.toml`
+
+`Forc.toml`
 
 ```rust
-// https://github.com/owner/repo/blob/branch/path/to/Contract.sol
-import "https://github.com/owner/repo/blob/branch/path/to/Contract.sol";
+{{{forc}}}
+```
 
-// Example import ECDSA.sol from openzeppelin-contract repo, release-v4.5 branch
-// https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v4.5/contracts/utils/cryptography/ECDSA.sol
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v4.5/contracts/utils/cryptography/ECDSA.sol";
+Note: It is good practice if you have a complex library to have an entry point for the sublibraries. Be sure to update the name of the entry point in the library if the default `main.sw` is not used. Make the necessary changes in the corresponding `Forc.toml` file of the library project.
+
+`library.sw`
+
+```rust
+{{{library}}}
 ```

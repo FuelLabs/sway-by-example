@@ -1,6 +1,6 @@
 // metadata
 export const version = "0.59.0"
-export const title = "Control Flow - Match Statement"
+export const title = "Match Statements"
 export const description = "Match statement in Sway"
 
 export const tempFileName = "match.sw"
