@@ -94,7 +94,7 @@ export const SWAY_ROUTES: Route[] = [
   },
   {
     path: "control-flow-if",
-    title: "If",
+    title: "If / Else",
   },
   {
     path: "control-flow-match",
