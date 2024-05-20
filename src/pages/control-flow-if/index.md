@@ -1,5 +1,5 @@
 ---
-title: Control Flow - If Statements
+title: If Statements
 version: 0.59.0
 description: If statements in Sway
 tempFileName: "if.sw"

@@ -1,6 +1,6 @@
 // metadata
 export const version = "0.59.0"
-export const title = "Control Flow - If Statements"
+export const title = "If Statements"
 export const description = "If statements in Sway"
 
 export const tempFileName = "if.sw"
