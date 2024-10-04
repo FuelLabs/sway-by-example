@@ -1,4 +1,4 @@
-# solidity-by-example.github.io
+# sway-by-example.github.io
 
 [Sway By Example](https://www.swaybyexample.com/)
 
