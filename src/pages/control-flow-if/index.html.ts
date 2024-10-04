@@ -1,7 +1,7 @@
 // metadata
 export const version = "0.59.0"
-export const title = "Control Flow - If Statements"
-export const description = "If statements in Sway"
+export const title = "If / Else Statements"
+export const description = "If / Else statements in Sway"
 
 export const tempFileName = "if.sw"
 export const tempPlaygroundLink = "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=e83075eecab4c7db923b8dee3319ab8d"
@@ -9,6 +9,7 @@ export const tempPlaygroundLink = "https://www.sway-playground.org/?toolchain=be
 export const keywords = [
     "if",
     "ifs",
+    "else",
     "control",
     "flow",
 ]

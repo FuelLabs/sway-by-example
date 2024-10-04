@@ -41,6 +41,10 @@ export const SWAY_ROUTES: Route[] = [
   //   title: "Primitive Data Types",
   // },
   {
+    path: "import",
+    title: "Imports",
+  },
+  {
     path: "variables",
     title: "Variables",
   },
@@ -90,15 +94,15 @@ export const SWAY_ROUTES: Route[] = [
   },
   {
     path: "control-flow-if",
-    title: "Control Flow If",
+    title: "If / Else",
   },
   {
     path: "control-flow-match",
-    title: "Control Flow Match",
+    title: "Match",
   },
   {
     path: "control-flow-while-loop",
-    title: "Control Flow While Loop",
+    title: "While Loops",
   },
   {
     path: "logging",
@@ -231,10 +235,6 @@ export const SWAY_ROUTES: Route[] = [
   // {
   //   path: "try-catch",
   //   title: "Try / Catch",
-  // },
-  // {
-  //   path: "import",
-  //   title: "Import",
   // },
   // {
   //   path: "library",

@@ -1,7 +1,7 @@
 // metadata
 export const version = "0.59.0"
-export const title = "Control Flow - While Loop"
-export const description = "While loop in Sway"
+export const title = "While Loops"
+export const description = "While loops in Sway"
 
 export const tempFileName = "while.sw"
 export const tempPlaygroundLink = "https://www.sway-playground.org/?toolchain=beta-5&transpile=false&gist=6365c7551a2abcb4fec4781d2a704acf"

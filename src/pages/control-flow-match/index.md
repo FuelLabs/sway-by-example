@@ -1,5 +1,5 @@
 ---
-title: Control Flow - Match Statement
+title: Match Statements
 version: 0.59.0
 description: Match statement in Sway
 tempFileName: "match.sw"
